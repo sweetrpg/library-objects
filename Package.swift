@@ -16,7 +16,7 @@ let package = Package(
         ],
         targets: [
             .target(
-                    name: "ProfilesModel",
+                    name: "LibraryModel",
                     dependencies: [
                         .product(name: "Fluent", package: "fluent"),
                         .product(name: "Vapor", package: "vapor"),

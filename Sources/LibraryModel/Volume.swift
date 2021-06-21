@@ -25,15 +25,6 @@ public final class Volume : Model {
     @Timestamp(key: Volume.v20210620.deletedAt, on: .delete)
     public var deletedAt : Date?
 
-    @OptionalField(key: Volume.v20210620.thirdPartyAuth)
-    public var thirdPartyAuth : String?
-
-    @OptionalField(key: Volume.v20210620.thirdPartyAuthId)
-    public var thirdPartyAuthId : String?
-
-    @Field(key: Volume.v20210620.email)
-    public var email : String
-
     public init() {
     }
 
