@@ -21,6 +21,18 @@ public final class Volume : Model {
 
     @Field(key: Volume.v20210620.name)
     public var name : String
+    
+    @Siblings(through: VolumeAuthorPivot.self, from: \.$volume, to: \.$author)
+    public var authors : [Author]
+
+    @Siblings(through: VolumeStudioPivot.self, from: \.$volume, to: \.$studio)
+    public var studios : [Studio]
+
+    @Siblings(through: VolumePublisherPivot.self, from: \.$volume, to: \.$publisher)
+    public var publishers : [Publisher]
+
+    @Children(for: \.$volume)
+    public var reviews : [Review]
 
     @Timestamp(key: Volume.v20210620.deletedAt, on: .delete)
     public var deletedAt : Date?

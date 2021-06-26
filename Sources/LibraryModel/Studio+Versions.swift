@@ -5,10 +5,10 @@
 import Fluent
 
 
-public extension Volume {
-    enum v20210620 {
+public extension Studio {
+    enum v20210625 {
         // schema
-        static let schemaName = "volumes"
+        static let schemaName = "studios"
 
         // properties
         static let name = FieldKey(stringLiteral: "name")

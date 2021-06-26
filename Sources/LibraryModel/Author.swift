@@ -1,5 +1,5 @@
 //
-// Volume.swift
+// Author.swift
 // Copyright (c) 2021 Paul Schifferer.
 //
 
@@ -7,22 +7,22 @@ import Fluent
 import Vapor
 
 
-public final class Volume : Model {
-    public static let schema = Volume.v20210620.schemaName
+public final class Author : Model {
+    public static let schema = Author.v20210625.schemaName
 
     @ID
     public var id : UUID?
 
-    @Timestamp(key: Volume.v20210620.createdAt, on: .create)
+    @Timestamp(key: Author.v20210625.createdAt, on: .create)
     public var createdAt : Date?
 
-    @Timestamp(key: Volume.v20210620.updatedAt, on: .update)
+    @Timestamp(key: Author.v20210625.updatedAt, on: .update)
     public var updatedAt : Date?
 
-    @Field(key: Volume.v20210620.name)
+    @Field(key: Author.v20210625.name)
     public var name : String
 
-    @Timestamp(key: Volume.v20210620.deletedAt, on: .delete)
+    @Timestamp(key: Author.v20210625.deletedAt, on: .delete)
     public var deletedAt : Date?
 
     public init() {
@@ -35,4 +35,4 @@ public final class Volume : Model {
 
 }
 
-extension Volume : Content {}
+extension Author : Content {}
