@@ -6,7 +6,7 @@ import Vapor
 import Fluent
 
 
-class VolumePublisherPivot : Model {
+public final class VolumePublisherPivot : Model {
     static let schema = "volume_publishers"
 
     @ID

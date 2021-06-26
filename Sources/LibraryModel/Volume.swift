@@ -31,6 +31,9 @@ public final class Volume : Model {
     @Siblings(through: VolumePublisherPivot.self, from: \.$volume, to: \.$publisher)
     public var publishers : [Publisher]
 
+    @Parent(key: Volume.v20210625.systemId)
+    public var system : LibraryModel.System
+
     @Children(for: \.$volume)
     public var reviews : [Review]
 

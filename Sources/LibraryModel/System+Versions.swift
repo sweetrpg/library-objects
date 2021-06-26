@@ -5,20 +5,16 @@
 import Fluent
 
 
-public extension Volume {
-    enum v20210620 {
+public extension System {
+    enum v20210625 {
         // schema
-        static let schemaName = "volumes"
+        static let schemaName = "systems"
 
         // properties
-        static let name = FieldKey(stringLiteral: "name")
+        static let gameSystemIdentifier = FieldKey(stringLiteral: "gameSystemIdentifier")
+        static let editionIdentifier = FieldKey(stringLiteral: "editionIdentifier")
         static let deletedAt = FieldKey(stringLiteral: "deletedAt")
         static let createdAt = FieldKey(stringLiteral: "createdAt")
         static let updatedAt = FieldKey(stringLiteral: "updatedAt")
-    }
-
-    enum v20210625 {
-        // properties
-        static let systemId = FieldKey(stringLiteral: "systemId")
     }
 }
