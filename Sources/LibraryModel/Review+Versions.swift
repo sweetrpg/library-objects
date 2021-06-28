@@ -12,6 +12,7 @@ public extension Review {
 
         // properties
         static let name = FieldKey(stringLiteral: "name")
+        static let volumeId = FieldKey(stringLiteral: "volumeId")
         static let deletedAt = FieldKey(stringLiteral: "deletedAt")
         static let createdAt = FieldKey(stringLiteral: "createdAt")
         static let updatedAt = FieldKey(stringLiteral: "updatedAt")

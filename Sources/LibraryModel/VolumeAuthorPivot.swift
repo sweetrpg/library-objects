@@ -7,20 +7,20 @@ import Fluent
 
 
 public final class VolumeAuthorPivot : Model {
-    static let schema = "volume_authors"
+    public static let schema = "volume_authors"
 
     @ID
-    var id : UUID?
+    public var id : UUID?
 
     @Parent(key: "volumeId")
-    var volume : Volume
+    public var volume : Volume
 
     @Parent(key: "authorId")
-    var author : Author
+    public var author : Author
 
-    init() {}
+    public init() {}
 
-    init(id : UUID? = nil, volume : Volume, author : Author) throws {
+    public init(id : UUID? = nil, volume : Volume, author : Author) throws {
         self.id = id
         self.$volume.id = try volume.requireID()
         self.$author.id = try author.requireID()

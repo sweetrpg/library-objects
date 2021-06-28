@@ -12,6 +12,7 @@ public extension Volume {
 
         // properties
         static let name = FieldKey(stringLiteral: "name")
+        static let systemId = FieldKey(stringLiteral: "systemId")
         static let deletedAt = FieldKey(stringLiteral: "deletedAt")
         static let createdAt = FieldKey(stringLiteral: "createdAt")
         static let updatedAt = FieldKey(stringLiteral: "updatedAt")

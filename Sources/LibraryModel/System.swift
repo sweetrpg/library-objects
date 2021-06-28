@@ -3,6 +3,7 @@
 //
 
 import Fluent
+import Vapor
 
 public final class System : Model {
     public static let schema = LibraryModel.System.v20210625.schemaName
