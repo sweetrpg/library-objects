@@ -21,7 +21,7 @@ public final class Volume : Model {
 
     @Field(key: Volume.v20210620.name)
     public var name : String
-    
+
     @Siblings(through: VolumeAuthorPivot.self, from: \.$volume, to: \.$author)
     public var authors : [Author]
 
@@ -43,9 +43,10 @@ public final class Volume : Model {
     public init() {
     }
 
-    public init(id : UUID? = nil, name : String) {
+    public init(id : UUID? = nil, name : String, systemId : LibraryModel.System.IDValue) {
         self.id = id
         self.name = name
+        self.$system.id = systemId
     }
 
 }
