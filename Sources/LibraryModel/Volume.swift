@@ -43,6 +43,9 @@ public final class Volume : Model {
     @Children(for: \.$volume)
     public var reviews : [Review]
 
+    @Children(for: \.$volume)
+    public var properties : [VolumeProperty]
+
     @Timestamp(key: Volume.v20210620.deletedAt, on: .delete)
     public var deletedAt : Date?
 
