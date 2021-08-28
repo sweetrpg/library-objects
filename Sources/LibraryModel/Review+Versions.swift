@@ -11,7 +11,8 @@ public extension Review {
         static let schemaName = "reviews"
 
         // properties
-        static let name = FieldKey(stringLiteral: "name")
+        static let title = FieldKey(stringLiteral: "title")
+        static let text = FieldKey(stringLiteral: "text")
         static let volumeId = FieldKey(stringLiteral: "volumeId")
         static let deletedAt = FieldKey(stringLiteral: "deletedAt")
         static let createdAt = FieldKey(stringLiteral: "createdAt")

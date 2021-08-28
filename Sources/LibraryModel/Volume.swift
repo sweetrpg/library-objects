@@ -22,6 +22,9 @@ public final class Volume : Model {
     @Field(key: Volume.v20210620.name)
     public var name : String
 
+    @Field(key: Volume.v20210620.isbn)
+    public var isbn : String
+
     @Siblings(through: VolumeAuthorPivot.self, from: \.$volume, to: \.$author)
     public var authors : [Author]
 
@@ -30,6 +33,9 @@ public final class Volume : Model {
 
     @Siblings(through: VolumePublisherPivot.self, from: \.$volume, to: \.$publisher)
     public var publishers : [Publisher]
+
+    @Siblings(through: VolumeTagPivot.self, from: \.$volume, to: \.$tag)
+    public var tags : [Tag]
 
     @Parent(key: Volume.v20210625.systemId)
     public var system : LibraryModel.System

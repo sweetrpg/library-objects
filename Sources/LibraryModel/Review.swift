@@ -19,8 +19,11 @@ public final class Review : Model {
     @Timestamp(key: Review.v20210625.updatedAt, on: .update)
     public var updatedAt : Date?
 
-    @Field(key: Review.v20210625.name)
-    public var name : String
+    @Field(key: Review.v20210625.title)
+    public var title : String
+
+    @Field(key: Review.v20210625.text)
+    public var text : String
 
     @Parent(key: Review.v20210625.volumeId)
     public var volume : Volume
@@ -31,9 +34,9 @@ public final class Review : Model {
     public init() {
     }
 
-    public init(id : UUID? = nil, name : String, volumeId : Volume.IDValue) {
+    public init(id : UUID? = nil, title : String, volumeId : Volume.IDValue) {
         self.id = id
-        self.name = name
+        self.title = title
         self.$volume.id = volumeId
     }
 

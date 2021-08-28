@@ -22,6 +22,9 @@ public final class Author : Model {
     @Field(key: Author.v20210625.name)
     public var name : String
 
+    @Siblings(through: AuthorTagPivot.self, from: \.$author, to: \.$tag)
+    public var tags : [Tag]
+
     @Timestamp(key: Author.v20210625.deletedAt, on: .delete)
     public var deletedAt : Date?
 
