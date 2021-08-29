@@ -38,6 +38,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout version repo
         uses: vweevers/multi-checkout-action@v1
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repositories: |
