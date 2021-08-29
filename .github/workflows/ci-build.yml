@@ -35,7 +35,7 @@ jobs:
       - name: Get repository metadata
         uses: varunsridharan/action-repository-meta@main
         env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout version repo
         uses: vweevers/multi-checkout-action@v1
         with:
