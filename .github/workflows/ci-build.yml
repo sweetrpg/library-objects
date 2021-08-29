@@ -45,7 +45,7 @@ jobs:
       - name: Get current version
         id: current_version
         run: |
-          echo "::set-output name=version::$(cat ../paulyhedral/sweetrpg-config/Semver/${{ env.REPOSITORY_NAME }})"
+          echo "::set-output name=version::$(cat ../paulyhedral/sweetrpg-config/Semver/${{ env.REPOSITORY_SLUG }})"
       - name: Increment patch version
         id: semver
         uses: "WyriHaximus/github-action-next-semvers@v1"
@@ -56,7 +56,7 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           cd ../paulyhedral/sweetrpg-config
-          echo "${{ steps.semver.outputs.version }}" > Semver/${{ env.REPOSITORY_NAME }}
+          echo "${{ steps.semver.outputs.version }}" > Semver/${{ env.REPOSITORY_SLUG }}
           git add Semver
-          git commit -m "Update version for ${{ env.REPOSITORY_NAME }}"
+          git commit -m "Update version for ${{ env.REPOSITORY_SLUG }}"
           git push
