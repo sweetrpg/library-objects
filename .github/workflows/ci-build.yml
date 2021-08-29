@@ -43,7 +43,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repositories: |
-            paulyhedral/sweetrpg-config
+            paulyhedral/sweetrpg-config@develop
       - name: Get current version
         id: current_version
         run: |
