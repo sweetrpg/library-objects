@@ -42,7 +42,7 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         with:
-          repository: ssh://git@github.com/paulyhedral/sweetrpg-config.git
+          repository: paulyhedral/sweetrpg-config
           ref: master
           fetch-depth: 1
           path: ../config-repo
