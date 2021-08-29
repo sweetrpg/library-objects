@@ -20,6 +20,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: main
       - name: Setup SSH Keys and known_hosts
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -45,7 +47,7 @@ jobs:
           repository: paulyhedral/sweetrpg-config
           ref: master
           fetch-depth: 1
-          path: ../config-repo
+          path: config
         #   token: ${{ secrets.GITHUB_TOKEN }}
         #   repositories: |
         #     paulyhedral/sweetrpg-config@develop
