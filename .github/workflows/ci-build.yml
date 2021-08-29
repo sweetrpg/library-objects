@@ -37,13 +37,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout version repo
-        uses: vweevers/multi-checkout-action@v1
+        uses: actions/checkout@v2
+        # - uses: vweevers/multi-checkout-action@v1
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repositories: |
-            paulyhedral/sweetrpg-config@develop
+          repository: ssh://git@github.com/paulyhedral/sweetrpg-config.git
+          ref: master
+          fetch-depth: 1
+          path: ../config-repo
+        #   token: ${{ secrets.GITHUB_TOKEN }}
+        #   repositories: |
+        #     paulyhedral/sweetrpg-config@develop
       - name: Get current version
         id: current_version
         run: |
