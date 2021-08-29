@@ -9,19 +9,19 @@ Model library for library applications.
 <a name="#author"></a>
 ### Author
 
+* [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the author.
     * `tags`: *[Tag]*. An array of tags associated with the author.
     * [Audit fields](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#audit).
-    * [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 
 <a name="#publisher"></a>
 ### Publisher
 
+* [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the publisher.
     * [Audit fields](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#audit).
-    * [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 
 <a name="#review"></a>
 ### Review
@@ -35,20 +35,20 @@ Model library for library applications.
 <a name="#studio"></a>
 ### Studio
 
+* [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the studio.
     * [Audit fields](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#audit).
-    * [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 
 <a name="#system"></a>
 ### System
 
+* [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 * Fields
     * `gameSystemIdentifier`: *String*. The identifier of the game system.
     * `editionIdentifier`: *String*. The identifier of the game system's edition.
     * `volumes`: *[Volume]*: An array of volumes belonging to the game system.
     * [Audit fields](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#audit).
-    * [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 
 <a name="#tag"></a>
 ### Tag
@@ -60,6 +60,7 @@ Model library for library applications.
 <a name="#volume"></a>
 ### Volume
 
+* [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the volume.
     * `isbn`: *String*. ISBN number for the volume.
@@ -70,7 +71,6 @@ Model library for library applications.
     * `reviews`: *[Review]*. An array of reviews associated with the volume.
     * `tags`: *[Tag]*. An array of tags associated with the volume.
     * [Audit fields](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#audit).
-    * [Slug as identifier](https://github.com/paulyhedral/sweetrpg-design/blob/master/README.md#slug).
 
 <a name="#volumeproperty"></a>
 ### VolumeProperty
