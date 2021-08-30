@@ -20,8 +20,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: main
       - name: Setup SSH Keys and known_hosts
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
