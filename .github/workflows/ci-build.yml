@@ -32,40 +32,4 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          echo "disabled"
-          # swift test # -v
-      - name: Get repository metadata
-        uses: varunsridharan/action-repository-meta@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Checkout version repo
-        uses: actions/checkout@v2
-        # - uses: vweevers/multi-checkout-action@v1
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        with:
-          repository: paulyhedral/sweetrpg-config
-          ref: master
-          fetch-depth: 1
-          path: config
-          token: ${{ secrets.GITHUB_TOKEN }}
-        #   repositories: |
-        #     paulyhedral/sweetrpg-config@develop
-      - name: Get current version
-        id: current_version
-        run: |
-          echo "::set-output name=version::$(cat ../paulyhedral/sweetrpg-config/Semver/${{ env.REPOSITORY_SLUG }})"
-      - name: Increment patch version
-        id: semver
-        uses: "WyriHaximus/github-action-next-semvers@v1"
-        with:
-          version: ${{ steps.current_version.outputs.version }}
-      - name: Store new version
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          cd ../paulyhedral/sweetrpg-config
-          echo "${{ steps.semver.outputs.version }}" > Semver/${{ env.REPOSITORY_SLUG }}
-          git add Semver
-          git commit -m "Update version for ${{ env.REPOSITORY_SLUG }}"
-          git push
+          swift test # -v
