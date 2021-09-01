@@ -22,6 +22,9 @@ public final class Volume : Model {
     @Field(key: Volume.v20210620.name)
     public var name : String
 
+    @Field(key: Volume.v20210620.slug)
+    public var slug : String
+
     @Field(key: Volume.v20210620.isbn)
     public var isbn : String
 

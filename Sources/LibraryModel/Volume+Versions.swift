@@ -13,6 +13,7 @@ public extension Volume {
 
         // properties
         static let name = FieldKey(stringLiteral: "name")
+        static let slug = FieldKey(stringLiteral: "slug")
         static let isbn = FieldKey(stringLiteral: "isbn")
         static let authors = FieldKey(stringLiteral: "authors")
         static let publishers = FieldKey(stringLiteral: "publishers")
