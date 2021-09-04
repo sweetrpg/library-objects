@@ -9,8 +9,8 @@ __author__ = "Paul Schifferer <paul@schifferers.net>"
 
 # Base = declarative_base()
 
-def Volume(object):
-    __tablename__ = 'volumes'
+class Volume(object):
+      __tablename__ = 'volumes'
 
-    # id = Column(Integer, primary_key=True)
-    # name = Column(String)
+      # id = Column(Integer, primary_key=True)
+      # name = Column(String)
