@@ -12,24 +12,40 @@ attrs==21.2.0
     # via pytest
 babel==2.9.1
     # via sphinx
+backports.entry-points-selectable==1.1.0
+    # via virtualenv
 blinker==1.4
     # via -r requirements/tests.in
 certifi==2021.5.30
     # via requests
+cffi==1.14.6
+    # via cryptography
 charset-normalizer==2.0.4
     # via requests
 click==8.0.1
     # via flask
+coverage==5.5
+    # via pytest-cov
+cryptography==3.4.8
+    # via trustme
+distlib==0.3.2
+    # via virtualenv
 docutils==0.16
     # via
     #   sphinx
     #   sphinx-tabs
+filelock==3.0.12
+    # via
+    #   tox
+    #   virtualenv
 flask==2.0.1
     # via -r requirements/pkg.in
 greenlet==1.1.1
     # via -r requirements/tests.in
 idna==3.2
-    # via requests
+    # via
+    #   requests
+    #   trustme
 imagesize==1.2.0
     # via sphinx
 iniconfig==1.1.1
@@ -47,12 +63,21 @@ packaging==21.0
     #   pallets-sphinx-themes
     #   pytest
     #   sphinx
+    #   tox
 pallets-sphinx-themes==2.0.1
     # via -r requirements/docs.in
+platformdirs==2.3.0
+    # via virtualenv
 pluggy==1.0.0
-    # via pytest
+    # via
+    #   pytest
+    #   tox
 py==1.10.0
-    # via pytest
+    # via
+    #   pytest
+    #   tox
+pycparser==2.20
+    # via cffi
 pygments==2.10.0
     # via
     #   sphinx
@@ -62,6 +87,13 @@ pymongo[tls]==3.12.0
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
+    # via
+    #   -r requirements/tests.in
+    #   pytest-cov
+    #   pytest-mock
+pytest-cov==2.12.1
+    # via -r requirements/tests.in
+pytest-mock==3.6.1
     # via -r requirements/tests.in
 python-dotenv==0.19.0
     # via -r requirements/tests.in
@@ -69,6 +101,10 @@ pytz==2021.1
     # via babel
 requests==2.26.0
     # via sphinx
+six==1.16.0
+    # via
+    #   tox
+    #   virtualenv
 snowballstemmer==2.1.0
     # via sphinx
 sphinx==4.1.2
@@ -97,11 +133,22 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 toml==0.10.2
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-cov
+    #   tox
+tox==3.24.3
+    # via -r requirements/tests.in
+trustme==0.9.0
+    # via -r requirements/tests.in
 urllib3==1.26.6
     # via requests
+virtualenv==20.7.2
+    # via tox
 werkzeug==2.0.1
     # via flask
+wheel==0.37.0
+    # via -r requirements/tests.in
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools

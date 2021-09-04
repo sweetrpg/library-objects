@@ -3,3 +3,8 @@ asgiref
 blinker
 greenlet
 python-dotenv
+tox
+trustme
+wheel
+pytest-cov
+pytest-mock
