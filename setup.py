@@ -5,7 +5,7 @@ import sys
 
 from codecs import open
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -39,7 +39,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 # packages = ['sweetrpg']
-packages=setuptools.find_packages(where="src")
+# packages=find_packages(where="src")
 
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
@@ -71,9 +71,9 @@ setup(
     author=about['__author__'],
     author_email=about['__author_email__'],
     url=about['__url__'],
-    packages=packages,
+    # packages=packages,
     package_data={'': ['LICENSE', 'NOTICE']},
-    package_dir={'sweetrpg-library-model': 'src'},
+    # package_dir={'sweetrpg-library-model': 'src'},
     include_package_data=True,
     python_requires=">=2, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
     install_requires=requires,

@@ -13,7 +13,7 @@ toy.py
 cover/
 build/
 docs/_build
-requests.egg-info/
+*.egg-info/
 *.pyc
 *.swp
 *.egg
