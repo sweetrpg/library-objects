@@ -1,8 +1,8 @@
 # sweetrpg-library-model
 
-[![CI - Test and build Docker image](https://github.com/paulyhedral/sweetrpg-library-model/actions/workflows/ci-build.yml/badge.svg)](https://github.com/paulyhedral/sweetrpg-library-model/actions/workflows/ci-build.yml)
+[![CI - Test and build Docker image](https://github.com/sweetrpg/library-model/actions/workflows/python-tests.yml/badge.svg)](https://github.com/sweetrpg/library-model/actions/workflows/python-tests.yml)
 
-Model library for library applications.
+Model package for library applications.
 
 ## Models
 
