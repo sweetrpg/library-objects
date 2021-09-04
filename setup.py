@@ -38,20 +38,15 @@ if sys.argv[-1] == 'publish':
     os.system('twine upload dist/*')
     sys.exit()
 
-# packages = ['sweetrpg']
-# packages=find_packages(where="src")
-
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
     'Flask>=2.0'
 
 ]
 test_requirements = [
-    'pytest-httpbin==0.0.7',
     'pytest-cov',
     'pytest-mock',
     'pytest-xdist',
-    'PySocks>=1.5.6, !=1.5.7',
     'pytest>=3'
 ]
 
@@ -71,11 +66,9 @@ setup(
     author=about['__author__'],
     author_email=about['__author_email__'],
     url=about['__url__'],
-    # packages=packages,
     package_data={'': ['LICENSE', 'NOTICE']},
-    # package_dir={'sweetrpg-library-model': 'src'},
     include_package_data=True,
-    python_requires=">=2, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
+    python_requires=">=3.9",
     install_requires=requires,
     license=about['__license__'],
     zip_safe=False,
