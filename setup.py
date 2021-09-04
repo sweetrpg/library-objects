@@ -43,8 +43,7 @@ packages=setuptools.find_packages(where="src")
 
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
-    'Flask>=2.0',
-    'SQLAlchemy>=1.4'
+    'Flask>=2.0'
 
 ]
 test_requirements = [
