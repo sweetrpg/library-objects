@@ -38,7 +38,7 @@ if sys.argv[-1] == 'publish':
     os.system('twine upload dist/*')
     sys.exit()
 
-packages = ['src', 'sweetrpg']
+packages = ['sweetrpg']
 
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
