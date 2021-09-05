@@ -5,12 +5,16 @@ __author__ = "Paul Schifferer <paul@schifferers.net>"
 
 # from sqlalchemy import Column, Integer, String, ForeignKey
 # from sqlalchemy.orm import declarative_base
-
+from marshmallow import Schema, fields
 
 # Base = declarative_base()
 
 class Volume(object):
       __tablename__ = 'volumes'
 
-      # id = Column(Integer, primary_key=True)
-      # name = Column(String)
+      def __init__(self, name, *args, **kwargs):
+            self.id = kwargs.get('id')
+            self.name = name
+
+      def __repr__(self):
+            return f"<Volume(id={self.id!r}, name={self.name!r})>"
