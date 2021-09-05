@@ -13,7 +13,10 @@ class Volume(object):
       __tablename__ = 'volumes'
 
       def __init__(self, name, *args, **kwargs):
-            self.id = kwargs.get('id')
+            print(name)
+            print(args)
+            print(kwargs)
+            self.id = kwargs.get('_id')
             self.name = name
 
       def __repr__(self):
