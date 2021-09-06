@@ -23,7 +23,9 @@ cffi==1.14.6
 charset-normalizer==2.0.4
     # via requests
 click==8.0.1
-    # via flask
+    # via
+    #   flask
+    #   pip-tools
 coverage==5.5
     # via pytest-cov
 cryptography==3.4.8
@@ -66,6 +68,10 @@ packaging==21.0
     #   tox
 pallets-sphinx-themes==2.0.1
     # via -r requirements/docs.in
+pep517==0.11.0
+    # via pip-tools
+pip-tools==6.2.0
+    # via -r requirements/dev.in
 platformdirs==2.3.0
     # via virtualenv
 pluggy==1.0.0
@@ -137,6 +143,8 @@ toml==0.10.2
     #   pytest
     #   pytest-cov
     #   tox
+tomli==1.2.1
+    # via pep517
 tox==3.24.3
     # via -r requirements/tests.in
 trustme==0.9.0
@@ -148,7 +156,10 @@ virtualenv==20.7.2
 werkzeug==2.0.1
     # via flask
 wheel==0.37.0
-    # via -r requirements/tests.in
+    # via
+    #   -r requirements/tests.in
+    #   pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
+# pip
 # setuptools
