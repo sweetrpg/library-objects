@@ -39,14 +39,14 @@ if sys.argv[-1] == 'publish':
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
     'Flask>=2.0',
-    'PyMongo[tls]~=3.12'
+    'PyMongo[tls]~=3.12',
 
 ]
 test_requirements = [
     'pytest-cov',
     'pytest-mock',
     'pytest-xdist',
-    'pytest>=3'
+    'pytest>=3',
 ]
 
 about = {}

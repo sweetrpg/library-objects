@@ -35,6 +35,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Setup SSH Keys and known_hosts
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+      - name: Test packaging
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          python setup.py sdist bdist_wheel
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
