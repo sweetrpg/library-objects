@@ -2,9 +2,7 @@
 # Learn more: https://github.com/kennethreitz/setup.py
 import os
 import sys
-
 from codecs import open
-
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
@@ -40,7 +38,8 @@ if sys.argv[-1] == 'publish':
 
 requires = [
     'charset_normalizer~=2.0.0; python_version >= "3"',
-    'Flask>=2.0'
+    'Flask>=2.0',
+    'PyMongo[tls]~=3.12'
 
 ]
 test_requirements = [
@@ -84,13 +83,13 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
     cmdclass={'test': PyTest},
-    tests_require=test_requirements,
-    extras_require={
-        'security': [],
-        'use_chardet_on_py3': ['chardet>=3.0.2,<5']
-    },
     project_urls={
         'Documentation': 'https://sweetrpg-library-model.readthedocs.io',
         'Source': 'https://github.com/sweetrpg/library-model',
+    },
+    entry_points={
+        'console_scripts': [
+            'sweetrpg_library_model = sweetrpg_library_model.cli:main',
+        ]
     },
 )
