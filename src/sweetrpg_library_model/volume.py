@@ -15,7 +15,7 @@ class Volume(object):
             """
             """
             now = datetime.utcnow().isoformat()
-            self.id = kwargs.get('_id')
+            self.id = kwargs.get('_id') or kwargs.get('id')
             self.name = name
             self.created_at = kwargs.get('created_at', now)
             self.updated_at = kwargs.get('updated_at', now)
