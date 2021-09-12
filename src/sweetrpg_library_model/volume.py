@@ -30,11 +30,11 @@ class Volume(object):
 
       def __repr__(self):
             return f"""<Volume(id={self.id!r},
-                        name={self.name!r}, slug={self.slug},
-                        system={self.system}, isbn={self.isbn},
-                        authors={self.authors},
-                        publishers={self.publishers},
-                        studios={self.studios},
-                        reviews={self.reviews},
-                        created_at={self.created_at}, updated_at={self.updated_at}, deleted_at={self.deleted_at})>
+                        name={self.name!s}, slug={self.slug!s},
+                        system={self.system!s}, isbn={self.isbn!s},
+                        authors={self.authors!r},
+                        publishers={self.publishers!r},
+                        studios={self.studios!r},
+                        reviews={self.reviews!r},
+                        created_at={self.created_at!r}, updated_at={self.updated_at!r}, deleted_at={self.deleted_at!r})>
                         """
