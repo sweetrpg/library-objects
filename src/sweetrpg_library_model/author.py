@@ -16,6 +16,7 @@ class Author(object):
             Creates a new Author object.
             :param str name: The name of the author.
             """
+            print(f"args: {args}, kwargs: {kwargs}")
             now = datetime.utcnow().isoformat()
             self.id = kwargs.get('_id') or kwargs.get('id')
             self.name = name

@@ -14,6 +14,7 @@ class Volume(object):
       def __init__(self, *args, **kwargs):
             """
             """
+            print(f"args: {args}, kwargs: {kwargs}")
             now = datetime.utcnow().isoformat()
             self.id = kwargs.get('_id') or kwargs.get('id')
             self.name = kwargs['name']
