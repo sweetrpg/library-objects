@@ -19,7 +19,7 @@ class Author(object):
             print(f"args: {args}, kwargs: {kwargs}")
             now = datetime.utcnow().isoformat()
             self.id = kwargs.get('_id') or kwargs.get('id')
-            self.name = name
+            self.name = kwargs['name']
             self.created_at = kwargs.get('created_at', now)
             self.updated_at = kwargs.get('updated_at', now)
             self.deleted_at = kwargs.get('deleted_at')
