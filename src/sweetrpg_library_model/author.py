@@ -30,4 +30,5 @@ class Author(object):
                     f"name={self.name!s}, "
                     f"volumes={self.volumes!r}, "
                     f"studios={self.studios!r}, "
-                    f"created_at={self.created_at!r}, updated_at={self.updated_at!r}, deleted_at={self.deleted_at!r})>")
+                    f"created_at={self.created_at!r}, updated_at={self.updated_at!r}, deleted_at={self.deleted_at!r})>"
+                   )

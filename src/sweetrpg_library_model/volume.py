@@ -29,12 +29,12 @@ class Volume(object):
             self.reviews = kwargs.get('reviews', [])
 
       def __repr__(self):
-            return f"""<Volume(id={self.id!r},
-                        name={self.name!s}, slug={self.slug!s},
-                        system={self.system!s}, isbn={self.isbn!s},
-                        authors={self.authors!r},
-                        publishers={self.publishers!r},
-                        studios={self.studios!r},
-                        reviews={self.reviews!r},
-                        created_at={self.created_at!r}, updated_at={self.updated_at!r}, deleted_at={self.deleted_at!r})>
-                        """
+            return (f"<Volume(id={self.id!r}, "
+                    f"name={self.name!s}, slug={self.slug!s}, "
+                    f"system={self.system!s}, isbn={self.isbn!s}, "
+                    f"authors={self.authors!r}, "
+                    f"publishers={self.publishers!r}, "
+                    f"studios={self.studios!r}, "
+                    f"reviews={self.reviews!r}, "
+                    f"created_at={self.created_at!r}, updated_at={self.updated_at!r}, deleted_at={self.deleted_at!r})> "
+                  )
