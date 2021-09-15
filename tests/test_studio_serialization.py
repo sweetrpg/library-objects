@@ -19,8 +19,8 @@ studio_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
 
 def test_studio_from_json():
     j = json.loads(studio_json)
-    a = Studio(**j)
-    assert isinstance(a, Studio)
-    assert a.name == "One Room"
-    assert a.id == "this-is-ignored"
-    assert a.created_at == studio_datetime
+    s = Studio(**j)
+    assert isinstance(s, Studio)
+    assert s.name == "One Room"
+    assert s.id == "this-is-ignored"
+    assert s.created_at == studio_datetime

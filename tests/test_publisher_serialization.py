@@ -19,8 +19,8 @@ publisher_datetime = datetime(2021, 9, 14, 20, 5, 0, 1000)
 
 def test_publisher_from_json():
     j = json.loads(publisher_json)
-    a = Publisher(**j)
-    assert isinstance(a, Publisher)
-    assert a.name == "Free League"
-    assert a.id == "this-is-ignored"
-    assert a.created_at == publisher_datetime
+    p = Publisher(**j)
+    assert isinstance(p, Publisher)
+    assert p.name == "Free League"
+    assert p.id == "this-is-ignored"
+    assert p.created_at == publisher_datetime

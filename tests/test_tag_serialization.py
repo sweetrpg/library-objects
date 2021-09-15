@@ -19,8 +19,8 @@ tag_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
 
 def test_tag_from_json():
     j = json.loads(tag_json)
-    a = Tag(**j)
-    assert isinstance(a, Tag)
-    assert a.name == "it"
-    assert a.id == "this-is-ignored"
-    assert a.created_at == tag_datetime
+    t = Tag(**j)
+    assert isinstance(t, Tag)
+    assert t.name == "it"
+    assert t.id == "this-is-ignored"
+    assert t.created_at == tag_datetime
