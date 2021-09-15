@@ -1,2 +1,4 @@
 Flask
 PyMongo[tls]
+marshmallow
+git+https://github.com/sweetrpg/common.git@develop
