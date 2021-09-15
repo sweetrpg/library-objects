@@ -30,6 +30,7 @@ class Author(object):
 
     def __repr__(self):
         attrs = []
-        for k, v in dir(self):
-            attrs.append(f"{k}({type(v)})={v}")
+        for k in dir(self):
+            v = getattr(self, k)
+            attrs.append("{k}({t})={v}".format(k=k, t=type(v), v=v))
         return f'<Author({", ".join(attrs)})'
