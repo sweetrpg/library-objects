@@ -6,6 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 import logging
 from sweetrpg_common.utils import to_datetime
+from reprlib import recursive_repr
 
 
 class Author(object):
@@ -28,9 +29,12 @@ class Author(object):
         self.volumes = kwargs.get("volumes", [])
         self.studios = kwargs.get("studios", [])
 
+    @recursive_repr()
     def __repr__(self):
         attrs = []
         for k in dir(self):
+            if k.startswith("__"):
+                continue
             v = getattr(self, k)
-            attrs.append("{k}({t})={v}".format(k=k, t=type(v), v=v))
-        return f'<Author({", ".join(attrs)})'
+            attrs.append("{k}={v}".format(k=k, v=v))
+        return "<Author(" + ", ".join(attrs) + ">"

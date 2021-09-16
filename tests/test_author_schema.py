@@ -32,7 +32,7 @@ def test_author_repr():
     a = Author(name="This guy")
     assert isinstance(a, Author)
     s = f"{a!r}"
-    assert "name(str)=This guy" in s
+    assert "name=This guy" in s
 
 
 def test_load_author_from_json():
