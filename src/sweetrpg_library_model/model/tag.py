@@ -14,9 +14,9 @@ class Tag(object):
     __tablename__ = "tags"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new Tag object.
-        :param str name: The name of the tag.
+        """Creates a new Tag object.
+
+        :key str name: The name of the tag.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()

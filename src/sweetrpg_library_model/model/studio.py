@@ -14,9 +14,9 @@ class Studio(object):
     __tablename__ = "studios"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new Studio object.
-        :param str name: The name of the studio.
+        """Creates a new Studio object.
+
+        :key str name: The name of the studio.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()

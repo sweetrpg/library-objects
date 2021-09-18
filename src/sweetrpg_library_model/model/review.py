@@ -14,10 +14,10 @@ class Review(object):
     __tablename__ = "reviews"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new Review object.
-        :param str title: The title of the review.
-        :param str text: The text of the review.
+        """Creates a new Review object.
+
+        :key str title: The title of the review.
+        :key str text: The text of the review.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()

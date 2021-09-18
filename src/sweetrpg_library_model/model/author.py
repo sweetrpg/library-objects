@@ -15,9 +15,9 @@ class Author(object):
     __tablename__ = "authors"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new Author object.
-        :param str name: The name of the author.
+        """Creates a new Author object.
+
+        :key str name: The name of the author.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()

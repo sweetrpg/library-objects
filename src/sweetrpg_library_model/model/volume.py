@@ -14,7 +14,7 @@ class Volume(object):
     __tablename__ = "volumes"
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """Creates a new Volume object. """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
         self.id = kwargs.get("_id") or kwargs.get("id")

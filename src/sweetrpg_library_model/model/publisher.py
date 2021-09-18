@@ -14,9 +14,9 @@ class Publisher(object):
     __tablename__ = "publishers"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new Publisher object.
-        :param str name: The name of the publisher.
+        """Creates a new Publisher object.
+
+        :key str name: The name of the publisher.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()

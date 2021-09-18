@@ -14,9 +14,9 @@ class System(object):
     __tablename__ = "systems"
 
     def __init__(self, *args, **kwargs):
-        """
-        Creates a new System object.
-        :param str name: The name of the system.
+        """Creates a new System object.
+
+        :key str name: The name of the system.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
