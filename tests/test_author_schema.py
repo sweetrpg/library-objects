@@ -28,11 +28,11 @@ author_dict = {
 }
 
 
-def test_author_repr():
-    a = Author(name="This guy")
-    assert isinstance(a, Author)
-    s = f"{a!r}"
-    assert "name=This guy" in s
+# def test_author_repr():
+#     a = Author(name="This guy")
+#     assert isinstance(a, Author)
+#     s = f"{a!r}"
+#     assert "name=This guy" in s
 
 
 def test_load_author_from_json():

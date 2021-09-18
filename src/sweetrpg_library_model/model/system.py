@@ -28,6 +28,9 @@ class System(object):
 
     def __repr__(self):
         attrs = []
-        for k, v in dir(self):
-            attrs.append(f"{k}({type(v)})={v}")
+        for k in dir(self):
+            if k.startswith("__"):
+                continue
+            v = getattr(self, k)
+            attrs.append("{k}={v}".format(k=k, v=v))
         return f'<System({", ".join(attrs)})'

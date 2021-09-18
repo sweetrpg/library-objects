@@ -4,6 +4,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 from sweetrpg_library_model.model.review import Review
+from sweetrpg_library_model.model.volume import Volume
 from sweetrpg_library_model.db.review.schema import ReviewDBSchema
 import json
 from datetime import datetime
@@ -25,19 +26,23 @@ review_dict = {
     "text": "I love it",
     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
+    "volume": Volume(id="4", name="War and Peace", slug="leo", system="peanuts")
 }
 
 
 def test_review_repr():
-    a = Review(title="This is fine", text="Just okay is not okay")
+    v = Volume(id="12345", name="Not your best work", slug="yuck", system="boo")
+    a = Review(title="This is fine", text="Just okay is not okay", volume=v)
     assert isinstance(a, Review)
     s = f"{a!r}"
     assert "title=This is fine" in s
     assert "text=Just okay is not okay" in s
+    assert "volume=" in s
 
 
 def test_load_review_from_json():
     j = json.loads(review_json)
+    j['volume'] = Volume(id="99", name="Gretsky", slug="wayne", system="la-kings")
     schema = ReviewDBSchema()
     a = schema.load(j)
     assert a is not None
@@ -46,6 +51,7 @@ def test_load_review_from_json():
     assert a.text == "I hate it"
     assert a.id == "this-is-ignored"
     assert a.created_at == review_datetime
+    assert a.volume.id == "99"
 
 
 def test_load_review_from_dict():
@@ -58,3 +64,4 @@ def test_load_review_from_dict():
     assert a.id == "another-id"
     assert a.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
     assert a.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)
+    assert a.volume.id == "4"

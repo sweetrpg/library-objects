@@ -1,6 +1,14 @@
 # sweetrpg-library-model
 
-[![CI - Test and build Docker image](https://github.com/sweetrpg/library-model/actions/workflows/python-tests.yml/badge.svg)](https://github.com/sweetrpg/library-model/actions/workflows/python-tests.yml)
+[![Unit tests](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml/badge.svg)](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml)
+[![Coverage](https://github.com/sweetrpg/library-model/coverage.svg)](https://github.com/sweetrpg/library-model)
+[![License](https://img.shields.io/github/license/sweetrpg/library-model.svg)](https://img.shields.io/github/license/sweetrpg/library-model.svg)
+[![Issues](https://img.shields.io/github/issues/sweetrpg/library-model.svg)](https://img.shields.io/github/issues/sweetrpg/library-model.svg)
+[![PRs](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)
+[![Dependabot](https://badgen.net/github/dependabot/sweetrpg/library-model)](https://badgen.net/github/dependabot/sweetrpg/library-model)
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[![Built with love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://ForTheBadge.com/images/badges/built-with-love.svg)
 
 Model package for library applications.
 
@@ -81,3 +89,7 @@ Model package for library applications.
     * `value`: *String*. The value of the property.
     * `volume`: *Volume*. The volume associated with the property.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
+
+## Documentation
+
+Documentation for this package can be found [here](https://sweetrpg.github.io/library-model).
