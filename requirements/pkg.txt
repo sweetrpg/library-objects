@@ -6,6 +6,8 @@
 #
 click==8.0.1
     # via flask
+dnspython==1.16.0
+    # via pymongo
 flask==2.0.1
     # via -r ./pkg.in
 itsdangerous==2.0.1
@@ -18,7 +20,7 @@ marshmallow==3.13.0
     # via
     #   -r ./pkg.in
     #   sweetrpg-common
-pymongo[tls]==3.12.0
+pymongo[srv,tls]==3.12
     # via
     #   -r ./pkg.in
     #   sweetrpg-common

@@ -18,10 +18,14 @@ click==8.0.1
     # via flask
 coverage==5.5
     # via pytest-cov
+coverage-badge==1.0.1
+    # via -r ./tests.in
 cryptography==3.4.8
     # via trustme
 distlib==0.3.2
     # via virtualenv
+dnspython==1.16.0
+    # via pymongo
 filelock==3.0.12
     # via
     #   tox
@@ -60,7 +64,7 @@ py==1.10.0
     #   tox
 pycparser==2.20
     # via cffi
-pymongo[tls]==3.12.0
+pymongo[srv,tls]==3.12
     # via
     #   -r ./pkg.in
     #   sweetrpg-common

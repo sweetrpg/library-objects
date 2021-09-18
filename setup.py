@@ -6,7 +6,7 @@ setup(
     install_requires=[
         "Flask>=2.0",
         "marshmallow==3.13.0",
-        "pymongo[tls]==3.12.0",
+        "PyMongo[srv,tls]==3.12.0",
         "sweetrpg-common @ git+https://github.com/sweetrpg/common.git@develop",
     ],
     extras_require={},

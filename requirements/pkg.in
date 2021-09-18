@@ -1,4 +1,4 @@
 Flask
-PyMongo[tls]
+PyMongo[srv,tls]==3.12
 marshmallow
 git+https://github.com/sweetrpg/common.git@develop
