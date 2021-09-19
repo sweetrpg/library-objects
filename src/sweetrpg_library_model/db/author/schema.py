@@ -7,7 +7,7 @@ from marshmallow import fields
 from marshmallow import post_load
 from sweetrpg_library_model.model.author import Author
 import logging
-from sweetrpg_db.db.base import BaseDBSchema
+from sweetrpg_db.schema.base import BaseDBSchema
 
 
 class AuthorDBSchema(BaseDBSchema):
