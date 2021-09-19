@@ -7,7 +7,7 @@ setup(
         "Flask>=2.0",
         "marshmallow==3.13.0",
         "PyMongo[srv,tls]==3.12.0",
-        "sweetrpg-common @ git+https://github.com/sweetrpg/common.git@develop",
+        "sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop",
     ],
     extras_require={},
 )
