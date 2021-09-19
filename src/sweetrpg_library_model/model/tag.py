@@ -5,7 +5,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 import logging
-from sweetrpg_common.utils import to_datetime
+from sweetrpg_db.utils import to_datetime
 
 
 class Tag(object):
