@@ -11,13 +11,22 @@ SweetRPG Library Model
    :caption: Contents:
 
 
-API Reference
+Model Objects
 -------------
 
 .. toctree::
    :maxdepth: 2
 
-   api
+   models
+
+
+Schemas
+-------
+
+.. toctree::
+   :maxdepth: 2
+
+   schemas
 
 
 Indices and tables
