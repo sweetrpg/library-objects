@@ -47,7 +47,7 @@ markupsafe==2.0.1
 marshmallow==3.13.0
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
+    #   sweetrpg-db
 packaging==21.0
     # via
     #   pytest
@@ -67,7 +67,7 @@ pycparser==2.20
 pymongo[srv,tls]==3.12
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
+    #   sweetrpg-db
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
@@ -85,7 +85,7 @@ six==1.16.0
     # via
     #   tox
     #   virtualenv
-git+https://github.com/sweetrpg/common.git@develop
+git+https://github.com/sweetrpg/db.git@develop
     # via -r ./pkg.in
 toml==0.10.2
     # via

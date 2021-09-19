@@ -71,7 +71,7 @@ markupsafe==2.0.1
 marshmallow==3.13.0
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
+    #   sweetrpg-db
 mypy-extensions==0.4.3
     # via black
 packaging==21.0
@@ -109,7 +109,7 @@ pygments==2.10.0
 pymongo[srv,tls]==3.12
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
+    #   sweetrpg-db
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
@@ -162,7 +162,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-git+https://github.com/sweetrpg/common.git@develop
+git+https://github.com/sweetrpg/db.git@develop
     # via -r ./pkg.in
 toml==0.10.2
     # via

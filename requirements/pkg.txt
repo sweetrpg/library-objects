@@ -19,12 +19,12 @@ markupsafe==2.0.1
 marshmallow==3.13.0
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
+    #   sweetrpg-db
 pymongo[srv,tls]==3.12
     # via
     #   -r ./pkg.in
-    #   sweetrpg-common
-git+https://github.com/sweetrpg/common.git@develop
+    #   sweetrpg-db
+git+https://github.com/sweetrpg/db.git@develop
     # via -r ./pkg.in
 werkzeug==2.0.1
     # via flask
