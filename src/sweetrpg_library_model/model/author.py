@@ -7,7 +7,7 @@ from datetime import datetime
 import logging
 # from sweetrpg_db.utils import to_datetime
 # from reprlib import recursive_repr
-from flask.ext.mongokit import MongoKit, Document
+from mongokit_ng import Document, INDEX_ASCENDING
 
 
 class Author(Document):
@@ -27,7 +27,7 @@ class Author(Document):
     }
     indexes = [
         {
-            'fields':[('name', pymongo.ASCENDING)],
+            'fields':[('name', INDEX_ASCENDING)],
             'name':'author_name'
         },
     ]
