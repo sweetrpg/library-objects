@@ -33,25 +33,13 @@ class Volume(object):
     @recursive_repr()
     def __repr__(self):
         attrs = []
-        for k in dir(self):
+        for k,v in self.__dict__.items():
             if k.startswith("__"):
                 continue
-            v = getattr(self, k)
-            if type(v) == 'method':
-                continue
+            # v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<Volume({", ".join(attrs)})>'
 
-    def to_dict(self):
-        d = {}
-        for k in dir(self):
-            if k.startswith("__"):
-                continue
-            v = getattr(self, k)
-            if type(v) == 'method':
-                continue
-            d[k] = v
-        return d
 
 
 class VolumeProperty(object):
