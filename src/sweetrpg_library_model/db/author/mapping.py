@@ -11,6 +11,7 @@ from mongokit_ng import Document, INDEX_ASCENDING
 class Author(Document):
     """A model object representing RPG authors."""
 
+    __database__ = "sweetrpg-library"
     __collection__ = "authors"
     structure = {
         'name': str,
