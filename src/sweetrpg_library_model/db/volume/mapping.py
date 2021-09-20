@@ -10,6 +10,7 @@ from mongokit_ng import Document, INDEX_ASCENDING
 class VolumeMapping(Document):
     """A mapping object to convert MongoDB data to a Volume object."""
 
+    _obj_class = 'Volume'
     __collection__ = "volumes"
     structure = {
         'name': str,

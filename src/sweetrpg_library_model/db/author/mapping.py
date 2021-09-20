@@ -8,7 +8,7 @@ import logging
 from mongokit_ng import Document, INDEX_ASCENDING
 
 
-class Author(Document):
+class AuthorMapping(Document):
     """A model object representing RPG authors."""
 
     __collection__ = "authors"
