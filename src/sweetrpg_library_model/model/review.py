@@ -6,6 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 import logging
 from sweetrpg_db.utils import to_datetime
+from reprlib import recursive_repr
 
 
 class Review(object):
@@ -27,6 +28,7 @@ class Review(object):
         self.deleted_at = to_datetime(kwargs.get("deleted_at"))
         self.volume = kwargs.get("volume")
 
+    @recursive_repr()
     def __repr__(self):
         attrs = []
         for k in dir(self):
@@ -35,3 +37,11 @@ class Review(object):
             v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<Review({", ".join(attrs)})>'
+
+    def to_dict(self):
+        d = {}
+        for k in dir(self):
+            if k.startswith("__"):
+                continue
+            d[k] = getattr(self, k)
+        return d

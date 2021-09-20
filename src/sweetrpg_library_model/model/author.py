@@ -6,7 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 import logging
 from sweetrpg_db.utils import to_datetime
-# from reprlib import recursive_repr
+from reprlib import recursive_repr
 
 
 class Author(object):
@@ -36,3 +36,11 @@ class Author(object):
             v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return "<Author(" + ", ".join(attrs) + ")>"
+
+    def to_dict(self):
+        d = {}
+        for k in dir(self):
+            if k.startswith("__"):
+                continue
+            d[k] = getattr(self, k)
+        return d
