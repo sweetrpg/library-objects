@@ -31,10 +31,6 @@ filelock==3.0.12
     #   tox
     #   virtualenv
 flask==2.0.1
-    # via
-    #   -r ./pkg.in
-    #   flask-mongokit
-flask-mongokit==0.6
     # via -r ./pkg.in
 greenlet==1.1.1
     # via -r ./tests.in
@@ -50,8 +46,8 @@ markupsafe==2.0.1
     # via jinja2
 marshmallow==3.13.0
     # via sweetrpg-db
-mongokit==0.9.1.1
-    # via flask-mongokit
+mongokit-ng==0.1.1
+    # via -r ./pkg.in
 packaging==21.0
     # via
     #   pytest
@@ -70,7 +66,7 @@ pycparser==2.20
     # via cffi
 pymongo[srv,tls]==3.12
     # via
-    #   mongokit
+    #   mongokit-ng
     #   sweetrpg-db
 pyparsing==2.4.7
     # via packaging

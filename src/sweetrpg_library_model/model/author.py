@@ -25,6 +25,12 @@ class Author(Document):
         'created_at': datetime.utcnow,
         'updated_at': datetime.utcnow,
     }
+    indexes = [
+        {
+            'fields':[('name', pymongo.ASCENDING)],
+            'name':'author_name'
+        },
+    ]
     use_dot_notation = True
 
     # def __init__(self, *args, **kwargs):

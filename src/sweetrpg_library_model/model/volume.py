@@ -6,7 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 import logging
 # from sweetrpg_db.utils import to_datetime
-from flask_mongokit import Document
+from mongokit_ng import Document, INDEX_ASCENDING
 
 
 class Volume(Document):
@@ -26,6 +26,15 @@ class Volume(Document):
         'created_at': datetime.utcnow,
         'updated_at': datetime.utcnow,
     }
+    indexes = [
+        {
+            'fields':[('slug', INDEX_ASCENDING)],
+            'name':'volume_slug',
+            'unique':True
+        },
+        {'fields':[('name', INDEX_ASCENDING)], 'name':'volume_name'},
+        {'fields':[('system', INDEX_ASCENDING)], 'name':'volume_system'},
+    ]
     use_dot_notation = True
 
     # __tablename__ = "volumes"
