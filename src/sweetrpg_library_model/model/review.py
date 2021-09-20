@@ -22,12 +22,12 @@ class Review(object):
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
         self.id = kwargs.get("_id") or kwargs.get("id")
-        self.title = kwargs["title"]
-        self.text = kwargs["text"]
+        self.title = kwargs.get("title")
+        self.text = kwargs.get("text")
         self.created_at = to_datetime(kwargs.get("created_at")) or now
         self.updated_at = to_datetime(kwargs.get("updated_at")) or now
         self.deleted_at = to_datetime(kwargs.get("deleted_at"))
-        self.volume = kwargs["volume"]
+        self.volume = kwargs.get("volume")
 
     def __repr__(self):
         attrs = []

@@ -18,18 +18,18 @@ class Volume(object):
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
         self.id = kwargs.get("_id") or kwargs.get("id")
-        self.name = kwargs["name"]
+        self.name = kwargs.get("name")
         self.created_at = to_datetime(kwargs.get("created_at")) or now
         self.updated_at = to_datetime(kwargs.get("updated_at")) or now
         self.deleted_at = to_datetime(kwargs.get("deleted_at"))
-        self.system = kwargs["system"]
-        self.slug = kwargs["slug"]
+        self.system = kwargs.get("system")
+        self.slug = kwargs.get("slug")
         self.isbn = kwargs.get("isbn")
-        self.authors = kwargs.get("authors", [])
-        self.publishers = kwargs.get("publishers", [])
-        self.studios = kwargs.get("studios", [])
-        self.reviews = kwargs.get("reviews", [])
-        self.properties = kwargs.get("properties", [])
+        self.authors = kwargs.get("authors")
+        self.publishers = kwargs.get("publishers")
+        self.studios = kwargs.get("studios")
+        self.reviews = kwargs.get("reviews")
+        self.properties = kwargs.get("properties")
 
     def __repr__(self):
         attrs = []
@@ -51,10 +51,10 @@ class VolumeProperty(object):
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
         self.id = kwargs.get("_id") or kwargs.get("id")
-        self.name = kwargs["name"]
-        self.type = kwargs["type"]
-        self.value = kwargs["value"]
-        self.volume = kwargs["volume"]
+        self.name = kwargs.get("name")
+        self.type = kwargs.get("type")
+        self.value = kwargs.get("value")
+        self.volume = kwargs.get("volume")
         self.created_at = to_datetime(kwargs.get("created_at")) or now
         self.updated_at = to_datetime(kwargs.get("updated_at")) or now
         self.deleted_at = to_datetime(kwargs.get("deleted_at"))
