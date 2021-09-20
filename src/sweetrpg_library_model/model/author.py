@@ -15,7 +15,7 @@ class Author(Document):
 
     __collection__ = "authors"
     structure = {
-        'name': unicode,
+        'name': str,
         'created_at': datetime,
         'updated_at': datetime,
         'deleted_at': datetime,

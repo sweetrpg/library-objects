@@ -14,9 +14,9 @@ class Volume(Document):
 
     __collection__ = "volumes"
     structure = {
-        'name': unicode,
-        'slug': unicode,
-        'system': unicode,
+        'name': str,
+        'slug': str,
+        'system': str,
         'created_at': datetime,
         'updated_at': datetime,
         'deleted_at': datetime,
