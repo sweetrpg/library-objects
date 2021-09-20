@@ -6,7 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 import logging
 # from sweetrpg_db.utils import to_datetime
-from flask.ext.mongokit import Document
+from flask_mongokit import Document
 
 
 class Volume(Document):
