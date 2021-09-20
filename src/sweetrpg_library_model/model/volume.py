@@ -37,6 +37,8 @@ class Volume(object):
             if k.startswith("__"):
                 continue
             v = getattr(self, k)
+            if type(v) == 'method':
+                continue
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<Volume({", ".join(attrs)})>'
 
@@ -45,7 +47,10 @@ class Volume(object):
         for k in dir(self):
             if k.startswith("__"):
                 continue
-            d[k] = getattr(self, k)
+            v = getattr(self, k)
+            if type(v) == 'method':
+                continue
+            d[k] = v
         return d
 
 
