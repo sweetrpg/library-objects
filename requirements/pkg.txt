@@ -9,6 +9,10 @@ click==8.0.1
 dnspython==1.16.0
     # via pymongo
 flask==2.0.1
+    # via
+    #   -r ./pkg.in
+    #   flask-mongokit
+flask-mongokit==0.6
     # via -r ./pkg.in
 itsdangerous==2.0.1
     # via flask
@@ -17,12 +21,12 @@ jinja2==3.0.1
 markupsafe==2.0.1
     # via jinja2
 marshmallow==3.13.0
-    # via
-    #   -r ./pkg.in
-    #   sweetrpg-db
+    # via sweetrpg-db
+mongokit==0.9.1.1
+    # via flask-mongokit
 pymongo[srv,tls]==3.12
     # via
-    #   -r ./pkg.in
+    #   mongokit
     #   sweetrpg-db
 git+https://github.com/sweetrpg/db.git@develop
     # via -r ./pkg.in

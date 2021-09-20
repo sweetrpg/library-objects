@@ -1,4 +1,3 @@
 Flask
-PyMongo[srv,tls]==3.12
-marshmallow
+Flask-MongoKit
 git+https://github.com/sweetrpg/db.git@develop
