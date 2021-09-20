@@ -3,8 +3,12 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-# import sweetrpg_library_model
+import sweetrpg_library_model
 
+
+def test_placeholder():
+    passed = True
+    assert passed
 
 # def test_can_access_model_volume_package():
 #     sweetrpg_library_model.model.volume
