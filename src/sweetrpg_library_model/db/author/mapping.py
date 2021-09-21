@@ -5,28 +5,26 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 import logging
-from mongokit_ng import Document, INDEX_ASCENDING
+from pymodm import fields, MongoModel, EmbeddedMongoModel
+from pymongo.operations import IndexModel
+from pymongo import ASCENDING
 
 
-class AuthorMapping(Document):
-    """A model object representing RPG authors."""
+class AuthorDocument(MongoModel):
+    """A model object representing an RPG author."""
 
-    __collection__ = "authors"
-    structure = {
-        'name': str,
-        'created_at': datetime,
-        'updated_at': datetime,
-        'deleted_at': datetime,
-    }
-    required_fields = ['name', 'created_at', 'updated_at']
-    default_values = {
-        'created_at': datetime.utcnow,
-        'updated_at': datetime.utcnow,
-    }
-    indexes = [
-        {
-            'fields':[('name', INDEX_ASCENDING)],
-            'name':'author_name'
-        },
-    ]
-    use_dot_notation = True
+    class Meta:
+        indexes = [
+            IndexModel([('name', ASCENDING)],
+                       name="author_name"),
+        ]
+        connection_alias = "default"
+        collection_name = "authors"
+        ignore_unknown_fields = True
+        cascade = True
+
+    name = fields.CharField(min_length=1, max_length=200, required=True)
+    created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
+    updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
+    deleted_at = fields.DateTimeField(blank=True)
+    authors = fields.ListField(field=fields.ReferenceField('VolumeDocument', on_delete=fields.ReferenceField.NULLIFY))
