@@ -15,7 +15,9 @@ blinker==1.4
 cffi==1.14.6
     # via cryptography
 click==8.0.1
-    # via flask
+    # via
+    #   flask
+    #   flask-pymodm
 coverage==5.5
     # via pytest-cov
 coverage-badge==1.0.1
@@ -31,6 +33,10 @@ filelock==3.0.12
     #   tox
     #   virtualenv
 flask==2.0.1
+    # via
+    #   -r ./pkg.in
+    #   flask-pymodm
+git+https://github.com/sweetrpg/flask-pymodm.git
     # via -r ./pkg.in
 greenlet==1.1.1
     # via -r ./tests.in
@@ -39,15 +45,19 @@ idna==3.2
 iniconfig==1.1.1
     # via pytest
 itsdangerous==2.0.1
-    # via flask
+    # via
+    #   flask
+    #   flask-pymodm
 jinja2==3.0.1
-    # via flask
+    # via
+    #   flask
+    #   flask-pymodm
 markupsafe==2.0.1
-    # via jinja2
+    # via
+    #   flask-pymodm
+    #   jinja2
 marshmallow==3.13.0
     # via sweetrpg-db
-mongokit-ng==0.1.1
-    # via -r ./pkg.in
 packaging==21.0
     # via
     #   pytest
@@ -64,9 +74,12 @@ py==1.10.0
     #   tox
 pycparser==2.20
     # via cffi
+pymodm==0.4.3
+    # via flask-pymodm
 pymongo[srv,tls]==3.12
     # via
-    #   mongokit-ng
+    #   flask-pymodm
+    #   pymodm
     #   sweetrpg-db
 pyparsing==2.4.7
     # via packaging
@@ -99,6 +112,8 @@ trustme==0.9.0
 virtualenv==20.7.2
     # via tox
 werkzeug==2.0.1
-    # via flask
+    # via
+    #   flask
+    #   flask-pymodm
 wheel==0.37.0
     # via -r ./tests.in

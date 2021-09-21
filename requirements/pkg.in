@@ -1,3 +1,3 @@
 Flask
-mongokit-ng
+git+https://github.com/sweetrpg/flask-pymodm.git
 git+https://github.com/sweetrpg/db.git@develop
