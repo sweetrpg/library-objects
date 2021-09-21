@@ -10,7 +10,7 @@ Author
    :private-members:
 
 Publisher
-------
+---------
 
 .. autoclass:: sweetrpg_library_model.model.publisher.Publisher
    :members:
