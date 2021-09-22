@@ -66,6 +66,8 @@ jobs:
       - name: publish
         run: |
           pip install python-semantic-release
+          git config --global user.email "bot@sweetrpg.com"
+          git config --global user.name "GitHub Actions Bot"
           semantic-release -v DEBUG --patch publish
 
   docs:
