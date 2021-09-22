@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__version__ = "0.0.3"
+# __version__ = "0.0.3"
 
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
@@ -8,5 +8,6 @@ setup(
     install_requires=[
         "Flask>=2.0",
         "Flask-PyMODM @ git+https://github.com/sweetrpg/flask-pymodm.git",
+        "sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop"
     ]
 )
