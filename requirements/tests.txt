@@ -26,8 +26,6 @@ cryptography==3.4.8
     # via trustme
 distlib==0.3.2
     # via virtualenv
-dnspython==1.16.0
-    # via pymongo
 filelock==3.0.12
     # via
     #   tox
@@ -37,7 +35,9 @@ flask==2.0.1
     #   -r ./pkg.in
     #   flask-pymodm
 git+https://github.com/sweetrpg/flask-pymodm.git
-    # via -r ./pkg.in
+    # via
+    #   -r ./pkg.in
+    #   sweetrpg-db
 greenlet==1.1.1
     # via -r ./tests.in
 idna==3.2
@@ -76,11 +76,10 @@ pycparser==2.20
     # via cffi
 pymodm==0.4.3
     # via flask-pymodm
-pymongo[srv,tls]==3.12
+pymongo==3.12
     # via
     #   flask-pymodm
     #   pymodm
-    #   sweetrpg-db
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
