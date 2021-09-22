@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
