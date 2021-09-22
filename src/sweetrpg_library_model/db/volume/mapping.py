@@ -30,7 +30,7 @@ class VolumeDocument(MongoModel):
 
     name = fields.CharField(min_length=1, max_length=200, required=True)
     slug = fields.CharField(min_length=2, max_length=50, required=True, primary_key=True)
-    system = fields.CharField(min_length=1, max_lenght=20, required=True)
+    system = fields.CharField(min_length=1, max_length=20, required=True)
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     deleted_at = fields.DateTimeField(blank=True)
