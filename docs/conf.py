@@ -24,8 +24,8 @@ import sweetrpg_library_model
 project = "SweetRPG Library Model"
 copyright = "2021, Paul Schifferer"
 author = "Paul Schifferer"
-version = sweetrpg_library_model.__version__
-release = sweetrpg_library_model.__version__
+version = setup.__version__
+release = setup.__version__
 
 # -- General configuration ---------------------------------------------------
 
