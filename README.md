@@ -1,7 +1,7 @@
 # sweetrpg-library-model
 
 [![Unit tests](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml/badge.svg)](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml)
-[![Coverage](https://github.com/sweetrpg/library-model/coverage.svg)](https://github.com/sweetrpg/library-model)
+[![Coverage](https://github.com/sweetrpg/library-model/blob/develop/coverage.svg)](https://github.com/sweetrpg/library-model)
 [![License](https://img.shields.io/github/license/sweetrpg/library-model.svg)](https://img.shields.io/github/license/sweetrpg/library-model.svg)
 [![Issues](https://img.shields.io/github/issues/sweetrpg/library-model.svg)](https://img.shields.io/github/issues/sweetrpg/library-model.svg)
 [![PRs](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)

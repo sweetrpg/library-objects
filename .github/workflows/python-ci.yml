@@ -63,6 +63,10 @@ jobs:
       #     git config user.email "<>"
       #     coverage-badge -f -o coverage.svg
       #     git add coverage.svg && git commit -m "Update code coverage" && git push origin develop
+      - name: publish
+        run: |
+          pip install python-semantic-release
+          semantic-release -v DEBUG --patch publish
 
   docs:
     needs: [tests]
