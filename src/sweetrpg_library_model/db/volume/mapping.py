@@ -34,8 +34,8 @@ class VolumeDocument(MongoModel):
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     deleted_at = fields.DateTimeField(blank=True)
-    authors = fields.ListField(field=fields.ReferenceField('AuthorDocument', on_delete=fields.ReferenceField.NULLIFY))
-    properties = fields.ListField(field=fields.ReferenceField('VolumePropertyDocument'), on_delete=fields.ReferenceField.DELETE)
+    authors = fields.ListField(field=fields.ReferenceField('AuthorDocument'))
+    properties = fields.EmbeddedDocumentListField('VolumePropertyDocument')
 
 class VolumePropertyDocument(EmbeddedMongoModel):
     """A mapping object for volume properties."""
@@ -52,7 +52,7 @@ class VolumePropertyDocument(EmbeddedMongoModel):
 
     name = fields.CharField(min_length=1, max_length=50, required=True)
     value = fields.CharField(min_length=2, max_length=200, required=True)
-    kind = fields.CharField(min_length=1, max_lenght=20, required=True)
+    kind = fields.CharField(min_length=1, max_length=20, required=True)
     volume = fields.ReferenceField('VolumeDocument', required=True)
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
