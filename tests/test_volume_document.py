@@ -3,7 +3,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.volume.mapping import VolumeDocument, VolumePropertyDocument
+from sweetrpg_library_model.db.volume.document import VolumeDocument, VolumePropertyDocument
 
 
 def test_volume_document_setup():
@@ -22,6 +22,12 @@ def test_volume_document_setup():
     assert v.system == "bob"
     assert len(v.authors) == 0
     assert len(v.properties) == 1
-    assert v.properties[0].name == "value"
-    assert v.properties[0].value == "1"
-    assert v.properties[0].kind == "int"
+
+def test_volume_property_document_setup():
+    vp = VolumePropertyDocument(name="value",
+                                value="1",
+                                kind="int")
+    assert vp is not None
+    assert vp.name == "value"
+    assert vp.value == "1"
+    assert vp.kind == "int"

@@ -27,4 +27,4 @@ class AuthorDocument(MongoModel):
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     deleted_at = fields.DateTimeField(blank=True)
-    authors = fields.ListField(field=fields.ReferenceField('VolumeDocument', on_delete=fields.ReferenceField.NULLIFY))
+    volumes = fields.ListField(field=fields.ReferenceField('VolumeDocument'))
