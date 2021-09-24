@@ -6,11 +6,11 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from marshmallow import fields
 from marshmallow import post_load
 from sweetrpg_library_model.model.publisher import Publisher
-from sweetrpg_db.schema.base import BaseDBSchema
+from sweetrpg_db.schema.base import BaseSchema
 import logging
 
 
-class PublisherDBSchema(BaseDBSchema):
+class PublisherSchema(BaseSchema):
     @post_load
     def make_object(self, data, **kwargs):
         logging.info("data: %s", data)

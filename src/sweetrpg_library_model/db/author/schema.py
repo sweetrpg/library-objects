@@ -7,10 +7,10 @@ from marshmallow import fields
 from marshmallow import post_load
 from sweetrpg_library_model.model.author import Author
 import logging
-from sweetrpg_db.schema.base import BaseDBSchema
+from sweetrpg_db.schema.base import BaseSchema
 
 
-class AuthorDBSchema(BaseDBSchema):
+class AuthorSchema(BaseSchema):
     @post_load
     def make_object(self, data, **kwargs):
         logging.debug("data: %s, kwargs: %s", data, kwargs)

@@ -6,11 +6,11 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from marshmallow import fields, INCLUDE
 from marshmallow import post_load
 from sweetrpg_library_model.model.review import Review
-from sweetrpg_db.schema.base import BaseDBSchema
+from sweetrpg_db.schema.base import BaseSchema
 import logging
 
 
-class ReviewDBSchema(BaseDBSchema):
+class ReviewSchema(BaseSchema):
     class Meta:
         unknown = INCLUDE
 
