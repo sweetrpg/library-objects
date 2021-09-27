@@ -5,55 +5,51 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 import logging
-from pymodm import fields, MongoModel, EmbeddedMongoModel
+from mongoengine import Document, EmbeddedDocument, fields
 from pymongo.operations import IndexModel
 from pymongo import ASCENDING
 
 
-class VolumeDocument(MongoModel):
-    """A mapping object to convert MongoDB data to a Volume object."""
-
-    class Meta:
-        indexes = [
-            IndexModel([('slug', ASCENDING)],
-                       name="volume_slug",
-                       unique=True),
-            IndexModel([('name', ASCENDING)],
-                       name="volume_name"),
-            IndexModel([('system', ASCENDING)],
-                       name="volume_system")
-        ]
-        connection_alias = "default"
-        collection_name = "volumes"
-        ignore_unknown_fields = True
-        cascade = True
-
-    name = fields.CharField(min_length=1, max_length=200, required=True)
-    slug = fields.CharField(min_length=2, max_length=50, required=True, primary_key=True)
-    system = fields.CharField(min_length=1, max_length=20, required=True)
-    created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
-    updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
-    deleted_at = fields.DateTimeField(blank=True)
-    authors = fields.ListField(field=fields.ReferenceField('AuthorDocument'))
-    properties = fields.EmbeddedDocumentListField('VolumePropertyDocument')
-
-class VolumePropertyDocument(EmbeddedMongoModel):
+class VolumePropertyDocument(EmbeddedDocument):
     """A mapping object for volume properties."""
 
-    class Meta:
-        indexes = [
-            IndexModel([('name', ASCENDING)],
-                       name="volume_property_name"),
-        ]
-        connection_alias = "default"
-        collection_name = "volume_properties"
-        ignore_unknown_fields = True
-        cascade = True
+    meta = {
+        'indexes' : [
+            {"name": "volume_property_name", "fields":["name"]}
+        ],
+        'db_alias' : "default",
+        'collection' : "volume_properties",
+        'strict': False,
+    }
 
-    name = fields.CharField(min_length=1, max_length=50, required=True)
-    value = fields.CharField(min_length=2, max_length=200, required=True)
-    kind = fields.CharField(min_length=1, max_length=20, required=True)
+    name = fields.StringField(min_length=1, max_length=50, required=True)
+    value = fields.StringField(min_length=2, max_length=200, required=True)
+    kind = fields.StringField(min_length=1, max_length=20, required=True)
     volume = fields.ReferenceField('VolumeDocument', required=True)
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
-    deleted_at = fields.DateTimeField(blank=True)
+    deleted_at = fields.DateTimeField(null=True)
+
+
+class VolumeDocument(Document):
+    """A mapping object to convert MongoDB data to a Volume object."""
+
+    meta = {
+        'indexes': [
+            {"name": "volume_slug", "fields": ["slug"], "unique":True},
+            {"name": "volume_name", "fields": ["name"]},
+            {"name": "volume_system", "fields": ["system"]},
+        ],
+        'db_alias': "default",
+        'collection':"volumes",
+        'strict' : False,
+    }
+
+    name = fields.StringField(min_length=1, max_length=200, required=True)
+    slug = fields.StringField(min_length=2, max_length=50, required=True, primary_key=True)
+    system = fields.StringField(min_length=1, max_length=20, required=True)
+    created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
+    updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
+    deleted_at = fields.DateTimeField(null=True)
+    authors = fields.ListField(field=fields.ReferenceField('AuthorDocument'))
+    properties = fields.ListField(fields.EmbeddedDocumentField(VolumePropertyDocument))
