@@ -7,7 +7,7 @@ setup(
     name="sweetrpg-library-model",
     install_requires=[
         "Flask>=2.0",
-        "Flask-PyMODM @ git+https://github.com/sweetrpg/flask-pymodm.git",
+        "mongoengine",
         "sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop"
     ]
 )
