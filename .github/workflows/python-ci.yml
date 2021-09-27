@@ -65,7 +65,7 @@ jobs:
       #     git add coverage.svg && git commit -m "Update code coverage" && git push origin develop
       - name: publish
         env:
-          pypi_token: ${{ secrets.PYPI_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           pip install python-semantic-release
           git config --global user.email "bot@sweetrpg.com"
