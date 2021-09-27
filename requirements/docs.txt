@@ -12,19 +12,33 @@ certifi==2021.5.30
     # via requests
 charset-normalizer==2.0.4
     # via requests
+click==8.0.1
+    # via flask
 docutils==0.16
     # via
     #   rstcheck
     #   sphinx
     #   sphinx-tabs
+flask==2.0.1
+    # via -r ./pkg.in
 idna==3.2
     # via requests
 imagesize==1.2.0
     # via sphinx
+itsdangerous==2.0.1
+    # via flask
 jinja2==3.0.1
-    # via sphinx
+    # via
+    #   flask
+    #   sphinx
 markupsafe==2.0.1
     # via jinja2
+marshmallow==3.13.0
+    # via sweetrpg-db
+mongoengine==0.23.1
+    # via
+    #   -r ./pkg.in
+    #   sweetrpg-db
 packaging==21.0
     # via
     #   pallets-sphinx-themes
@@ -35,6 +49,8 @@ pygments==2.10.0
     # via
     #   sphinx
     #   sphinx-tabs
+pymongo==3.12.0
+    # via mongoengine
 pyparsing==2.4.7
     # via packaging
 pytz==2021.1
@@ -70,8 +86,12 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
+git+https://github.com/sweetrpg/db.git@develop
+    # via -r ./pkg.in
 urllib3==1.26.6
     # via requests
+werkzeug==2.0.1
+    # via flask
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools

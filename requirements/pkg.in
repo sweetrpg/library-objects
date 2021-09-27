@@ -1,3 +1,3 @@
 Flask
-git+https://github.com/sweetrpg/flask-pymodm.git
+mongoengine
 git+https://github.com/sweetrpg/db.git@develop

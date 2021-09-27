@@ -5,8 +5,5 @@ coverage-badge
 greenlet
 pytest
 pytest-cov
-pytest-mock
 python-dotenv
 tox
-trustme
-wheel
