@@ -6,4 +6,4 @@ greenlet
 pytest
 pytest-cov
 python-dotenv
-tox
+tox==3.24.4
