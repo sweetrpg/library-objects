@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Models &#8212; SweetRPG Library Model 0.0.1 documentation</title>
+    <title>Models &#8212; SweetRPG Library Model 0.0.12 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -36,27 +36,150 @@
 <h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="author">
 <h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.author.Author">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.author.</span></span><span class="sig-name descname"><span class="pre">Author</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/author.html#Author"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.author.Author" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing RPG authors.</p>
+<p>Creates a new Author object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str name</dt>
+<dd class="field-odd"><p>The name of the author.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.author.Author.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/author.html#Author.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.author.Author.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="publisher">
 <h2>Publisher<a class="headerlink" href="#publisher" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.publisher.Publisher">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.publisher.</span></span><span class="sig-name descname"><span class="pre">Publisher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/publisher.html#Publisher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.publisher.Publisher" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing RPG publishers.</p>
+<p>Creates a new Publisher object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str name</dt>
+<dd class="field-odd"><p>The name of the publisher.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.publisher.Publisher.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/publisher.html#Publisher.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.publisher.Publisher.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="review">
 <h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.review.Review">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.review.</span></span><span class="sig-name descname"><span class="pre">Review</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/review.html#Review"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.review.Review" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing a review for a Volume.</p>
+<p>Creates a new Review object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str title</dt>
+<dd class="field-odd"><p>The title of the review.</p>
+</dd>
+<dt class="field-even">Key str text</dt>
+<dd class="field-even"><p>The text of the review.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.review.Review.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/review.html#Review.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.review.Review.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="studio">
 <h2>Studio<a class="headerlink" href="#studio" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.studio.Studio">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.studio.</span></span><span class="sig-name descname"><span class="pre">Studio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/studio.html#Studio"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.studio.Studio" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing RPG studios.</p>
+<p>Creates a new Studio object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str name</dt>
+<dd class="field-odd"><p>The name of the studio.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.studio.Studio.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/studio.html#Studio.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.studio.Studio.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="system">
 <h2>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.system.System">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.system.</span></span><span class="sig-name descname"><span class="pre">System</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/system.html#System"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.system.System" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing an RPG game system.</p>
+<p>Creates a new System object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str name</dt>
+<dd class="field-odd"><p>The name of the system.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.system.System.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/system.html#System.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.system.System.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="tag">
 <h2>Tag<a class="headerlink" href="#tag" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.tag.Tag">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.tag.</span></span><span class="sig-name descname"><span class="pre">Tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/tag.html#Tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.tag.Tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing a tag value attached to an object.</p>
+<p>Creates a new Tag object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Key str name</dt>
+<dd class="field-odd"><p>The name of the tag.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.tag.Tag.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/tag.html#Tag.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.tag.Tag.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="volume">
 <h2>Volume<a class="headerlink" href="#volume" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.volume.Volume">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.volume.</span></span><span class="sig-name descname"><span class="pre">Volume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/volume.html#Volume"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.volume.Volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing an RPG volume (digital or print).</p>
+<p>Creates a new Volume object.</p>
+</dd></dl>
+
 </div>
 <div class="section" id="volumeproperty">
 <h2>VolumeProperty<a class="headerlink" href="#volumeproperty" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.volume.VolumeProperty">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sweetrpg_library_model.model.volume.</span></span><span class="sig-name descname"><span class="pre">VolumeProperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/volume.html#VolumeProperty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.volume.VolumeProperty" title="Permalink to this definition">¶</a></dt>
+<dd><p>A model object representing a property key/value pair for a Volume.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sweetrpg_library_model.model.volume.VolumeProperty.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sweetrpg_library_model/model/volume.html#VolumeProperty.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sweetrpg_library_model.model.volume.VolumeProperty.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 
