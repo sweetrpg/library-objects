@@ -56,7 +56,11 @@ Volume
    :members:
    :undoc-members:
    :private-members:
-.. autoclass:: sweetrpg_library_model.db.volume.schema.VolumePropertySchema
+
+VolumeProperty
+--------------
+
+.. autoclass:: sweetrpg_library_model.db.volume_property.schema.VolumePropertySchema
    :members:
    :undoc-members:
    :private-members:
