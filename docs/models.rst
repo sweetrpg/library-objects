@@ -60,7 +60,7 @@ Volume
 VolumeProperty
 --------------
 
-.. autoclass:: sweetrpg_library_model.model.volume.VolumeProperty
+.. autoclass:: sweetrpg_library_model.model.volume_property.VolumeProperty
    :members:
    :undoc-members:
    :private-members:
