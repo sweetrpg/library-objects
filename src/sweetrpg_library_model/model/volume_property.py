@@ -16,14 +16,14 @@ class VolumeProperty(object):
         """ """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
         now = datetime.utcnow()  # .isoformat()
-        self.id = kwargs.get("_id") or kwargs.get("id")
+        # self.id = kwargs.get("_id") or kwargs.get("id")
         self.name = kwargs.get("name")
         self.kind = kwargs.get("kind")
         self.value = kwargs.get("value")
-        self.volume = kwargs.get("volume")
-        self.created_at = to_datetime(kwargs.get("created_at")) or now
-        self.updated_at = to_datetime(kwargs.get("updated_at")) or now
-        self.deleted_at = to_datetime(kwargs.get("deleted_at"))
+        # self.volume = kwargs.get("volume")
+        # self.created_at = to_datetime(kwargs.get("created_at")) or now
+        # self.updated_at = to_datetime(kwargs.get("updated_at")) or now
+        # self.deleted_at = to_datetime(kwargs.get("deleted_at"))
 
     @recursive_repr()
     def __repr__(self):
