@@ -18,7 +18,7 @@ class VolumeProperty(object):
         now = datetime.utcnow()  # .isoformat()
         self.id = kwargs.get("_id") or kwargs.get("id")
         self.name = kwargs.get("name")
-        self.type = kwargs.get("type")
+        self.kind = kwargs.get("kind")
         self.value = kwargs.get("value")
         self.volume = kwargs.get("volume")
         self.created_at = to_datetime(kwargs.get("created_at")) or now
@@ -28,17 +28,18 @@ class VolumeProperty(object):
     @recursive_repr()
     def __repr__(self):
         attrs = []
-        for k in dir(self):
+        for k, v in self.__dict__.items():
             if k.startswith("__"):
                 continue
-            v = getattr(self, k)
+            # v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<VolumeProperty({", ".join(attrs)})>'
 
     def to_dict(self):
         d = {}
         for k in dir(self):
-            if k.startswith("__"):
+            logging.debug("k: %s, type: %s", k, type(k))
+            if k.startswith("__") or k.startswith("to_"):
                 continue
             d[k] = getattr(self, k)
         return d

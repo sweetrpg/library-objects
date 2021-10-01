@@ -39,3 +39,12 @@ class Volume(object):
             # v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<Volume({", ".join(attrs)})>'
+
+    def to_dict(self):
+        d = {}
+        for k in dir(self):
+            logging.debug("k: %s, type: %s", k, type(k))
+            if k.startswith("__") or k.startswith("to_"):
+                continue
+            d[k] = getattr(self, k)
+        return d

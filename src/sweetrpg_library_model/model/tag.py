@@ -28,17 +28,18 @@ class Tag(object):
     @recursive_repr()
     def __repr__(self):
         attrs = []
-        for k in dir(self):
+        for k, v in self.__dict__.items():
             if k.startswith("__"):
                 continue
-            v = getattr(self, k)
+            # v = getattr(self, k)
             attrs.append("{k}={v}".format(k=k, v=v))
         return f'<Tag({", ".join(attrs)})>'
 
     def to_dict(self):
         d = {}
         for k in dir(self):
-            if k.startswith("__"):
+            logging.debug("k: %s, type: %s", k, type(k))
+            if k.startswith("__") or k.startswith("to_"):
                 continue
             d[k] = getattr(self, k)
         return d
