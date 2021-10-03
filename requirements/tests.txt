@@ -20,6 +20,8 @@ coverage-badge==1.0.1
     # via -r ./tests.in
 distlib==0.3.2
     # via virtualenv
+dnspython==1.16.0
+    # via pymongo
 filelock==3.0.12
     # via
     #   tox
@@ -36,8 +38,10 @@ jinja2==3.0.1
     # via flask
 markupsafe==2.0.1
     # via jinja2
-marshmallow==3.13.0
-    # via sweetrpg-db
+marshmallow==3.13
+    # via
+    #   sweetrpg-db
+    #   sweetrpg-model-core
 mongoengine==0.23.1
     # via
     #   -r ./pkg.in
@@ -56,8 +60,10 @@ py==1.10.0
     # via
     #   pytest
     #   tox
-pymongo==3.12
-    # via mongoengine
+pymongo[srv,tls]==3.12
+    # via
+    #   mongoengine
+    #   sweetrpg-model-core
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
@@ -73,6 +79,8 @@ six==1.16.0
     #   tox
     #   virtualenv
 git+https://github.com/sweetrpg/db.git@develop
+    # via -r ./pkg.in
+git+https://github.com/sweetrpg/model-core.git@develop
     # via -r ./pkg.in
 toml==0.10.2
     # via

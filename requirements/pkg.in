@@ -1,3 +1,4 @@
 Flask
 mongoengine
 git+https://github.com/sweetrpg/db.git@develop
+git+https://github.com/sweetrpg/model-core.git@develop
