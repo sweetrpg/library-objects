@@ -18,6 +18,5 @@ class VolumeSchema(BaseSchema):
 
     name = fields.String(required=True)  # , load_only=True)
     slug = fields.String(required=True)  # , load_only=True)
-    isbn = fields.String(allow_none=True)  # , load_only=True)
     system = fields.String(required=True)  # , load_only=True)
     # authors = fields.List(fields.String())
