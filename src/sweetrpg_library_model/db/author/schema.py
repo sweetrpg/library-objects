@@ -4,17 +4,12 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 from marshmallow import fields
-from marshmallow import post_load
 from sweetrpg_library_model.model.author import Author
-import logging
-from sweetrpg_db.schema.base import BaseSchema
+from sweetrpg_model_core.schema.base import BaseSchema
 
 
 class AuthorSchema(BaseSchema):
-    @post_load
-    def make_object(self, data, **kwargs):
-        logging.debug("data: %s, kwargs: %s", data, kwargs)
-        return Author(**data)
+    model_class = Author
 
     name = fields.Str(required=True)  # , load_only=True)
     volumes = fields.List(fields.Str())
