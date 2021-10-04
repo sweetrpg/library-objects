@@ -92,10 +92,12 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-git+https://github.com/sweetrpg/db.git@develop
+sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop
     # via -r ./pkg.in
-git+https://github.com/sweetrpg/model-core.git@develop
-    # via -r ./pkg.in
+sweetrpg-model-core @ git+https://github.com/sweetrpg/model-core.git@develop
+    # via
+    #   -r ./pkg.in
+    #   sweetrpg-db
 urllib3==1.26.6
     # via requests
 werkzeug==2.0.1
