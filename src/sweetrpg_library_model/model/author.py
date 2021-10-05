@@ -21,4 +21,4 @@ class Author(BaseModel):
 
         self.name = kwargs.get("name")
         self.volumes = kwargs.get("volumes", [])
-        self.studios = kwargs.get("studios", [])
+        # self.studios = kwargs.get("studios", [])
