@@ -14,7 +14,7 @@ class Volume(BaseModel):
         """Creates a new Volume object."""
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 
-        super().__init__(args, kwargs)
+        super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
         self.system = kwargs.get("system")

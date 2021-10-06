@@ -18,7 +18,7 @@ class Review(BaseModel):
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 
-        super().__init__(args, kwargs)
+        super().__init__(*args, **kwargs)
 
         self.title = kwargs.get("title")
         self.text = kwargs.get("text")

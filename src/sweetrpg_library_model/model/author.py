@@ -17,7 +17,7 @@ class Author(BaseModel):
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 
-        super().__init__(args, kwargs)
+        super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
         self.volumes = kwargs.get("volumes", [])
