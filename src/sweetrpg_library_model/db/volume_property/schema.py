@@ -14,3 +14,4 @@ class VolumePropertySchema(BaseEmbeddedSchema):
     name = fields.String(required=True)  # , load_only=True)
     value = fields.String(required=True)  # , load_only=True)
     kind = fields.String(allow_none=True)  # , load_only=True)
+    authors = fields.List(fields.Str())

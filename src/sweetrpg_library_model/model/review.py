@@ -15,6 +15,7 @@ class Review(BaseModel):
 
         :key str title: The title of the review.
         :key str text: The text of the review.
+        :key str volume: The volume ID to which this review belongs.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 

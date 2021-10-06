@@ -26,7 +26,7 @@ review_dict = {
     "text": "I love it",
     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
-    "volume": Volume(id="4", name="War and Peace", slug="leo", system="peanuts")
+    "volume": "4",  # Volume(id="4", name="War and Peace", slug="leo", system="peanuts")
 }
 
 
@@ -42,7 +42,7 @@ review_dict = {
 
 def test_load_review_from_json():
     j = json.loads(review_json)
-    j['volume'] = Volume(id="99", name="Gretsky", slug="wayne", system="la-kings")
+    j["volume"] = "99"  # Volume(id="99", name="Gretsky", slug="wayne", system="la-kings")
     schema = ReviewSchema()
     a = schema.load(j)
     assert a is not None
@@ -51,7 +51,7 @@ def test_load_review_from_json():
     assert a.text == "I hate it"
     assert a.id == "this-is-ignored"
     assert a.created_at == review_datetime
-    assert a.volume.id == "99"
+    assert a.volume == "99"
 
 
 def test_load_review_from_dict():
@@ -64,4 +64,4 @@ def test_load_review_from_dict():
     assert a.id == "another-id"
     assert a.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
     assert a.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)
-    assert a.volume.id == "4"
+    assert a.volume == "4"
