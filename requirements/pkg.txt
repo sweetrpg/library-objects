@@ -28,9 +28,9 @@ pymongo[srv,tls]==3.12
     # via
     #   mongoengine
     #   sweetrpg-model-core
-sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop
+sweetrpg-db==0.0.4
     # via -r ./pkg.in
-sweetrpg-model-core @ git+https://github.com/sweetrpg/model-core.git@develop
+sweetrpg-model-core==0.0.9
     # via
     #   -r ./pkg.in
     #   sweetrpg-db
