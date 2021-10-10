@@ -4,10 +4,10 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 import logging
-from sweetrpg_model_core.model.base import BaseModel
+from sweetrpg_model_core.model.base import Model
 
 
-class Tag(BaseModel):
+class Tag(Model):
     """A model object representing a tag value attached to an object."""
 
     def __init__(self, *args, **kwargs):

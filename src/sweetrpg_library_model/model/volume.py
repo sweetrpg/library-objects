@@ -4,10 +4,10 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 import logging
-from sweetrpg_model_core.model.base import BaseModel
+from sweetrpg_model_core.model.base import Model
 
 
-class Volume(BaseModel):
+class Volume(Model):
     """A model object representing an RPG volume (digital or print)."""
 
     def __init__(self, *args, **kwargs):

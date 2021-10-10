@@ -4,10 +4,10 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 import logging
-from sweetrpg_model_core.model.base import BaseModel
+from sweetrpg_model_core.model.base import Model
 
 
-class Publisher(BaseModel):
+class Publisher(Model):
     """A model object representing RPG publishers."""
 
     def __init__(self, *args, **kwargs):
