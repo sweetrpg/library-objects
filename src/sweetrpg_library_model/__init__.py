@@ -5,7 +5,7 @@
 __title__ = 'sweetrpg-library-model'
 __description__ = 'Model objects for SweetRPG Library'
 __url__ = 'https://sweetrpg.com'
-__version__ = '0.0.17'
+__version__ = '0.0.18'
 __build__ = 0x000001
 __author__ = 'Paul Schifferer'
 __author_email__ = 'dm@sweetrpg.com'
