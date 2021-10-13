@@ -20,3 +20,6 @@ class Studio(Model):
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
+        self.tags = kwargs.get("tags")
+        # authors: see StudioAuthor
+        # volumes: see StudioVolume

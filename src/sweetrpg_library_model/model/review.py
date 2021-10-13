@@ -24,3 +24,4 @@ class Review(Model):
         self.title = kwargs.get("title")
         self.text = kwargs.get("text")
         self.volume = kwargs.get("volume")
+        self.tags = kwargs.get("tags")

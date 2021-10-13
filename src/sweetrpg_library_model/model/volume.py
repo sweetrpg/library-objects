@@ -19,8 +19,9 @@ class Volume(Model):
         self.name = kwargs.get("name")
         self.system = kwargs.get("system")
         self.slug = kwargs.get("slug")
-        self.authors = kwargs.get("authors")
-        # self.publishers = kwargs.get("publishers")
-        # self.studios = kwargs.get("studios")
-        # self.reviews = kwargs.get("reviews")
         self.properties = kwargs.get("properties")
+        self.publisher = kwargs.get("publisher")
+        self.tags = kwargs.get("tags")
+        # authors: see AuthorVolume
+        # studios: see StudioVolume
+        # reviews: see VolumeReview

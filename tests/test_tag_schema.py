@@ -9,47 +9,47 @@ import json
 from datetime import datetime
 
 
-tag_json = """
-{
-    "_id": "this-is-ignored",
-    "name": "Joe Bob",
-    "created_at": "2021-09-13T07:55:00.001",
-    "updated_at": "2021-09-13T07:55:00.001"
-}
-"""
-tag_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
-tag_dict = {
-    "_id": "another-id",
-    "name": "Billy",
-    "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
-    "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
-}
+# tag_json = """
+# {
+#     "_id": "this-is-ignored",
+#     "name": "Joe Bob",
+#     "created_at": "2021-09-13T07:55:00.001",
+#     "updated_at": "2021-09-13T07:55:00.001"
+# }
+# """
+# tag_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
+# tag_dict = {
+#     "_id": "another-id",
+#     "name": "Billy",
+#     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
+#     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
+# }
 
 
-# def test_tag_repr():
-#     a = Tag(name="This guy")
+# # def test_tag_repr():
+# #     a = Tag(name="This guy")
+# #     assert isinstance(a, Tag)
+# #     s = f"{a!r}"
+# #     assert "name=This guy" in s
+
+
+# def test_load_tag_from_json():
+#     j = json.loads(tag_json)
+#     schema = TagSchema()
+#     a = schema.load(j)
+#     assert a is not None
 #     assert isinstance(a, Tag)
-#     s = f"{a!r}"
-#     assert "name=This guy" in s
+#     assert a.name == "Joe Bob"
+#     assert a.id == "this-is-ignored"
+#     assert a.created_at == tag_datetime
 
 
-def test_load_tag_from_json():
-    j = json.loads(tag_json)
-    schema = TagSchema()
-    a = schema.load(j)
-    assert a is not None
-    assert isinstance(a, Tag)
-    assert a.name == "Joe Bob"
-    assert a.id == "this-is-ignored"
-    assert a.created_at == tag_datetime
-
-
-def test_load_tag_from_dict():
-    schema = TagSchema()
-    a = schema.load(tag_dict)
-    assert a is not None
-    assert isinstance(a, Tag)
-    assert a.name == "Billy"
-    assert a.id == "another-id"
-    assert a.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
-    assert a.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)
+# def test_load_tag_from_dict():
+#     schema = TagSchema()
+#     a = schema.load(tag_dict)
+#     assert a is not None
+#     assert isinstance(a, Tag)
+#     assert a.name == "Billy"
+#     assert a.id == "another-id"
+#     assert a.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
+#     assert a.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)

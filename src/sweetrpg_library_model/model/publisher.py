@@ -20,3 +20,5 @@ class Publisher(Model):
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
+        self.tags = kwargs.get("tags")
+        # volumes: see Volume#publisher

@@ -20,3 +20,4 @@ class Tag(Model):
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
+        self.value = kwargs.get("value")

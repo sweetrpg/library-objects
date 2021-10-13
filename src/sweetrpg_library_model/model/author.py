@@ -16,9 +16,12 @@ class Author(Model):
         :key str name: The name of the author.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
+        print(kwargs)  # TODO: remove
 
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
-        self.volumes = kwargs.get("volumes", [])
-        # self.studios = kwargs.get("studios", [])
+        self.properties = kwargs.get("properties")
+        self.tags = kwargs.get("tags")
+        # volumes: see AuthorVolume
+        # studios: see StudioAuthor

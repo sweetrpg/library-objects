@@ -12,3 +12,4 @@ class StudioSchema(BaseSchema):
     model_class = Studio
 
     name = fields.String(required=True)  # , load_only=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

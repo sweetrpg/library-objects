@@ -7,13 +7,13 @@ from mongoengine import EmbeddedDocument, fields
 from pymongo import ASCENDING
 
 
-class VolumePropertyDocument(EmbeddedDocument):
-    """A mapping object for volume properties."""
+class AuthorPropertyDocument(EmbeddedDocument):
+    """A mapping object for author properties."""
 
     meta = {
-        "indexes": [{"name": "volume_property_name", "fields": ["name"]}],
+        "indexes": [{"name": "author_property_name", "fields": ["name"]}],
         "db_alias": "default",
-        "collection": "volume_properties",
+        "collection": "author_properties",
         "strict": False,
     }
 

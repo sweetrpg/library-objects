@@ -13,7 +13,15 @@ volume_json = """
     "name": "Player's Handbook",
     "slug": "phb",
     "system": "dnd5",
-    "created_at": "2021-09-13T07:55:00.001"
+    "publisher": "1",
+    "tags": [{"name": "tag", "value": "tag"}],
+    "properties": [
+        {"name": "value", "value": "1", "kind": "int"}
+    ],
+    "created_at": "2021-09-13T07:55:00.001",
+    "created_by": "test",
+    "updated_at": "2021-09-13T07:55:00.001",
+    "updated_by": "test"
 }
 """
 volume_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
@@ -23,8 +31,22 @@ def test_volume_from_json():
     j = json.loads(volume_json)
     v = Volume(**j)
     assert isinstance(v, Volume)
+    assert v.id == "this-is-ignored"
     assert v.name == "Player's Handbook"
     assert v.slug == "phb"
     assert v.system == "dnd5"
-    assert v.id == "this-is-ignored"
+    assert v.publisher == "1"
+    assert len(v.tags) == 1
+    t = v.tags[0]
+    assert t["name"] == "tag"
+    assert t["value"] == "tag"
+    p = v.properties[0]
+    assert p["name"] == "value"
+    assert p["value"] == "1"
+    assert p["kind"] == "int"
     assert v.created_at == volume_datetime
+    assert v.created_by == "test"
+    assert v.updated_at == volume_datetime
+    assert v.updated_by == "test"
+    assert not hasattr(v, "deleted_at") or v.deleted_at is None
+    assert not hasattr(v, "deleted_by") or v.deleted_by is None

@@ -4,20 +4,18 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 import logging
-from sweetrpg_model_core.model.base import Model
+from sweetrpg_model_core.model.base import EmbeddedModel
 
 
-class System(Model):
-    """A model object representing an RPG game system."""
+class AuthorProperty(EmbeddedModel):
+    """A model object representing a property key/value pair for a Author."""
 
     def __init__(self, *args, **kwargs):
-        """Creates a new System object.
-
-        :key str name: The name of the system.
-        """
+        """ """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 
         super().__init__(*args, **kwargs)
 
         self.name = kwargs.get("name")
-        self.tags = kwargs.get("tags")
+        self.kind = kwargs.get("kind")
+        self.value = kwargs.get("value")

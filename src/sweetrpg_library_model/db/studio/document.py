@@ -6,29 +6,26 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 from mongoengine import Document, fields
 from pymongo import ASCENDING
-from sweetrpg_library_model.db.volume_property.document import VolumePropertyDocument
 
 
-class VolumeDocument(Document):
-    """A mapping object to convert MongoDB data to a Volume object."""
+class StudioDocument(Document):
+    """A mapping object to convert MongoDB data to a Studio object."""
 
     meta = {
         "indexes": [
-            {"name": "volume_slug", "fields": ["slug"], "unique": True},
-            {"name": "volume_name", "fields": ["name"]},
-            {"name": "volume_system", "fields": ["system"]},
+            {"name": "studio_name", "fields": ["name"]},
         ],
         "db_alias": "default",
-        "collection": "volumes",
+        "collection": "studios",
         "strict": False,
     }
 
     # basic properties
     name = fields.StringField(min_length=1, max_length=200, required=True)
-    slug = fields.StringField(min_length=2, max_length=50, required=True)
-    system = fields.StringField(min_length=1, max_length=20, required=True)
-    properties = fields.ListField(fields.EmbeddedDocumentField(VolumePropertyDocument))
-    publisher = fields.ReferenceField("PublisherDocument")
+
+    # relations
+    volumes = fields.ListField(field=fields.ReferenceField("VolumeDocument"))
+    authors = fields.ListField(field=fields.ReferenceField("AuthorDocument"))
     tags = fields.ListField(field=fields.ReferenceField("TagDocument"))
 
     # audit properties

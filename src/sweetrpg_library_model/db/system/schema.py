@@ -12,3 +12,4 @@ class SystemSchema(BaseSchema):
     model_class = System
 
     name = fields.String(required=True)  # , load_only=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

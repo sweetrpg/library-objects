@@ -14,3 +14,4 @@ class ReviewSchema(BaseSchema):
     title = fields.String(required=True)  # , load_only=True)
     text = fields.String(required=True)  # , load_only=True)
     volume = fields.Str(required=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
