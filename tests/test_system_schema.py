@@ -9,47 +9,57 @@ import json
 from datetime import datetime
 
 
-# system_json = """
-# {
-#     "_id": "this-is-ignored",
-#     "name": "Joe Bob",
-#     "created_at": "2021-09-13T07:55:00.001",
-#     "updated_at": "2021-09-13T07:55:00.001"
-# }
-# """
-# system_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
-# system_dict = {
-#     "_id": "another-id",
-#     "name": "Billy",
-#     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
-#     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
-# }
+system_json = """
+{
+    "_id": "this-is-ignored",
+    "name": "Joe Bob",
+    "created_at": "2021-09-13T07:55:00.001",
+    "created_by": "test",
+    "updated_at": "2021-09-13T07:55:00.001",
+    "updated_by": "test",
+    "tags": [{"name": "tag", "value": "tag"}]
+}
+"""
+system_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
+system_dict = {
+    "_id": "another-id",
+    "name": "Billy",
+    "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
+    "created_by": "test",
+    "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
+    "updated_by": "test",
+    "deleted_at": datetime(2021, 9, 15, 7, 35, 0, 2002),
+    "deleted_by": "test",
+    "tags": [{"name": "tag", "value": "tag"}],
+}
 
 
-# # def test_system_repr():
-# #     a = System(name="This guy")
-# #     assert isinstance(a, System)
-# #     s = f"{a!r}"
-# #     assert "name=This guy" in s
+def test_load_system_from_json():
+    j = json.loads(system_json)
+    schema = SystemSchema()
+    s = schema.load(j)
+    assert s is not None
+    assert isinstance(s, System)
+    assert s.id == "this-is-ignored"
+    assert s.name == "Joe Bob"
+    assert s.created_at == system_datetime
+    assert s.created_by == "test"
+    assert s.updated_at == system_datetime
+    assert s.updated_by == "test"
+    assert s.deleted_at is None
+    assert s.deleted_by is None
 
 
-# def test_load_system_from_json():
-#     j = json.loads(system_json)
-#     schema = SystemSchema()
-#     a = schema.load(j)
-#     assert a is not None
-#     assert isinstance(a, System)
-#     assert a.name == "Joe Bob"
-#     assert a.id == "this-is-ignored"
-#     assert a.created_at == system_datetime
-
-
-# def test_load_system_from_dict():
-#     schema = SystemSchema()
-#     a = schema.load(system_dict)
-#     assert a is not None
-#     assert isinstance(a, System)
-#     assert a.name == "Billy"
-#     assert a.id == "another-id"
-#     assert a.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
-#     assert a.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)
+def test_load_system_from_dict():
+    schema = SystemSchema()
+    s = schema.load(system_dict)
+    assert s is not None
+    assert isinstance(s, System)
+    assert s.id == "another-id"
+    assert s.name == "Billy"
+    assert s.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
+    assert s.created_by == "test"
+    assert s.updated_at == datetime(2021, 9, 15, 7, 35, 0, 2001)
+    assert s.updated_by == "test"
+    assert s.deleted_at == datetime(2021, 9, 15, 7, 35, 0, 2002)
+    assert s.deleted_by == "test"

@@ -14,6 +14,7 @@ class Tag(Model):
         """Creates a new Tag object.
 
         :key str name: The name of the tag.
+        :key str value: The value of the tag.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
 

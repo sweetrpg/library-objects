@@ -22,7 +22,7 @@ class TagDocument(Document):
 
     # basic properties
     name = fields.StringField(min_length=1, max_length=50, required=True)
-    value = fields.StringField(min_length=1, max_length=50, required=True)
+    value = fields.StringField(max_length=50)
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

@@ -12,3 +12,4 @@ class TagSchema(BaseSchema):
     model_class = Tag
 
     name = fields.String(required=True)  # , load_only=True)
+    value = fields.String()  # , load_only=True)
