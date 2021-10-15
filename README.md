@@ -90,6 +90,33 @@ Model package for library applications.
     * `volume`: *Volume*. The volume associated with the property.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
+## Development
+
+1. Create a virtual environment
+    ```shell
+    python -m venv ~/.virtualenvs/sweetrpg-library-model
+    source ~/.virtualenvs/sweetrpg-library-model/bin/activate
+    ```
+2. Install requirements
+    ```shell
+    pip3 install -r requirements/dev.txt
+    ```
+
+### Requirements
+
+Requirements are organized in a number of role-based files in the `requirements/` directory:
+
+* `dev.{in,txt}` -- for project development
+* `pkg.{in,txt}` -- for the package itself
+* `docs.{in,txt}` -- to generate documentation
+* `tests.{in,txt}` -- to run unit tests
+
+### Updating requirements
+
+To update requirements, edit the appropriate `*.in` file, then run the `update.sh` script in the
+same directory. The script will run `pip-compile` to generate the `*.txt` file with the actual
+resolved versions and dependencies.
+
 ## Documentation
 
 Documentation for this package can be found [here](https://sweetrpg.github.io/library-model).
