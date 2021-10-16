@@ -46,7 +46,7 @@ filelock==3.0.12
     # via
     #   tox
     #   virtualenv
-flask==2.0.1
+flask==2.0.2
     # via -r requirements/pkg.in
 greenlet==1.1.2
     # via -r requirements/tests.in
