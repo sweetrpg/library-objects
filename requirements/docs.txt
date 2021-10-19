@@ -19,7 +19,7 @@ docutils==0.16
     #   rstcheck
     #   sphinx
     #   sphinx-tabs
-flask==2.0.1
+flask==2.0.2
     # via -r requirements/pkg.in
 idna==3.2
     # via requests
