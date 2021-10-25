@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sweetrpg-library-model.iml" filepath="$PROJECT_DIR$/.idea/sweetrpg-library-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sweetrpg-library-objects.iml" filepath="$PROJECT_DIR$/.idea/sweetrpg-library-objects.iml" />
     </modules>
   </component>
 </project>

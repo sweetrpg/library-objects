@@ -1,11 +1,11 @@
-# sweetrpg-library-model
+# sweetrpg-library-objects
 
-[![Unit tests](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml/badge.svg)](https://github.com/sweetrpg/library-model/actions/workflows/python-ci.yml)
-[![Coverage](https://github.com/sweetrpg/library-model/blob/develop/coverage.svg)](https://github.com/sweetrpg/library-model)
-[![License](https://img.shields.io/github/license/sweetrpg/library-model.svg)](https://img.shields.io/github/license/sweetrpg/library-model.svg)
-[![Issues](https://img.shields.io/github/issues/sweetrpg/library-model.svg)](https://img.shields.io/github/issues/sweetrpg/library-model.svg)
-[![PRs](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)](https://img.shields.io/github/issues-pr/sweetrpg/library-model.svg)
-[![Dependabot](https://badgen.net/github/dependabot/sweetrpg/library-model)](https://badgen.net/github/dependabot/sweetrpg/library-model)
+[![Unit tests](https://github.com/sweetrpg/library-objects/actions/workflows/python-ci.yml/badge.svg)](https://github.com/sweetrpg/library-objects/actions/workflows/python-ci.yml)
+[![Coverage](https://github.com/sweetrpg/library-objects/blob/develop/coverage.svg)](https://github.com/sweetrpg/library-objects)
+[![License](https://img.shields.io/github/license/sweetrpg/library-objects.svg)](https://img.shields.io/github/license/sweetrpg/library-objects.svg)
+[![Issues](https://img.shields.io/github/issues/sweetrpg/library-objects.svg)](https://img.shields.io/github/issues/sweetrpg/library-objects.svg)
+[![PRs](https://img.shields.io/github/issues-pr/sweetrpg/library-objects.svg)](https://img.shields.io/github/issues-pr/sweetrpg/library-objects.svg)
+[![Dependabot](https://badgen.net/github/dependabot/sweetrpg/library-objects)](https://badgen.net/github/dependabot/sweetrpg/library-objects)
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 [![Built with love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://ForTheBadge.com/images/badges/built-with-love.svg)
@@ -94,8 +94,8 @@ Model package for library applications.
 
 1. Create a virtual environment
     ```shell
-    python -m venv ~/.virtualenvs/sweetrpg-library-model
-    source ~/.virtualenvs/sweetrpg-library-model/bin/activate
+    python -m venv ~/.virtualenvs/sweetrpg-library-objects
+    source ~/.virtualenvs/sweetrpg-library-objects/bin/activate
     ```
 2. Install requirements
     ```shell
@@ -119,4 +119,4 @@ resolved versions and dependencies.
 
 ## Documentation
 
-Documentation for this package can be found [here](https://sweetrpg.github.io/library-model).
+Documentation for this package can be found [here](https://sweetrpg.github.io/library-objects).

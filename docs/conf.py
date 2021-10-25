@@ -88,7 +88,7 @@ html_theme = "alabaster"
 html_theme_options = {
     "show_powered_by": False,
     "github_user": "sweetrpg",
-    "github_repo": "library-model",
+    "github_repo": "library-objects",
     "github_banner": True,
     "show_related": False,
     "note_bg": "#FFF59C",
@@ -153,7 +153,7 @@ latex_documents = [(master_doc, "SweetRPG-Library Model.tex", u"SweetRPG Library
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "sweetrpg-library-model", u"SweetRPG Library Model Documentation", [author], 1)]
+man_pages = [(master_doc, "sweetrpg-library-objects", u"SweetRPG Library Model Documentation", [author], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
