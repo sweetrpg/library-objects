@@ -2,7 +2,7 @@
 """
 """
 
-__title__ = 'sweetrpg-library-model'
+__title__ = 'sweetrpg-library-objects'
 __description__ = 'Model objects for SweetRPG Library'
 __url__ = 'https://sweetrpg.com'
 __version__ = '0.0.24'

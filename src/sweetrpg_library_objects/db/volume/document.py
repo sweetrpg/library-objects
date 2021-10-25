@@ -6,7 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 from mongoengine import Document, fields
 from pymongo import ASCENDING
-from sweetrpg_library_model.db.volume_property.document import VolumePropertyDocument
+from sweetrpg_library_objects.db.volume_property.document import VolumePropertyDocument
 
 
 class VolumeDocument(Document):

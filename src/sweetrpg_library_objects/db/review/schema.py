@@ -4,7 +4,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 from marshmallow import fields, INCLUDE
-from sweetrpg_library_model.model.review import Review
+from sweetrpg_library_objects.model.review import Review
 from sweetrpg_model_core.schema.base import BaseSchema
 
 

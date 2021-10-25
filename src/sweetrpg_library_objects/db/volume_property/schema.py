@@ -4,12 +4,12 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 from marshmallow import fields
-from sweetrpg_library_model.model.author_property import AuthorProperty
+from sweetrpg_library_objects.model.volume_property import VolumeProperty
 from sweetrpg_model_core.schema.base import BaseEmbeddedSchema
 
 
-class AuthorPropertySchema(BaseEmbeddedSchema):
-    model_class = AuthorProperty
+class VolumePropertySchema(BaseEmbeddedSchema):
+    model_class = VolumeProperty
 
     name = fields.String(required=True)  # , load_only=True)
     value = fields.String(required=True)  # , load_only=True)
