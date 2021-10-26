@@ -6,8 +6,8 @@ setup(
     install_requires=[
         "Flask==2.0.2",
         "mongoengine",
-        "sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop",
-        "sweetrpg-model-core @ git+https://github.com/sweetrpg/model-core.git@develop",
+        "sweetrpg-db",
+        "sweetrpg-model-core",
         "marshmallow-jsonapi",
     ],
 )

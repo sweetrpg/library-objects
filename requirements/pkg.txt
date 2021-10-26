@@ -6,6 +6,8 @@
 #
 click==8.0.1
     # via flask
+dnspython==1.16.0
+    # via pymongo
 flask==2.0.2
     # via -r requirements/pkg.in
 itsdangerous==2.0.1
@@ -18,17 +20,20 @@ marshmallow==3.14.0
     # via
     #   marshmallow-jsonapi
     #   sweetrpg-db
+    #   sweetrpg-model-core
 marshmallow-jsonapi==0.24.0
     # via -r requirements/pkg.in
 mongoengine==0.23.1
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-db
-pymongo==3.12
-    # via mongoengine
-sweetrpg-db @ git+https://github.com/sweetrpg/db.git@develop
+pymongo[srv,tls]==3.12
+    # via
+    #   mongoengine
+    #   sweetrpg-model-core
+sweetrpg-db==0.0.17
     # via -r requirements/pkg.in
-sweetrpg-model-core @ git+https://github.com/sweetrpg/model-core.git@develop
+sweetrpg-model-core==0.0.20
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-db

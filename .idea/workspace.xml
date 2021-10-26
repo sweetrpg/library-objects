@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/docs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/pkg.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/pkg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/tests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/update-requirements.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/update-requirements.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
@@ -154,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635204639876</updated>
       <workItem from="1635204641253" duration="405000" />
-      <workItem from="1635205370180" duration="5001000" />
+      <workItem from="1635205370180" duration="6153000" />
     </task>
     <servers />
   </component>
