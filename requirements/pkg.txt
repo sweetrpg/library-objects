@@ -14,8 +14,12 @@ jinja2==3.0.1
     # via flask
 markupsafe==2.0.1
     # via jinja2
-marshmallow==3.13
-    # via sweetrpg-db
+marshmallow==3.14.0
+    # via
+    #   marshmallow-jsonapi
+    #   sweetrpg-db
+marshmallow-jsonapi==0.24.0
+    # via -r requirements/pkg.in
 mongoengine==0.23.1
     # via
     #   -r requirements/pkg.in

@@ -54,7 +54,7 @@
       <recent name="$PROJECT_DIR$/src/sweetrpg_library_objects/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Update requirements files">
+  <component name="RunManager" selected="Shell Script.Install requirements">
     <configuration name="Clean" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="rm -rf .tox htmlcov .coverage build .pytest_cache rm -rf ${VIRTUAL_ENV}/lib/python3.9/site-packages/sweetrpg*" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -152,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635204639876</updated>
       <workItem from="1635204641253" duration="405000" />
-      <workItem from="1635205370180" duration="1845000" />
+      <workItem from="1635205370180" duration="2930000" />
     </task>
     <servers />
   </component>
