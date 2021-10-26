@@ -5,62 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/api.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/db.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sweetrpg-library-model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sweetrpg-library-objects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/models.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/schemas.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/pkg.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_review_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_review_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_db_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +54,7 @@
       <recent name="$PROJECT_DIR$/src/sweetrpg_library_objects/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Clean">
+  <component name="RunManager" selected="Shell Script.Update requirements files">
     <configuration name="Clean" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="rm -rf .tox htmlcov .coverage build .pytest_cache rm -rf ${VIRTUAL_ENV}/lib/python3.9/site-packages/sweetrpg*" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -207,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635204639876</updated>
       <workItem from="1635204641253" duration="405000" />
-      <workItem from="1635205370180" duration="1253000" />
+      <workItem from="1635205370180" duration="1845000" />
     </task>
     <servers />
   </component>
