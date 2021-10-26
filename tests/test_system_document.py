@@ -3,7 +3,7 @@ __system__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.system.document import SystemDocument
+from sweetrpg_library_objects.db.system.document import SystemDocument
 
 
 # def test_system_document_setup():

@@ -3,8 +3,8 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.model.publisher import Publisher
-from sweetrpg_library_model.db.publisher.schema import PublisherSchema
+from sweetrpg_library_objects.model.publisher import Publisher
+from sweetrpg_library_objects.db.publisher.schema import PublisherSchema
 import json
 from datetime import datetime
 

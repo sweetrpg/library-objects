@@ -4,7 +4,7 @@ Models
 Author
 ------
 
-.. autoclass:: sweetrpg_library_model.model.author.Author
+.. autoclass:: sweetrpg_library_objects.model.author.Author
    :members:
    :undoc-members:
    :private-members:
@@ -12,7 +12,7 @@ Author
 Publisher
 ---------
 
-.. autoclass:: sweetrpg_library_model.model.publisher.Publisher
+.. autoclass:: sweetrpg_library_objects.model.publisher.Publisher
    :members:
    :undoc-members:
    :private-members:
@@ -20,7 +20,7 @@ Publisher
 Review
 ------
 
-.. autoclass:: sweetrpg_library_model.model.review.Review
+.. autoclass:: sweetrpg_library_objects.model.review.Review
    :members:
    :undoc-members:
    :private-members:
@@ -28,7 +28,7 @@ Review
 Studio
 ------
 
-.. autoclass:: sweetrpg_library_model.model.studio.Studio
+.. autoclass:: sweetrpg_library_objects.model.studio.Studio
    :members:
    :undoc-members:
    :private-members:
@@ -36,7 +36,7 @@ Studio
 System
 ------
 
-.. autoclass:: sweetrpg_library_model.model.system.System
+.. autoclass:: sweetrpg_library_objects.model.system.System
    :members:
    :undoc-members:
    :private-members:
@@ -44,7 +44,7 @@ System
 Tag
 ---
 
-.. autoclass:: sweetrpg_library_model.model.tag.Tag
+.. autoclass:: sweetrpg_library_objects.model.tag.Tag
    :members:
    :undoc-members:
    :private-members:
@@ -52,7 +52,7 @@ Tag
 Volume
 ------
 
-.. autoclass:: sweetrpg_library_model.model.volume.Volume
+.. autoclass:: sweetrpg_library_objects.model.volume.Volume
    :members:
    :undoc-members:
    :private-members:
@@ -60,7 +60,7 @@ Volume
 VolumeProperty
 --------------
 
-.. autoclass:: sweetrpg_library_model.model.volume_property.VolumeProperty
+.. autoclass:: sweetrpg_library_objects.model.volume_property.VolumeProperty
    :members:
    :undoc-members:
    :private-members:

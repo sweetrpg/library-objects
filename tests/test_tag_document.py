@@ -3,7 +3,7 @@ __tag__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.tag.document import TagDocument
+from sweetrpg_library_objects.db.tag.document import TagDocument
 
 
 # def test_tag_document_setup():

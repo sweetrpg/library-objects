@@ -3,7 +3,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.model.system import System
+from sweetrpg_library_objects.model.system import System
 import json
 from datetime import datetime
 

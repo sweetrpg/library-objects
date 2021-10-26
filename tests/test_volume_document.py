@@ -3,10 +3,10 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.volume.document import VolumeDocument
-from sweetrpg_library_model.db.tag.document import TagDocument
-from sweetrpg_library_model.db.publisher.document import PublisherDocument
-from sweetrpg_library_model.db.volume_property.document import VolumePropertyDocument
+from sweetrpg_library_objects.db.volume.document import VolumeDocument
+from sweetrpg_library_objects.db.tag.document import TagDocument
+from sweetrpg_library_objects.db.publisher.document import PublisherDocument
+from sweetrpg_library_objects.db.volume_property.document import VolumePropertyDocument
 
 
 def test_volume_document_setup():

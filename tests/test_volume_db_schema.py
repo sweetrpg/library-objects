@@ -3,8 +3,8 @@ __volume__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.model.volume import Volume
-from sweetrpg_library_model.db.volume.schema import VolumeSchema
+from sweetrpg_library_objects.model.volume import Volume
+from sweetrpg_library_objects.db.volume.schema import VolumeSchema
 import json
 from datetime import datetime
 

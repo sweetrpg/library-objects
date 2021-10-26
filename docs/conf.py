@@ -16,7 +16,7 @@ import sys
 sys.path.insert(0, os.path.abspath("../src"))
 sys.path.insert(0, os.path.abspath("_themes"))
 
-import sweetrpg_library_model
+import sweetrpg_library_objects
 
 
 # -- Project information -----------------------------------------------------
@@ -24,8 +24,8 @@ import sweetrpg_library_model
 project = "SweetRPG Library Model"
 copyright = "2021, Paul Schifferer"
 author = "Paul Schifferer"
-version = sweetrpg_library_model.__version__
-release = sweetrpg_library_model.__version__
+version = sweetrpg_library_objects.__version__
+release = sweetrpg_library_objects.__version__
 
 # -- General configuration ---------------------------------------------------
 

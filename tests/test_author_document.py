@@ -3,9 +3,9 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.author.document import AuthorDocument
-from sweetrpg_library_model.db.author_property.document import AuthorPropertyDocument
-from sweetrpg_library_model.db.tag.document import TagDocument
+from sweetrpg_library_objects.db.author.document import AuthorDocument
+from sweetrpg_library_objects.db.author_property.document import AuthorPropertyDocument
+from sweetrpg_library_objects.db.tag.document import TagDocument
 from datetime import datetime
 
 

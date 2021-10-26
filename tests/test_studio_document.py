@@ -3,7 +3,7 @@ __studio__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_model.db.studio.document import StudioDocument
+from sweetrpg_library_objects.db.studio.document import StudioDocument
 
 
 # def test_studio_document_setup():
