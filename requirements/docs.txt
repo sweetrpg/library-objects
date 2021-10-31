@@ -8,13 +8,13 @@ alabaster==0.7.12
     # via sphinx
 babel==2.9.1
     # via sphinx
-certifi==2021.5.30
+certifi==2021.10.8
     # via requests
-charset-normalizer==2.0.4
+charset-normalizer==2.0.7
     # via requests
-click==8.0.1
+click==8.0.3
     # via flask
-dnspython==1.16.0
+dnspython==2.1.0
     # via pymongo
 docutils==0.16
     # via
@@ -23,13 +23,13 @@ docutils==0.16
     #   sphinx-tabs
 flask==2.0.2
     # via -r requirements/pkg.in
-idna==3.2
+idna==3.3
     # via requests
 imagesize==1.2.0
     # via sphinx
 itsdangerous==2.0.1
     # via flask
-jinja2==3.0.1
+jinja2==3.0.2
     # via
     #   flask
     #   sphinx
@@ -46,7 +46,7 @@ mongoengine==0.23.1
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-db
-packaging==21.0
+packaging==21.2
     # via
     #   pallets-sphinx-themes
     #   sphinx
@@ -56,13 +56,13 @@ pygments==2.10.0
     # via
     #   sphinx
     #   sphinx-tabs
-pymongo[srv,tls]==3.12.0
+pymongo[srv,tls]==3.12.1
     # via
     #   mongoengine
     #   sweetrpg-model-core
 pyparsing==2.4.7
     # via packaging
-pytz==2021.1
+pytz==2021.3
     # via babel
 requests==2.26.0
     # via sphinx
@@ -95,15 +95,15 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sweetrpg-db==0.0.17
+sweetrpg-db==0.0.18
     # via -r requirements/pkg.in
-sweetrpg-model-core==0.0.20
+sweetrpg-model-core==0.0.22
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-db
-urllib3==1.26.6
+urllib3==1.26.7
     # via requests
-werkzeug==2.0.1
+werkzeug==2.0.2
     # via flask
 
 # The following packages are considered to be unsafe in a requirements file:
