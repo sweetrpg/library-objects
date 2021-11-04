@@ -4,7 +4,7 @@ API Schemas
 Author
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.author.schema.AuthorSchema
+.. autoclass:: sweetrpg_library_objects.api.author.schema.AuthorAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -12,7 +12,7 @@ Author
 Publisher
 ---------
 
-.. autoclass:: sweetrpg_library_objects.api.publisher.schema.PublisherSchema
+.. autoclass:: sweetrpg_library_objects.api.publisher.schema.PublisherAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -20,7 +20,7 @@ Publisher
 Review
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.review.schema.ReviewSchema
+.. autoclass:: sweetrpg_library_objects.api.review.schema.ReviewAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -28,7 +28,7 @@ Review
 Studio
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.studio.schema.StudioSchema
+.. autoclass:: sweetrpg_library_objects.api.studio.schema.StudioAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -36,7 +36,7 @@ Studio
 System
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.system.schema.SystemSchema
+.. autoclass:: sweetrpg_library_objects.api.system.schema.SystemAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -44,7 +44,7 @@ System
 Tag
 ---
 
-.. autoclass:: sweetrpg_library_objects.api.tag.schema.TagSchema
+.. autoclass:: sweetrpg_library_objects.api.tag.schema.TagAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -52,15 +52,7 @@ Tag
 Volume
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.volume.schema.VolumeSchema
-   :members:
-   :undoc-members:
-   :private-members:
-
-VolumeProperty
---------------
-
-.. autoclass:: sweetrpg_library_objects.api.volume_property.schema.VolumePropertySchema
+.. autoclass:: sweetrpg_library_objects.api.volume.schema.VolumeAPISchema
    :members:
    :undoc-members:
    :private-members:
