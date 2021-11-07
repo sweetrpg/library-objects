@@ -3,3 +3,4 @@ mongoengine
 sweetrpg-db
 sweetrpg-model-core
 marshmallow-jsonapi
+sweetrpg-api-core

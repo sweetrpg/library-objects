@@ -47,9 +47,16 @@ filelock==3.3.2
     #   tox
     #   virtualenv
 flask==2.0.2
-    # via -r requirements/pkg.in
+    # via
+    #   -r requirements/pkg.in
+    #   flask-rest-jsonapi
+    #   sweetrpg-api-core
+flask-rest-jsonapi==0.31.2
+    # via sweetrpg-api-core
 greenlet==1.1.2
-    # via -r requirements/tests.in
+    # via
+    #   -r requirements/tests.in
+    #   sqlalchemy
 idna==3.3
     # via requests
 imagesize==1.2.0
@@ -66,14 +73,18 @@ markupsafe==2.0.1
     # via jinja2
 marshmallow==3.14.0
     # via
+    #   flask-rest-jsonapi
     #   marshmallow-jsonapi
     #   sweetrpg-db
     #   sweetrpg-model-core
 marshmallow-jsonapi==0.24.0
-    # via -r requirements/pkg.in
+    # via
+    #   -r requirements/pkg.in
+    #   flask-rest-jsonapi
 mongoengine==0.23.1
     # via
     #   -r requirements/pkg.in
+    #   sweetrpg-api-core
     #   sweetrpg-db
 mypy-extensions==0.4.3
     # via black
@@ -99,7 +110,7 @@ pluggy==1.0.0
     # via
     #   pytest
     #   tox
-py==1.10.0
+py==1.11.0
     # via
     #   pytest
     #   tox
@@ -123,7 +134,7 @@ python-dotenv==0.19.1
     # via -r requirements/tests.in
 pytz==2021.3
     # via babel
-regex==2021.10.23
+regex==2021.11.2
     # via black
 requests==2.26.0
     # via sphinx
@@ -131,6 +142,7 @@ rstcheck==3.3.1
     # via -r requirements/docs.in
 six==1.16.0
     # via
+    #   flask-rest-jsonapi
     #   tox
     #   virtualenv
 snowballstemmer==2.1.0
@@ -160,11 +172,18 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sweetrpg-db==0.0.18
+sqlalchemy==1.4.26
+    # via flask-rest-jsonapi
+sweetrpg-api-core==0.0.23
     # via -r requirements/pkg.in
-sweetrpg-model-core==0.0.22
+sweetrpg-db==0.0.21
     # via
     #   -r requirements/pkg.in
+    #   sweetrpg-api-core
+sweetrpg-model-core==0.0.30
+    # via
+    #   -r requirements/pkg.in
+    #   sweetrpg-api-core
     #   sweetrpg-db
 toml==0.10.2
     # via
@@ -181,7 +200,7 @@ typing-extensions==3.10.0.2
     # via black
 urllib3==1.26.7
     # via requests
-virtualenv==20.9.0
+virtualenv==20.10.0
     # via tox
 werkzeug==2.0.2
     # via flask
