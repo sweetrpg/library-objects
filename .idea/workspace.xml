@@ -137,11 +137,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
       <item itemvalue="Shell Script.Clean" />
       <item itemvalue="Shell Script.Install requirements" />
       <item itemvalue="Shell Script.Update requirements files" />
       <item itemvalue="tox.Tests" />
-      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -162,6 +162,10 @@
       <workItem from="1635990999893" duration="2278000" />
       <workItem from="1636088433820" duration="874000" />
       <workItem from="1636263370377" duration="1367000" />
+      <workItem from="1636341742362" duration="81000" />
+      <workItem from="1636392156338" duration="906000" />
+      <workItem from="1636463894463" duration="802000" />
+      <workItem from="1636483301497" duration="203000" />
     </task>
     <servers />
   </component>
