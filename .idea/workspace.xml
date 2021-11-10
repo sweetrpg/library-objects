@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/python-update-reqs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/docs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/pkg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/tests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,7 @@
       <workItem from="1636341742362" duration="81000" />
       <workItem from="1636392156338" duration="906000" />
       <workItem from="1636463894463" duration="802000" />
-      <workItem from="1636483301497" duration="1303000" />
+      <workItem from="1636483301497" duration="3428000" />
     </task>
     <servers />
   </component>
