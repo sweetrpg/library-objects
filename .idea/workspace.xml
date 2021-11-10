@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +141,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
       <item itemvalue="Shell Script.Clean" />
       <item itemvalue="Shell Script.Install requirements" />
       <item itemvalue="Shell Script.Update requirements files" />
       <item itemvalue="tox.Tests" />
-      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -169,7 +169,7 @@
       <workItem from="1636341742362" duration="81000" />
       <workItem from="1636392156338" duration="906000" />
       <workItem from="1636463894463" duration="802000" />
-      <workItem from="1636483301497" duration="3721000" />
+      <workItem from="1636483301497" duration="4905000" />
     </task>
     <servers />
   </component>
