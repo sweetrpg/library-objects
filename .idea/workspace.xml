@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-update-reqs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-update-reqs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
       <workItem from="1636341742362" duration="81000" />
       <workItem from="1636392156338" duration="906000" />
       <workItem from="1636463894463" duration="802000" />
-      <workItem from="1636483301497" duration="3607000" />
+      <workItem from="1636483301497" duration="3721000" />
     </task>
     <servers />
   </component>
