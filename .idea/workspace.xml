@@ -139,11 +139,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
       <item itemvalue="Shell Script.Clean" />
       <item itemvalue="Shell Script.Install requirements" />
       <item itemvalue="Shell Script.Update requirements files" />
       <item itemvalue="tox.Tests" />
+      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
