@@ -40,6 +40,7 @@
 <span class="kn">from</span> <span class="nn">marshmallow_jsonapi</span> <span class="kn">import</span> <span class="n">fields</span>
 <span class="kn">from</span> <span class="nn">sweetrpg_library_objects.model.review</span> <span class="kn">import</span> <span class="n">Review</span>
 <span class="kn">from</span> <span class="nn">sweetrpg_api_core.schema.base</span> <span class="kn">import</span> <span class="n">BaseAPISchema</span>
+<span class="kn">from</span> <span class="nn">sweetrpg_model_core.schema.lang</span> <span class="kn">import</span> <span class="n">LangString</span>
 
 
 <div class="viewcode-block" id="ReviewAPISchema"><a class="viewcode-back" href="../../../../api.html#sweetrpg_library_objects.api.review.schema.ReviewAPISchema">[docs]</a><span class="k">class</span> <span class="nc">ReviewAPISchema</span><span class="p">(</span><span class="n">BaseAPISchema</span><span class="p">):</span>
@@ -51,8 +52,8 @@
         <span class="n">self_view_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;id&gt;&quot;</span><span class="p">}</span>
         <span class="n">self_view_many</span> <span class="o">=</span> <span class="s2">&quot;review_list&quot;</span></div>
 
-    <span class="n">title</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># , load_only=True)</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Str</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># , load_only=True)</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">LangString</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># , load_only=True)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">LangString</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># , load_only=True)</span>
     <span class="n">volume</span> <span class="o">=</span> <span class="n">Relationship</span><span class="p">(</span><span class="n">attribute</span><span class="o">=</span><span class="s1">&#39;volume&#39;</span><span class="p">,</span>
                           <span class="n">self_view</span><span class="o">=</span><span class="s1">&#39;review_volume&#39;</span><span class="p">,</span>
                           <span class="n">self_view_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;id&gt;&#39;</span><span class="p">},</span>
