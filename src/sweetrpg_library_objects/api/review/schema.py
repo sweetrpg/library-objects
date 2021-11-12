@@ -7,6 +7,7 @@ from marshmallow_jsonapi.flask import Schema, Relationship
 from marshmallow_jsonapi import fields
 from sweetrpg_library_objects.model.review import Review
 from sweetrpg_api_core.schema.base import BaseAPISchema
+from sweetrpg_model_core.schema.lang import LangString
 
 
 class ReviewAPISchema(BaseAPISchema):
@@ -18,8 +19,8 @@ class ReviewAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "review_list"
 
-    title = fields.Str(required=True)  # , load_only=True)
-    text = fields.Str(required=True)  # , load_only=True)
+    title = LangString(required=True)  # , load_only=True)
+    text = LangString(required=True)  # , load_only=True)
     volume = Relationship(attribute='volume',
                           self_view='review_volume',
                           self_view_kwargs={'id': '<id>'},

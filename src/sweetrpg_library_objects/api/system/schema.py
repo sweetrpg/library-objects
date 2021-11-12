@@ -7,6 +7,7 @@ from marshmallow_jsonapi.flask import Schema, Relationship
 from marshmallow_jsonapi import fields
 from sweetrpg_library_objects.model.system import System
 from sweetrpg_api_core.schema.base import BaseAPISchema
+from sweetrpg_model_core.schema.lang import LangString
 
 
 class SystemAPISchema(BaseAPISchema):
@@ -18,4 +19,4 @@ class SystemAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "system_list"
 
-    name = fields.Str(required=True)  # , load_only=True)
+    name = LangString(required=True)  # , load_only=True)

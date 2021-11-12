@@ -3,10 +3,11 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from marshmallow_jsonapi.flask import Schema, Relationship
 from marshmallow_jsonapi import fields
-from sweetrpg_library_objects.model.volume import Volume
+from marshmallow_jsonapi.flask import Relationship
 from sweetrpg_api_core.schema.base import BaseAPISchema
+from sweetrpg_library_objects.model.volume import Volume
+from sweetrpg_model_core.schema.lang import LangString
 
 
 class VolumeAPISchema(BaseAPISchema):
@@ -18,7 +19,7 @@ class VolumeAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "volume_list"
 
-    name = fields.Str()  # , load_only=True)
+    name = LangString()  # , load_only=True)
     slug = fields.Str()  # , load_only=True)
     system = fields.Str()  # , load_only=True)
     authors = Relationship(
