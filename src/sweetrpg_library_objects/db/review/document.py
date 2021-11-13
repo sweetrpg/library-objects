@@ -21,8 +21,9 @@ class ReviewDocument(Document):
     }
 
     # basic properties
-    title = fields.DictField(required=True)
-    text = fields.DictField(required=True)
+    title = fields.StringField(required=True)
+    text = fields.StringField(required=True)
+    locale = fields.StringField(required=True, default="en_US")
 
     # relations
     volume = fields.StringField(required=True)

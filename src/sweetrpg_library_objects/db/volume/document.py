@@ -24,7 +24,7 @@ class VolumeDocument(Document):
     }
 
     # basic properties
-    name = fields.DictField(required=True)
+    name = fields.StringField(required=True)
     slug = fields.StringField(min_length=2, max_length=50, required=True)
     system = fields.StringField(min_length=1, max_length=20, required=True)
     properties = fields.ListField(fields.EmbeddedDocumentField(VolumePropertyDocument))

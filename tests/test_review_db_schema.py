@@ -15,6 +15,7 @@ review_json = """
     "_id": "this-is-ignored",
     "title": "This sucks",
     "text": "I hate it",
+    "locale": "en",
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
@@ -27,6 +28,7 @@ review_dict = {
     "_id": "another-id",
     "title": "This is great",
     "text": "I love it",
+    "locale": "en_US",
     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
     "created_by": "test",
     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
@@ -48,6 +50,7 @@ def test_load_review_from_json():
     assert r.id == "this-is-ignored"
     assert r.title == "This sucks"
     assert r.text == "I hate it"
+    assert r.locale == "en"
     assert r.created_at == review_datetime
     assert r.created_by == "test"
     assert r.updated_at == review_datetime
@@ -61,6 +64,7 @@ def test_load_review_from_dict():
     assert isinstance(r, Review)
     assert r.title == "This is great"
     assert r.text == "I love it"
+    assert r.locale == "en_US"
     assert r.id == "another-id"
     assert r.created_at == datetime(2021, 9, 15, 7, 35, 0, 2000)
     assert r.created_by == "test"

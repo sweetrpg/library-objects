@@ -15,6 +15,7 @@ class Review(Model):
 
         :key str title: The title of the review.
         :key str text: The text of the review.
+        :key str locale: The locale of the review's contents.
         :key str volume: The volume ID to which this review belongs.
         """
         logging.debug("args: %s, kwargs: %s", args, kwargs)
@@ -23,5 +24,6 @@ class Review(Model):
 
         self.title = kwargs.get("title")
         self.text = kwargs.get("text")
+        self.locale = kwargs.get("locale")
         self.volume = kwargs.get("volume")
         self.tags = kwargs.get("tags")

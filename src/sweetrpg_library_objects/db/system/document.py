@@ -5,7 +5,6 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 from mongoengine import Document, fields
-from pymongo import ASCENDING
 
 
 class SystemDocument(Document):
@@ -21,7 +20,7 @@ class SystemDocument(Document):
     }
 
     # basic properties
-    name = fields.DictField(required=True)
+    name = fields.StringField(required=True)
 
     # relations
     volumes = fields.ListField(field=fields.ReferenceField("VolumeDocument"))
