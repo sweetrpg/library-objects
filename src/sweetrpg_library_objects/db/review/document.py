@@ -21,8 +21,8 @@ class ReviewDocument(Document):
     }
 
     # basic properties
-    title = fields.StringField(min_length=1, max_length=100, required=True)
-    text = fields.StringField(min_length=1, max_length=4000, required=True)
+    title = fields.DictField(required=True)
+    text = fields.DictField(required=True)
 
     # relations
     volume = fields.StringField(required=True)

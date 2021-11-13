@@ -21,7 +21,7 @@ class SystemDocument(Document):
     }
 
     # basic properties
-    name = fields.StringField(min_length=1, max_length=200, required=True)
+    name = fields.DictField(required=True)
 
     # relations
     volumes = fields.ListField(field=fields.ReferenceField("VolumeDocument"))
