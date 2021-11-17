@@ -8,6 +8,7 @@ setup(
         "mongoengine",
         "sweetrpg-db",
         "sweetrpg-model-core",
+        "sweetrpg-api-core",
         "marshmallow-jsonapi",
     ],
 )
