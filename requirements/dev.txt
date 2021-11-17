@@ -14,7 +14,7 @@ babel==2.9.1
     # via sphinx
 backports.entry-points-selectable==1.1.1
     # via virtualenv
-black==21.10b0
+black==21.11b0
     # via -r requirements/dev.in
 blinker==1.4
     # via -r requirements/tests.in
@@ -148,7 +148,7 @@ six==1.16.0
     #   flask-rest-jsonapi
     #   tox
     #   virtualenv
-snowballstemmer==2.1.0
+snowballstemmer==2.2.0
     # via sphinx
 sphinx==4.3.0
     # via
@@ -177,9 +177,9 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlalchemy==1.4.27
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.42
+sweetrpg-api-core==0.0.43
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.39
+sweetrpg-db==0.0.40
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core

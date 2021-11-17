@@ -84,7 +84,7 @@ rstcheck==3.3.1
     # via -r requirements/docs.in
 six==1.16.0
     # via flask-rest-jsonapi
-snowballstemmer==2.1.0
+snowballstemmer==2.2.0
     # via sphinx
 sphinx==4.3.0
     # via
@@ -113,9 +113,9 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlalchemy==1.4.27
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.42
+sweetrpg-api-core==0.0.43
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.39
+sweetrpg-db==0.0.40
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
