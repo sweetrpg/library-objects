@@ -7,11 +7,11 @@ from marshmallow_jsonapi.flask import Schema, Relationship
 from marshmallow_jsonapi import fields
 from marshmallow import post_load
 from sweetrpg_library_objects.model.author import Author
-from flask import session, current_app
 from sweetrpg_library_objects.utils.user import add_user_info
+from sweetrpg_api_core.schema.base import BaseAPISchema
 
 
-class AuthorAPISchema(Schema):
+class AuthorAPISchema(BaseAPISchema):
     class Meta:
         type_ = "author"
         self_view = "author_detail"
@@ -25,15 +25,12 @@ class AuthorAPISchema(Schema):
 
     id = fields.Str()  # as_string=True, dump_only=True)
     name = fields.Str(required=True)  # required=True) #, load_only=True)
-    volumes = Relationship(
-        self_view="author_volumes",
-        self_view_kwargs={"id": "<id>"},
-        related_view="volume_list",
-        related_view_kwargs={"author_id": "<id>"},
-        many=True,
-        schema="VolumeAPISchema",
-        type_="volume",
-    )
-    created_at = fields.DateTime()  # dump_only=True)
-    updated_at = fields.DateTime()  # dump_only=True)
-    deleted_at = fields.DateTime()
+    # volumes = Relationship(
+    #     self_view="author_volumes",
+    #     self_view_kwargs={"id": "<id>"},
+    #     related_view="volume_list",
+    #     related_view_kwargs={"author_id": "<id>"},
+    #     many=True,
+    #     schema="VolumeAPISchema",
+    #     type_="volume",
+    # )

@@ -5,148 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="Checkpoint">
-      <change beforePath="$PROJECT_DIR$/.coveragerc" beforeDir="false" afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/devcontainer.json" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/devcontainer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/library-scripts/common-debian.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/library-scripts/common-debian.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.devcontainer/library-scripts/node-debian.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.devcontainer/library-scripts/node-debian.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/codeql-analysis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/codeql-analysis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/debug.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/debug.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-pr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-pr.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-update-reqs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-update-reqs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sweetrpg-library-objects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sweetrpg-library-objects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.python-version" beforeDir="false" afterPath="$PROJECT_DIR$/.python-version" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.nojekyll" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.nojekyll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_static/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_static/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_templates/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_templates/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_themes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_themes/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_themes/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_themes/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_themes/flask_theme_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_themes/flask_theme_support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/db.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/db.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/models.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/dev.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/docs.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/docs.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/docs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/pkg.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/pkg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/pkg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/tests.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/tests.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/tests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/author/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/tag/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_property/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/author_volume/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/publisher/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/tag/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume_property/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author_property.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author_volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/author_volume.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/publisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio_author.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio_author.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio_volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio_volume.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/tag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume_property.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume_review.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume_review.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/utils/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_author_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_author_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_publisher_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_publisher_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_review_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_review_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_studio_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_studio_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_system_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_system_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_tag_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_tag_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_volume_property_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_property_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,11 +143,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
       <item itemvalue="Shell Script.Clean" />
       <item itemvalue="Shell Script.Install requirements" />
       <item itemvalue="Shell Script.Update requirements files" />
       <item itemvalue="tox.Tests" />
-      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -324,6 +184,7 @@
       <workItem from="1636909836931" duration="539000" />
       <workItem from="1637029926747" duration="868000" />
       <workItem from="1637158900550" duration="905000" />
+      <workItem from="1637530697755" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="Change some name fields to LangString type">
       <created>1636733445238</created>
