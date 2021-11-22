@@ -14,7 +14,8 @@ def test_volume_document_setup():
     p = PublisherDocument(name="Pub Lisher")
     pr = VolumePropertyDocument(name="value", value="1", kind="int")
     v = VolumeDocument(
-        name="Bob's Book",
+        title="Bob's Book",
+        description="Descriptive",
         slug="bob",
         system="bob",
         tags=[t],
@@ -22,7 +23,8 @@ def test_volume_document_setup():
         properties=[pr],
     )
     assert v is not None
-    assert v.name == "Bob's Book"
+    assert v.title == "Bob's Book"
+    assert v.description == "Descriptive"
     assert v.slug == "bob"
     assert v.system == "bob"
     assert v.publisher.name == "Pub Lisher"

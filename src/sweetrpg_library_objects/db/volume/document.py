@@ -15,7 +15,7 @@ class VolumeDocument(Document):
     meta = {
         "indexes": [
             {"name": "volume_slug", "fields": ["slug"], "unique": True},
-            {"name": "volume_name", "fields": ["name"]},
+            {"name": "volume_title", "fields": ["title"]},
             {"name": "volume_system", "fields": ["system"]},
         ],
         "db_alias": "default",
@@ -24,7 +24,8 @@ class VolumeDocument(Document):
     }
 
     # basic properties
-    name = fields.StringField(required=True)
+    title = fields.StringField(required=True)
+    description = fields.StringField(required=True)
     slug = fields.StringField(min_length=2, max_length=50, required=True)
     system = fields.StringField(min_length=1, max_length=20, required=True)
     properties = fields.ListField(fields.EmbeddedDocumentField(VolumePropertyDocument))

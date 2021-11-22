@@ -18,7 +18,8 @@ class VolumeAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "volume_list"
 
-    name = fields.String(required=True)  # , load_only=True)
+    title = fields.String(required=True)  # , load_only=True)
+    description = fields.String(required=True)  # , load_only=True)
     slug = fields.String(required=True)  # , load_only=True)
     system = fields.String(required=True)  # , load_only=True)
     authors = Relationship(self_view="volume_authors",

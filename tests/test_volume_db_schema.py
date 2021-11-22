@@ -12,7 +12,8 @@ from datetime import datetime
 volume_json = """
 {
     "_id": "this-is-ignored",
-    "name": "Bob's Book",
+    "title": "Bob's Book",
+    "description": "The book that Bob worked pretty hard on",
     "slug": "bob",
     "system": "bobo",
     "created_at": "2021-09-13T07:55:00.001",
@@ -29,7 +30,8 @@ volume_json = """
 volume_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
 volume_dict = {
     "_id": "another-id",
-    "name": "BillyBook",
+    "title": "BillyBook",
+    "description": "Another work",
     "slug": "bb",
     "system": "yo",
     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
@@ -60,7 +62,8 @@ def test_load_volume_from_json():
     assert v is not None
     assert isinstance(v, Volume)
     assert v.id == "this-is-ignored"
-    assert v.name == "Bob's Book"
+    assert v.title == "Bob's Book"
+    assert v.description == "The book that Bob worked pretty hard on"
     assert v.slug == "bob"
     assert v.system == "bobo"
     assert v.publisher == "1"
@@ -87,7 +90,8 @@ def test_load_volume_from_dict():
     assert v is not None
     assert isinstance(v, Volume)
     assert v.id == "another-id"
-    assert v.name == "BillyBook"
+    assert v.title == "BillyBook"
+    assert v.description == "Another work"
     assert v.slug == "bb"
     assert v.system == "yo"
     assert v.publisher == "1"

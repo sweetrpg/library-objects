@@ -10,7 +10,8 @@ from datetime import datetime
 volume_json = """
 {
     "_id": "this-is-ignored",
-    "name": "Player's Handbook",
+    "title": "Player's Handbook",
+    "description": "Informative",
     "slug": "phb",
     "system": "dnd5",
     "publisher": "1",
@@ -32,7 +33,8 @@ def test_volume_from_json():
     v = Volume(**j)
     assert isinstance(v, Volume)
     assert v.id == "this-is-ignored"
-    assert v.name == "Player's Handbook"
+    assert v.title == "Player's Handbook"
+    assert v.description == "Informative"
     assert v.slug == "phb"
     assert v.system == "dnd5"
     assert v.publisher == "1"

@@ -16,7 +16,8 @@ class Volume(Model):
 
         super().__init__(*args, **kwargs)
 
-        self.name = kwargs.get("name")
+        self.title = kwargs.get("title")
+        self.description = kwargs.get("description")
         self.system = kwargs.get("system")
         self.slug = kwargs.get("slug")
         self.properties = kwargs.get("properties")

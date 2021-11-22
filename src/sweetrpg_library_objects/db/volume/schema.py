@@ -11,7 +11,8 @@ from sweetrpg_model_core.schema.base import BaseSchema
 class VolumeSchema(BaseSchema):
     model_class = Volume
 
-    name = fields.String(required=True)  # , load_only=True)
+    title = fields.String(required=True)  # , load_only=True)
+    description = fields.String(required=True)  # , load_only=True)
     slug = fields.String(required=True)  # , load_only=True)
     system = fields.String(required=True)  # , load_only=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
