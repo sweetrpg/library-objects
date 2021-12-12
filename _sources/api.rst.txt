@@ -1,10 +1,10 @@
 API Schemas
 ===========
 
-Author
+Person
 ------
 
-.. autoclass:: sweetrpg_library_objects.api.author.schema.AuthorAPISchema
+.. autoclass:: sweetrpg_library_objects.api.person.schema.PersonAPISchema
    :members:
    :undoc-members:
    :private-members:
@@ -37,14 +37,6 @@ System
 ------
 
 .. autoclass:: sweetrpg_library_objects.api.system.schema.SystemAPISchema
-   :members:
-   :undoc-members:
-   :private-members:
-
-Tag
----
-
-.. autoclass:: sweetrpg_library_objects.api.tag.schema.TagAPISchema
    :members:
    :undoc-members:
    :private-members:

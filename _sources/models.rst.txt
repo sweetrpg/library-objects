@@ -1,10 +1,10 @@
 Models
 ======
 
-Author
+Person
 ------
 
-.. autoclass:: sweetrpg_library_objects.model.author.Author
+.. autoclass:: sweetrpg_library_objects.model.person.Person
    :members:
    :undoc-members:
    :private-members:
@@ -41,26 +41,10 @@ System
    :undoc-members:
    :private-members:
 
-Tag
----
-
-.. autoclass:: sweetrpg_library_objects.model.tag.Tag
-   :members:
-   :undoc-members:
-   :private-members:
-
 Volume
 ------
 
 .. autoclass:: sweetrpg_library_objects.model.volume.Volume
-   :members:
-   :undoc-members:
-   :private-members:
-
-VolumeProperty
---------------
-
-.. autoclass:: sweetrpg_library_objects.model.volume_property.VolumeProperty
    :members:
    :undoc-members:
    :private-members:
