@@ -18,4 +18,5 @@ class SystemAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "system_list"
 
-    name = fields.String(required=True)  # , load_only=True)
+    game_system = fields.String(required=True)  # , load_only=True)
+    edition = fields.String(required=True)  # , load_only=True)

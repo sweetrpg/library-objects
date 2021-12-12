@@ -5,30 +5,26 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 from mongoengine import Document, fields
-from pymongo import ASCENDING
+from sweetrpg_library_objects.db.embedded.property.document import PropertyDocument
 from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
 
 
-class ReviewDocument(Document):
-    """A mapping object to convert MongoDB data to a Review object."""
+class PersonDocument(Document):
+    """A model object representing a person contributing to an RPG."""
 
     meta = {
-        "indexes": [
-            {"name": "review_title", "fields": ["title"]},
-        ],
+        "indexes": [{"name": "person_name", "fields": ["name"]}],
         "db_alias": "default",
-        "collection": "reviews",
+        "collection": "persons",
         "strict": False,
     }
 
     # basic properties
-    title = fields.StringField(required=True)
-    text = fields.StringField(required=True)
-    locale = fields.StringField(required=True, default="en_US")
+    name = fields.StringField(min_length=1, max_length=200, required=True)
+    properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations
-    volume_id = fields.StringField(required=True)
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)
@@ -36,4 +32,4 @@ class ReviewDocument(Document):
     updated_at = fields.DateTimeField(default=datetime.utcnow, required=True)
     updated_by = fields.StringField(default="system", required=True)
     deleted_at = fields.DateTimeField(null=True)
-    deleted_by = fields.StringField(default="system", required=True)
+    deleted_by = fields.StringField(null=True)

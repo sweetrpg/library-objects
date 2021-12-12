@@ -13,3 +13,4 @@ class StudioSchema(BaseSchema):
 
     name = fields.String(required=True)  # , load_only=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

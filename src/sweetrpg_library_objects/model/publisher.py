@@ -21,4 +21,3 @@ class Publisher(Model):
 
         self.name = kwargs.get("name")
         self.tags = kwargs.get("tags")
-        # volumes: see Volume#publisher

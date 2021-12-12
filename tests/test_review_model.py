@@ -19,7 +19,8 @@ review_json = """
     "updated_by": "test",
     "tags": [
         {"name": "tag", "value": "tag"}
-    ]
+    ],
+    "volume_id": "volume-id"
 }
 """
 volume_json = """
@@ -31,7 +32,8 @@ volume_json = """
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
-    "updated_by": "test"
+    "updated_by": "test",
+    "volume_id": "volume-id"
 }
 """
 review_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
@@ -54,6 +56,4 @@ def test_review_from_json():
     t = r.tags[0]
     assert t["name"] == "tag"
     assert t["value"] == "tag"
-    v = r.volume
-    assert isinstance(v, Volume)
-    assert v.slug == "phb"
+    assert r.volume_id == "volume-id"

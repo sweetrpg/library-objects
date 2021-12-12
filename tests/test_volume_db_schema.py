@@ -15,13 +15,13 @@ volume_json = """
     "title": "Bob's Book",
     "description": "The book that Bob worked pretty hard on",
     "slug": "bob",
-    "system": "bobo",
+    "system_id": "bobo",
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
     "updated_by": "test",
     "tags": [{"name":"tag", "value":"tag"}],
-    "publisher": "1",
+    "publisher_id": "1",
     "properties": [
         {"name": "value", "value": "1", "kind": "int"}
     ]
@@ -33,7 +33,7 @@ volume_dict = {
     "title": "BillyBook",
     "description": "Another work",
     "slug": "bb",
-    "system": "yo",
+    "system_id": "yo",
     "created_at": datetime(2021, 9, 15, 7, 35, 0, 2000),
     "created_by": "test",
     "updated_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
@@ -41,7 +41,7 @@ volume_dict = {
     "deleted_at": datetime(2021, 9, 15, 7, 35, 0, 2001),
     "deleted_by": "test",
     "tags": [{"name": "tag", "value": "tag"}],
-    "publisher": "1",
+    "publisher_id": "1",
     "properties": [
         {"name": "value", "value": "1", "kind": "int"},
     ],
@@ -65,8 +65,8 @@ def test_load_volume_from_json():
     assert v.title == "Bob's Book"
     assert v.description == "The book that Bob worked pretty hard on"
     assert v.slug == "bob"
-    assert v.system == "bobo"
-    assert v.publisher == "1"
+    assert v.system_id == "bobo"
+    assert v.publisher_id == "1"
     assert len(v.tags) == 1
     t = v.tags[0]
     assert t["name"] == "tag"
@@ -93,8 +93,8 @@ def test_load_volume_from_dict():
     assert v.title == "BillyBook"
     assert v.description == "Another work"
     assert v.slug == "bb"
-    assert v.system == "yo"
-    assert v.publisher == "1"
+    assert v.system_id == "yo"
+    assert v.publisher_id == "1"
     assert len(v.tags) == 1
     t = v.tags[0]
     assert t["name"] == "tag"

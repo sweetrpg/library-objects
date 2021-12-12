@@ -1,10 +1,10 @@
 DB Schemas
 ==========
 
-Author
+Person
 ------
 
-.. autoclass:: sweetrpg_library_objects.db.author.schema.AuthorSchema
+.. autoclass:: sweetrpg_library_objects.db.person.schema.PersonSchema
    :members:
    :undoc-members:
    :private-members:
@@ -41,26 +41,10 @@ System
    :undoc-members:
    :private-members:
 
-Tag
----
-
-.. autoclass:: sweetrpg_library_objects.db.tag.schema.TagSchema
-   :members:
-   :undoc-members:
-   :private-members:
-
 Volume
 ------
 
 .. autoclass:: sweetrpg_library_objects.db.volume.schema.VolumeSchema
-   :members:
-   :undoc-members:
-   :private-members:
-
-VolumeProperty
---------------
-
-.. autoclass:: sweetrpg_library_objects.db.volume_property.schema.VolumePropertySchema
    :members:
    :undoc-members:
    :private-members:

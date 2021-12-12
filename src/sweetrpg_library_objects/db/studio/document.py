@@ -6,6 +6,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 from datetime import datetime
 from mongoengine import Document, fields
 from pymongo import ASCENDING
+from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
 
 
 class StudioDocument(Document):
@@ -22,11 +23,9 @@ class StudioDocument(Document):
 
     # basic properties
     name = fields.StringField(min_length=1, max_length=200, required=True)
+    tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations
-    volumes = fields.ListField(field=fields.ReferenceField("VolumeDocument"))
-    authors = fields.ListField(field=fields.ReferenceField("AuthorDocument"))
-    tags = fields.ListField(field=fields.ReferenceField("TagDocument"))
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

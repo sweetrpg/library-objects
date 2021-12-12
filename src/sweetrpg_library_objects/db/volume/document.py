@@ -5,8 +5,8 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 from mongoengine import Document, fields
-from pymongo import ASCENDING
-from sweetrpg_library_objects.db.volume_property.document import VolumePropertyDocument
+from sweetrpg_library_objects.db.embedded.property.document import PropertyDocument
+from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
 
 
 class VolumeDocument(Document):
@@ -27,10 +27,11 @@ class VolumeDocument(Document):
     title = fields.StringField(required=True)
     description = fields.StringField(required=True)
     slug = fields.StringField(min_length=2, max_length=50, required=True)
-    system = fields.StringField(min_length=1, max_length=20, required=True)
-    properties = fields.ListField(fields.EmbeddedDocumentField(VolumePropertyDocument))
+    system = fields.ReferenceField("SystemDocument")
+    # system_id = fields.StringField(min_length=1, max_length=20, required=True)
+    properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))
     publisher = fields.ReferenceField("PublisherDocument")
-    tags = fields.ListField(field=fields.ReferenceField("TagDocument"))
+    tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

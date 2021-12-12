@@ -19,5 +19,6 @@ class System(Model):
 
         super().__init__(*args, **kwargs)
 
-        self.name = kwargs.get("name")
+        self.game_system = kwargs.get("game_system")
+        self.edition = kwargs.get("edition")
         self.tags = kwargs.get("tags")

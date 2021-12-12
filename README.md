@@ -15,19 +15,27 @@ Model package for library applications.
 
 ## Models
 
-<a name="#author"></a>
-### Author
+<a name="#person"></a>
+### Person
 
-* [Slug as identifier](https://github.com/sweetrpg/design/blob/master/README.md#slug).
 * Fields
-    * `name`: *String*. The name of the author.
-    * `tags`: *[Tag]*. An array of tags associated with the author.
+    * `name`: *String*. The name of the person.
+    * `tag_ids`: *[Tag]*. An array of tags associated with the author.
+    * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
+
+<a name="#personproperty"></a>
+### PersonProperty
+
+* Fields
+    * `name`: *String*. The name of the property.
+    * `type`: *String*. The type of the property's value.
+    * `value`: *String*. The value of the property.
+    * `person_id`: *Volume*. The identifier of the person associated with the property.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 <a name="#publisher"></a>
 ### Publisher
 
-* [Slug as identifier](https://github.com/sweetrpg/design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the publisher.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
@@ -38,13 +46,12 @@ Model package for library applications.
 * Fields
     * `title`: *String*. The title of the review.
     * `text`: *String*. The body text of the review.
-    * `volume`: *Volume*. The volume associated with the review.
+    * `volume_id`: *Volume*. The volume associated with the review.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 <a name="#studio"></a>
 ### Studio
 
-* [Slug as identifier](https://github.com/sweetrpg/design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the studio.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
@@ -52,33 +59,41 @@ Model package for library applications.
 <a name="#system"></a>
 ### System
 
-* [Slug as identifier](https://github.com/sweetrpg/design/blob/master/README.md#slug).
 * Fields
-    * `gameSystemIdentifier`: *String*. The identifier of the game system.
-    * `editionIdentifier`: *String*. The identifier of the game system's edition.
-    * `volumes`: *[Volume]*: An array of volumes belonging to the game system.
+    * `game_system`: *String*. The identifier of the game system.
+    * `edition`: *String*. The identifier of the game system's edition.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 <a name="#tag"></a>
 ### Tag
 
 * Fields
-    * `name`: *String*. The text of the tag.
+    * `name`: *String*. The name of the tag.
+    * `value`: *String*. The optional value of the tag.
+    * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
+
+<a name="#contribution"></a>
+### Contribution
+
+* Fields
+    * `person_id`: *Person*. Identifier of the Person making the contribution
+    * `roles`: *[Enum{ContributionType}]*. An array of contribution types for this person.
+                       Valid values are: `designer`, `developer`, `writer`, `artist`, `cartographer`, `editor`,
+                       `producer`, `consultant`, `director`, `illustrator`, `misc`.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 <a name="#volume"></a>
 ### Volume
 
-* [Slug as identifier](https://github.com/sweetrpg/design/blob/master/README.md#slug).
 * Fields
     * `name`: *String*. The name of the volume.
-    * `isbn`: *String*. ISBN number for the volume.
-    * `authors`: *[Author]*. An array of authors associated with the volume.
-    * `studios`: *[Studio]*. An array of studios associated with the volume.
-    * `publishers`: *[Publisher]*. An array of publishers associated with the volume.
-    * `system`: *System*. The game system associated with the volume.
-    * `reviews`: *[Review]*. An array of reviews associated with the volume.
-    * `tags`: *[Tag]*. An array of tags associated with the volume.
+    * `contributors`: *[Contribution]*. An array of contributions for the volume, indicating a person
+                      and their contribution(s) to the volume.
+    * `studio_ids`: *[Studio]*. An array of studios associated with the volume.
+    * `publisher_ids`: *[Publisher]*. An array of publishers associated with the volume.
+    * `system_id`: *System*. The game system associated with the volume.
+    * `review_ids`: *[Review]*. An array of reviews associated with the volume.
+    * `tag_ids`: *[Tag]*. An array of tags associated with the volume.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 <a name="#volumeproperty"></a>
@@ -88,7 +103,7 @@ Model package for library applications.
     * `name`: *String*. The name of the property.
     * `type`: *String*. The type of the property's value.
     * `value`: *String*. The value of the property.
-    * `volume`: *Volume*. The volume associated with the property.
+    * `volume_id`: *Volume*. The identifier of the volume associated with the property.
     * [Audit fields](https://github.com/sweetrpg/design/blob/master/README.md#audit).
 
 ## Development

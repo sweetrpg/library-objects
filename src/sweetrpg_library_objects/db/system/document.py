@@ -5,6 +5,7 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 from mongoengine import Document, fields
+from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
 
 
 class SystemDocument(Document):
@@ -12,7 +13,7 @@ class SystemDocument(Document):
 
     meta = {
         "indexes": [
-            {"name": "system_name", "fields": ["name"]},
+            {"name": "game_system_edition", "fields": ["game_system", "edition"], "unique": True},
         ],
         "db_alias": "default",
         "collection": "systems",
@@ -20,11 +21,11 @@ class SystemDocument(Document):
     }
 
     # basic properties
-    name = fields.StringField(required=True)
+    game_system = fields.StringField(required=True)
+    edition = fields.StringField(required=True)
+    tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations
-    volumes = fields.ListField(field=fields.ReferenceField("VolumeDocument"))
-    tags = fields.ListField(field=fields.ReferenceField("TagDocument"))
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

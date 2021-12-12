@@ -25,5 +25,5 @@ class Review(Model):
         self.title = kwargs.get("title")
         self.text = kwargs.get("text")
         self.locale = kwargs.get("locale")
-        self.volume = kwargs.get("volume")
+        self.volume_id = kwargs.get("volume_id")
         self.tags = kwargs.get("tags")
