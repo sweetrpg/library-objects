@@ -4,11 +4,11 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 
 import logging
-from sweetrpg_model_core.model.base import EmbeddedModel
+from sweetrpg_model_core.model.base import Model
 
 
-class Contribution(EmbeddedModel):
-    """A model object representing contributions to an RPG volume."""
+class Contribution(Model):
+    """A model object representing contributions to an RPG volume contribution."""
 
     def __init__(self, *args, **kwargs):
         """Creates a new Contribution object.
@@ -22,4 +22,5 @@ class Contribution(EmbeddedModel):
         super().__init__(*args, **kwargs)
 
         self.person_id = kwargs.get("person_id")
+        self.volume_id = kwargs.get("volume_id")
         self.roles = kwargs.get("roles")

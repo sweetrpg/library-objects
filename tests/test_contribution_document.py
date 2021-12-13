@@ -3,23 +3,19 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 """
 """
 
-from sweetrpg_library_objects.db.person.document import PersonDocument
-from sweetrpg_library_objects.db.embedded.property.document import PropertyDocument
-from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
+from sweetrpg_library_objects.db.contribution.document import ContributionDocument
 from datetime import datetime
 
 
-def test_author_document_setup():
-    t = TagDocument(name="tag", value="value")
-    p = PropertyDocument(name="property", kind="kind", value="value")
-    a = PersonDocument(name="Bob", properties=[p], tags=[t])
-    assert a is not None
-    assert a.name == "Bob"
-    assert len(a.properties) == 1
-    assert len(a.tags) == 1
-    assert isinstance(a.created_at, datetime)
-    assert a.created_by == "system"
-    assert isinstance(a.updated_at, datetime)
-    assert a.updated_by == "system"
-    assert a.deleted_at is None
-    assert a.deleted_by is None
+def test_contribution_document_setup():
+    c = ContributionDocument(person_id="1", volume_id="1", roles=["developer"])
+    assert c is not None
+    assert c.person_id == "1"
+    assert c.volume_id == "1"
+    assert len(c.roles) == 1
+    assert isinstance(c.created_at, datetime)
+    assert c.created_by == "system"
+    assert isinstance(c.updated_at, datetime)
+    assert c.updated_by == "system"
+    assert c.deleted_at is None
+    assert c.deleted_by is None
