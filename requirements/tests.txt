@@ -115,7 +115,7 @@ toml==0.10.2
     # via
     #   pytest
     #   tox
-tomli==1.2.2
+tomli==2.0.0
     # via coverage
 tox==3.24.4
     # via -r requirements/tests.in

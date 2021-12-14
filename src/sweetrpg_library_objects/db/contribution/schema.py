@@ -12,5 +12,5 @@ class ContributionSchema(BaseSchema):
     model_class = Contribution
 
     person_id = fields.String(required=True)  # , load_only=True)
-    roles = fields.List(fields.String(required=True))
     volume_id = fields.String(required=True)
+    roles = fields.List(fields.String(required=True))

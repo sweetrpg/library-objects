@@ -12,9 +12,9 @@ volume_json = """
     "_id": "this-is-ignored",
     "title": "Player's Handbook",
     "description": "Informative",
-    "slug": "phb",
-    "system_id": "dnd5",
-    "publisher_id": "1",
+    "system_ids": ["dnd5"],
+    "publisher_ids": ["1"],
+    "studio_ids": ["1"],
     "tags": [{"name": "tag", "value": "tag"}],
     "properties": [
         {"name": "value", "value": "1", "kind": "int"}
@@ -35,9 +35,9 @@ def test_volume_from_json():
     assert v.id == "this-is-ignored"
     assert v.title == "Player's Handbook"
     assert v.description == "Informative"
-    assert v.slug == "phb"
-    assert v.system_id == "dnd5"
-    assert v.publisher_id == "1"
+    assert "dnd5" in v.system_ids
+    assert "1" in v.publisher_ids
+    assert "1" in v.studio_ids
     assert len(v.tags) == 1
     t = v.tags[0]
     assert t["name"] == "tag"

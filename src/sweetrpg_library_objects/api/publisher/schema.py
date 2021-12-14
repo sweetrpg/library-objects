@@ -18,4 +18,6 @@ class PublisherAPISchema(BaseAPISchema):
         self_view_kwargs = {"id": "<id>"}
         self_view_many = "publisher_list"
 
-    name = fields.Str(required=True)  # , load_only=True)
+    name = fields.String(required=True)  # , load_only=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

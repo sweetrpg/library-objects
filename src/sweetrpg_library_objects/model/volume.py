@@ -18,10 +18,8 @@ class Volume(Model):
 
         self.title = kwargs.get("title")
         self.description = kwargs.get("description")
-        self.system_id = kwargs.get("system_id")
-        self.slug = kwargs.get("slug")
         self.properties = kwargs.get("properties")
-        self.publisher_id = kwargs.get("publisher_id")
         self.tags = kwargs.get("tags")
-        # self.contributors = kwargs.get("contributors")
+        self.system_ids = kwargs.get("system_ids")
+        self.publisher_ids = kwargs.get("publisher_ids")
         self.studio_ids = kwargs.get("studio_ids")

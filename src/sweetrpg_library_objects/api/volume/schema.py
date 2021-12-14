@@ -21,12 +21,8 @@ class VolumeAPISchema(BaseAPISchema):
     title = fields.String(required=True)  # , load_only=True)
     description = fields.String(required=True)  # , load_only=True)
     slug = fields.String(required=True)  # , load_only=True)
-    system_id = fields.String(required=True)  # , load_only=True)
-    # authors = Relationship(self_view="volume_authors",
-    #     self_view_kwargs={"id": "<id>"},
-    #     related_view="author_list",
-    #     related_view_kwargs={"volume_id": "<id>"},
-    #     many=True,
-    #     schema="AuthorAPISchema",
-    #     type_="author")
-    properties = fields.List(fields.Dict(keys=fields.Str(), values=fields.Str()))
+    properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    system_ids = fields.List(fields.String(required=True))  # , load_only=True)
+    publisher_ids = fields.List(fields.String(required=True))  # , load_only=True)
+    studio_ids = fields.List(fields.String(required=True))  # , load_only=True)

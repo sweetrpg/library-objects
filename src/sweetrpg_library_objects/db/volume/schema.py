@@ -13,8 +13,8 @@ class VolumeSchema(BaseSchema):
 
     title = fields.String(required=True)  # , load_only=True)
     description = fields.String(required=True)  # , load_only=True)
-    slug = fields.String(required=True)  # , load_only=True)
-    system_id = fields.String(required=True)  # , load_only=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
-    publisher_id = fields.String(required=True)
     properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    system_ids = fields.List(fields.String(required=True))  # , load_only=True)
+    publisher_ids = fields.List(fields.String(required=True))
+    studio_ids = fields.List(fields.String(required=True))

@@ -21,3 +21,4 @@ class Studio(Model):
 
         self.name = kwargs.get("name")
         self.tags = kwargs.get("tags")
+        self.properties = kwargs.get("properties")

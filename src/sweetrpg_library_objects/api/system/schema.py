@@ -20,3 +20,4 @@ class SystemAPISchema(BaseAPISchema):
 
     game_system = fields.String(required=True)  # , load_only=True)
     edition = fields.String(required=True)  # , load_only=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))

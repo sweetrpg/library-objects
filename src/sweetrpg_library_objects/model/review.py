@@ -23,7 +23,7 @@ class Review(Model):
         super().__init__(*args, **kwargs)
 
         self.title = kwargs.get("title")
-        self.text = kwargs.get("text")
-        self.locale = kwargs.get("locale")
-        self.volume_id = kwargs.get("volume_id")
+        self.body = kwargs.get("body")
+        self.language = kwargs.get("language")
         self.tags = kwargs.get("tags")
+        self.volume_id = kwargs.get("volume_id")

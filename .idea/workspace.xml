@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="Contributions" />
+    <list default="true" id="3d65409d-aeaf-412a-9544-c6f7d5d9bbda" name="Changes" comment="something">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/tests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/contribution/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/contribution/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/person/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/person/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/publisher/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/review/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/studio/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/system/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/api/volume/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/contribution/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/contribution/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/contribution/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/contribution/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/review/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/studio/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/system/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/db/volume/schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/publisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/review.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/studio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweetrpg_library_objects/model/volume.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_review_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_db_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_review_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_review_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_volume_db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_db_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_volume_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_volume_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_volume_model.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +75,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.tox/py39-default/lib/python3.9/site-packages/sweetrpg_library_objects/db/volume/document.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -67,7 +97,7 @@
   </component>
   <component name="RunManager" selected="tox.Tests">
     <configuration name="Clean" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="rm -rf .tox htmlcov .coverage build .pytest_cache rm -rf ${VIRTUAL_ENV}/lib/python3.9/site-packages/sweetrpg*" />
+      <option name="SCRIPT_TEXT" value="rm -rf .tox htmlcov dist .coverage build .pytest_cache ${VIRTUAL_ENV}/lib/python3.9/site-packages/sweetrpg*" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -111,7 +141,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Tests" type="Tox" factoryName="Tox">
+    <configuration name="Tests" type="Tox" factoryName="Tox" show_console_on_std_err="true" show_console_on_std_out="true">
       <module name="sweetrpg-library-objects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +177,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
       <item itemvalue="Shell Script.Clean" />
       <item itemvalue="Shell Script.Install requirements" />
       <item itemvalue="Shell Script.Update requirements files" />
       <item itemvalue="tox.Tests" />
-      <item itemvalue="Python tests.pytest in sweetrpg-library-objects" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -198,6 +228,7 @@
       <workItem from="1638289021124" duration="4033000" />
       <workItem from="1638493042394" duration="319000" />
       <workItem from="1639237505165" duration="8113000" />
+      <workItem from="1639439644342" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Change some name fields to LangString type">
       <created>1636733445238</created>
@@ -269,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639413319576</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="something">
+      <created>1639439723737</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639439723737</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +334,8 @@
     <MESSAGE value="Change name to title, add description" />
     <MESSAGE value="Change author to person, remove tag, update references" />
     <MESSAGE value="Contributions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contributions" />
+    <MESSAGE value="something" />
+    <option name="LAST_COMMIT_MESSAGE" value="something" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -310,6 +349,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sweetrpg_library_objects$Tests.coverage" NAME="Tests Coverage Results" MODIFIED="1639413174755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/sweetrpg_library_objects$Tests.coverage" NAME="Tests Coverage Results" MODIFIED="1639442553169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

@@ -12,7 +12,7 @@ class ReviewSchema(BaseSchema):
     model_class = Review
 
     title = fields.String(required=True)  # , load_only=True)
-    text = fields.String(required=True)  # , load_only=True)
-    locale = fields.String(required=True)
-    volume = fields.String(required=True)
+    body = fields.String(required=True)  # , load_only=True)
+    language = fields.String(required=True)
     tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    volume = fields.String(required=True)

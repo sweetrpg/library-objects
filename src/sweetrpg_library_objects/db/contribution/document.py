@@ -22,11 +22,11 @@ class ContributionDocument(Document):
     }
 
     # basic properties
-    person_id = fields.StringField(min_length=1, max_length=30, required=True)
-    roles = fields.ListField(field=fields.StringField, required=True)
-    volume_id = fields.StringField(min_length=1, max_length=30, required=True)
+    roles = fields.ListField(fields.StringField(required=True), required=True)
 
     # relations
+    person_id = fields.StringField(min_length=1, max_length=30, required=True)
+    volume_id = fields.StringField(min_length=1, max_length=30, required=True)
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

@@ -23,7 +23,7 @@ class ContributionAPISchema(BaseAPISchema):
         data = add_user_info(data)
         return Contribution(**data)
 
-    id = fields.Str()  # as_string=True, dump_only=True)
-    person_id = fields.Str(required=True)  # required=True) #, load_only=True)
-    volume_id = fields.Str(required=True)  # required=True) #, load_only=True)
-    roles = fields.List(fields.Str(required=True))  # required=True) #, load_only=True)
+    id = fields.String()  # as_string=True, dump_only=True)
+    person_id = fields.String(required=True)  # required=True) #, load_only=True)
+    volume_id = fields.String(required=True)  # required=True) #, load_only=True)
+    roles = fields.List(fields.String(required=True))  # required=True) #, load_only=True)

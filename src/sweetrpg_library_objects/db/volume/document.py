@@ -14,9 +14,7 @@ class VolumeDocument(Document):
 
     meta = {
         "indexes": [
-            {"name": "volume_slug", "fields": ["slug"], "unique": True},
             {"name": "volume_title", "fields": ["title"]},
-            {"name": "volume_system", "fields": ["system"]},
         ],
         "db_alias": "default",
         "collection": "volumes",
@@ -26,12 +24,11 @@ class VolumeDocument(Document):
     # basic properties
     title = fields.StringField(required=True)
     description = fields.StringField(required=True)
-    slug = fields.StringField(min_length=2, max_length=50, required=True)
-    system = fields.ReferenceField("SystemDocument")
-    # system_id = fields.StringField(min_length=1, max_length=20, required=True)
     properties = fields.ListField(fields.EmbeddedDocumentField(PropertyDocument))
-    publisher = fields.ReferenceField("PublisherDocument")
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
+    systems = fields.ListField(fields.ReferenceField("SystemDocument"))
+    publishers = fields.ListField(fields.ReferenceField("PublisherDocument"))
+    studios = fields.ListField(fields.ReferenceField("StudioDocument"))
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

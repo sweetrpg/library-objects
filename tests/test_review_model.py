@@ -12,7 +12,8 @@ review_json = """
 {
     "_id": "this-is-ignored",
     "title": "This sucks",
-    "text": "I hate it",
+    "body": "I hate it",
+    "language": "en_US",
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
@@ -25,15 +26,13 @@ review_json = """
 """
 volume_json = """
 {
-    "_id": "this-is-ignored",
+    "_id": "volume-id",
     "name": "Player's Handbook",
-    "slug": "phb",
-    "system": "dnd5",
+    "systems": ["dnd5"],
     "created_at": "2021-09-13T07:55:00.001",
     "created_by": "test",
     "updated_at": "2021-09-13T07:55:00.001",
-    "updated_by": "test",
-    "volume_id": "volume-id"
+    "updated_by": "test"
 }
 """
 review_datetime = datetime(2021, 9, 13, 7, 55, 0, 1000)
@@ -47,7 +46,8 @@ def test_review_from_json():
     assert isinstance(r, Review)
     assert r.id == "this-is-ignored"
     assert r.title == "This sucks"
-    assert r.text == "I hate it"
+    assert r.body == "I hate it"
+    assert r.language == "en_US"
     assert r.created_at == review_datetime
     assert r.created_by == "test"
     assert r.updated_at == review_datetime

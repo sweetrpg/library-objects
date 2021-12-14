@@ -5,7 +5,6 @@ __author__ = "Paul Schifferer <dm@sweetrpg.com>"
 
 from datetime import datetime
 from mongoengine import Document, fields
-from pymongo import ASCENDING
 from sweetrpg_library_objects.db.embedded.tag.document import TagDocument
 
 
@@ -23,8 +22,8 @@ class ReviewDocument(Document):
 
     # basic properties
     title = fields.StringField(required=True)
-    text = fields.StringField(required=True)
-    locale = fields.StringField(required=True, default="en_US")
+    body = fields.StringField(required=True)
+    language = fields.StringField(required=True, default="en_US")
     tags = fields.ListField(fields.EmbeddedDocumentField(TagDocument))
 
     # relations

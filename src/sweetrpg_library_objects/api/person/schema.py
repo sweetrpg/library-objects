@@ -23,5 +23,7 @@ class PersonAPISchema(BaseAPISchema):
         data = add_user_info(data)
         return Person(**data)
 
-    id = fields.Str()  # as_string=True, dump_only=True)
-    name = fields.Str(required=True)  # required=True) #, load_only=True)
+    id = fields.String()  # as_string=True, dump_only=True)
+    name = fields.String(required=True)  # required=True) #, load_only=True)
+    tags = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
+    properties = fields.List(fields.Dict(keys=fields.String(required=True), values=fields.String()))
