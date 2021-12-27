@@ -111,11 +111,11 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sqlalchemy==1.4.28
+sqlalchemy==1.4.29
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.62
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.45
+sweetrpg-db==0.0.46
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
