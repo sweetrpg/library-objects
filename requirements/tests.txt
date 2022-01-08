@@ -6,10 +6,8 @@
 #
 asgiref==3.4.1
     # via -r requirements/tests.in
-attrs==21.2.0
+attrs==21.4.0
     # via pytest
-backports.entry-points-selectable==1.1.1
-    # via virtualenv
 blinker==1.4
     # via -r requirements/tests.in
 click==8.0.3
@@ -100,13 +98,13 @@ six==1.16.0
     #   virtualenv
 sqlalchemy==1.4.29
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.63
+sweetrpg-api-core==0.0.66
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.47
+sweetrpg-db==0.0.48
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.55
+sweetrpg-model-core==0.0.56
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -119,7 +117,7 @@ tomli==2.0.0
     # via coverage
 tox==3.24.5
     # via -r requirements/tests.in
-virtualenv==20.10.0
+virtualenv==20.13.0
     # via tox
 werkzeug==2.0.2
     # via flask
