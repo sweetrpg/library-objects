@@ -27,6 +27,11 @@ click==8.0.4
     #   black
     #   flask
     #   pip-tools
+    #   typer
+colorama==0.4.5
+    # via typer
+commonmark==0.9.1
+    # via rich
 coverage[toml]==6.3.2
     # via
     #   coverage-badge
@@ -42,6 +47,7 @@ dnspython==2.2.1
 docutils==0.17.1
     # via
     #   rstcheck
+    #   rstcheck-core
     #   sphinx
     #   sphinx-tabs
 filelock==3.6.0
@@ -120,8 +126,13 @@ py==1.11.0
     # via
     #   pytest
     #   tox
+pydantic==1.9.2
+    # via
+    #   rstcheck
+    #   rstcheck-core
 pygments==2.11.2
     # via
+    #   rich
     #   sphinx
     #   sphinx-tabs
 pymongo[srv,tls]==3.12.1
@@ -143,8 +154,14 @@ pytz==2021.3
     # via babel
 requests==2.27.1
     # via sphinx
-rstcheck==3.3.1
+rich==12.5.1
+    # via typer
+rstcheck==6.1.0
     # via -r requirements/docs.in
+rstcheck-core==1.0.2
+    # via rstcheck
+shellingham==1.5.0
+    # via typer
 six==1.16.0
     # via
     #   flask-rest-jsonapi
@@ -201,8 +218,16 @@ tomli==2.0.1
     #   pytest
 tox==3.24.5
     # via -r requirements/tests.in
+typer[all]==0.6.1
+    # via rstcheck
+types-docutils==0.18.3
+    # via
+    #   rstcheck
+    #   rstcheck-core
 typing-extensions==4.1.1
-    # via black
+    # via
+    #   black
+    #   pydantic
 urllib3==1.26.8
     # via requests
 virtualenv==20.13.3
