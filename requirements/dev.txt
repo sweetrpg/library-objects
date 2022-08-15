@@ -6,7 +6,7 @@
 #
 alabaster==0.7.12
     # via sphinx
-asgiref==3.5.0
+asgiref==3.5.2
     # via -r requirements/tests.in
 attrs==21.4.0
     # via pytest
@@ -14,7 +14,7 @@ babel==2.9.1
     # via sphinx
 black==22.1.0
     # via -r requirements/dev.in
-blinker==1.4
+blinker==1.5
     # via -r requirements/tests.in
 build==0.8.0
     # via pip-tools
@@ -169,7 +169,7 @@ six==1.16.0
     #   virtualenv
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==4.4.0
+sphinx==5.1.1
     # via
     #   -r requirements/docs.in
     #   pallets-sphinx-themes
@@ -216,7 +216,7 @@ tomli==2.0.1
     #   coverage
     #   pep517
     #   pytest
-tox==3.24.5
+tox==3.25.1
     # via -r requirements/tests.in
 typer[all]==0.6.1
     # via rstcheck
