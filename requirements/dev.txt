@@ -207,8 +207,6 @@ sweetrpg-model-core==0.0.62
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
-toml==0.10.2
-    # via tox
 tomli==2.0.1
     # via
     #   black
@@ -216,7 +214,8 @@ tomli==2.0.1
     #   coverage
     #   pep517
     #   pytest
-tox==3.25.1
+    #   tox
+tox==3.26.0
     # via -r requirements/tests.in
 typer[all]==0.6.1
     # via rstcheck
