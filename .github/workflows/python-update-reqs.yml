@@ -6,7 +6,7 @@ on:
             - model-core-published
             - db-published
     schedule:
-        - cron: '0 1 * * 0'
+        - cron: '0 2 * * 0'
 
 jobs:
     update-reqs:
