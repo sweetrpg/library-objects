@@ -37,7 +37,7 @@ flask==2.0.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==1.1.3
+greenlet==1.1.3.post0
     # via sqlalchemy
 idna==3.4
     # via requests
