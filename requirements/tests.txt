@@ -24,6 +24,8 @@ dnspython==2.2.1
     # via
     #   pymongo
     #   sweetrpg-db
+exceptiongroup==1.0.0
+    # via pytest
 filelock==3.8.0
     # via
     #   tox
@@ -75,9 +77,7 @@ pluggy==1.0.0
     #   pytest
     #   tox
 py==1.11.0
-    # via
-    #   pytest
-    #   tox
+    # via tox
 pymongo[srv]==4.0.2
     # via
     #   mongoengine
@@ -85,7 +85,7 @@ pymongo[srv]==4.0.2
     #   sweetrpg-model-core
 pyparsing==3.0.9
     # via packaging
-pytest==7.1.3
+pytest==7.2.0
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -117,7 +117,7 @@ tomli==2.0.1
     #   tox
 tox==3.26.0
     # via -r requirements/tests.in
-virtualenv==20.16.5
+virtualenv==20.16.6
     # via tox
 werkzeug==2.2.2
     # via flask
