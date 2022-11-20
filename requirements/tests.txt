@@ -24,7 +24,7 @@ dnspython==2.2.1
     # via
     #   pymongo
     #   sweetrpg-db
-exceptiongroup==1.0.1
+exceptiongroup==1.0.4
     # via pytest
 filelock==3.8.0
     # via
