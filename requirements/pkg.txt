@@ -6,7 +6,7 @@
 #
 click==8.1.3
     # via flask
-dnspython==2.2.1
+dnspython==2.3.0
     # via
     #   pymongo
     #   sweetrpg-db
@@ -23,7 +23,7 @@ itsdangerous==2.1.2
     # via flask
 jinja2==3.1.2
     # via flask
-markupsafe==2.1.1
+markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
@@ -37,7 +37,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine==0.25.0
+mongoengine==0.26.0
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
