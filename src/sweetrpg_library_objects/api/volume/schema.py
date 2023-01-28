@@ -26,3 +26,4 @@ class VolumeAPISchema(BaseAPISchema):
     system_ids = fields.List(fields.String(required=True))  # , load_only=True)
     publisher_ids = fields.List(fields.String(required=True))  # , load_only=True)
     studio_ids = fields.List(fields.String(required=True))  # , load_only=True)
+    license_ids = fields.List(fields.String(required=True))  # , load_only=True)

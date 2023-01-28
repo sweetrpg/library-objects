@@ -29,6 +29,7 @@ class VolumeDocument(Document):
     systems = fields.ListField(fields.ReferenceField("SystemDocument"))
     publishers = fields.ListField(fields.ReferenceField("PublisherDocument"))
     studios = fields.ListField(fields.ReferenceField("StudioDocument"))
+    licenses = fields.ListField(fields.ReferenceField("LicenseDocument"))
 
     # audit properties
     created_at = fields.DateTimeField(default=datetime.utcnow, required=True)

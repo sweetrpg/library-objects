@@ -23,3 +23,4 @@ class Volume(Model):
         self.system_ids = kwargs.get("system_ids")
         self.publisher_ids = kwargs.get("publisher_ids")
         self.studio_ids = kwargs.get("studio_ids")
+        self.license_ids = kwargs.get("license_ids")

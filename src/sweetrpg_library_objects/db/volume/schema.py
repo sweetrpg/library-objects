@@ -18,3 +18,4 @@ class VolumeSchema(BaseSchema):
     system_ids = fields.List(fields.String(required=True))  # , load_only=True)
     publisher_ids = fields.List(fields.String(required=True))
     studio_ids = fields.List(fields.String(required=True))
+    license_ids = fields.List(fields.String(required=True))
