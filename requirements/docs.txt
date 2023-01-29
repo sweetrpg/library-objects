@@ -36,11 +36,13 @@ flask==2.0.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==2.0.1
+greenlet==2.0.2
     # via sqlalchemy
 idna==3.4
     # via requests
 imagesize==1.4.1
+    # via sphinx
+importlib-metadata==6.0.0
     # via sphinx
 itsdangerous==2.1.2
     # via flask
@@ -112,7 +114,7 @@ sphinx-issues==3.0.1
     # via -r requirements/docs.in
 sphinx-tabs==3.4.1
     # via -r requirements/docs.in
-sphinxcontrib-applehelp==1.0.3
+sphinxcontrib-applehelp==1.0.4
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
     # via sphinx
@@ -126,7 +128,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sqlalchemy==1.4.46
+sqlalchemy==2.0.0
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.81
     # via -r requirements/pkg.in
@@ -134,7 +136,7 @@ sweetrpg-db==0.0.54
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.63
+sweetrpg-model-core==0.0.98
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -144,8 +146,12 @@ typer[all]==0.7.0
 types-docutils==0.19.1.2
     # via rstcheck-core
 typing-extensions==4.4.0
-    # via pydantic
+    # via
+    #   pydantic
+    #   sqlalchemy
 urllib3==1.26.14
     # via requests
 werkzeug==2.2.2
     # via flask
+zipp==3.12.0
+    # via importlib-metadata
