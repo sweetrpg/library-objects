@@ -36,6 +36,8 @@ flask==2.0.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
+greenlet==2.0.2
+    # via sqlalchemy
 idna==3.4
     # via requests
 imagesize==1.4.1
@@ -114,7 +116,7 @@ sphinxcontrib-applehelp==1.0.4
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
     # via sphinx
-sphinxcontrib-htmlhelp==2.0.0
+sphinxcontrib-htmlhelp==2.0.1
     # via sphinx
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
@@ -124,7 +126,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sqlalchemy==2.0.0
+sqlalchemy==2.0.1
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.81
     # via -r requirements/pkg.in
