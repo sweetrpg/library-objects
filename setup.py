@@ -4,11 +4,11 @@ from setuptools import setup
 setup(
     name="sweetrpg-library-objects",
     install_requires=[
-        "Flask==2.0.2",
-        "mongoengine",
+        "Flask<3.0",
+        "mongoengine @ git+https://github.com/MongoEngine/mongoengine.git",
         "sweetrpg-db",
         "sweetrpg-model-core",
-        "sweetrpg-api-core",
         "marshmallow-jsonapi",
+        "sweetrpg-api-core",
     ],
 )
