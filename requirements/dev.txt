@@ -103,7 +103,7 @@ mongoengine @ git+https://github.com/MongoEngine/mongoengine.git
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
-mypy-extensions==0.4.3
+mypy-extensions==1.0.0
     # via black
 packaging==23.0
     # via
