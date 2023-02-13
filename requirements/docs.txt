@@ -95,7 +95,7 @@ rstcheck==6.1.1
     # via -r requirements/docs.in
 rstcheck-core==1.0.3
     # via rstcheck
-shellingham==1.5.0.post1
+shellingham==1.5.1
     # via typer
 six==1.16.0
     # via flask-rest-jsonapi
@@ -134,7 +134,7 @@ sweetrpg-db==0.0.54
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.101
+sweetrpg-model-core==0.0.102
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
