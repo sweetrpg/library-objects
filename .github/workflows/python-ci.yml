@@ -97,9 +97,6 @@ jobs:
             fail-fast: false
             matrix:
                 include:
-                    - repo: model-core
-                    - repo: db
-                    - repo: api-core
                     - repo: library-api
                     - repo: web-core
                     - repo: client
