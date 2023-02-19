@@ -38,6 +38,8 @@ flask==2.2.3
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
+greenlet==2.0.2
+    # via sqlalchemy
 idna==3.4
     # via requests
 imagesize==1.4.1
