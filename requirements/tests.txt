@@ -43,6 +43,8 @@ flask==2.0.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
+greenlet==2.0.2
+    # via sqlalchemy
 iniconfig==2.0.0
     # via pytest
 itsdangerous==2.1.2
@@ -53,7 +55,7 @@ markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
-marshmallow==3.14.1
+marshmallow==3.19.0
     # via
     #   flask-rest-jsonapi
     #   marshmallow-jsonapi
@@ -70,6 +72,7 @@ mongoengine==0.26.0
     #   sweetrpg-db
 packaging==23.0
     # via
+    #   marshmallow
     #   pyproject-api
     #   pytest
     #   tox
@@ -81,7 +84,7 @@ pluggy==1.0.0
     # via
     #   pytest
     #   tox
-pymongo[srv]==4.0.2
+pymongo[srv]==4.3.3
     # via
     #   mongoengine
     #   sweetrpg-db
@@ -102,7 +105,7 @@ sqlalchemy==2.0.4
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.81
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.54
+sweetrpg-db==0.0.91
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core

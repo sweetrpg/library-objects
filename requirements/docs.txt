@@ -36,6 +36,8 @@ flask==2.0.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
+greenlet==2.0.2
+    # via sqlalchemy
 idna==3.4
     # via requests
 imagesize==1.4.1
@@ -50,7 +52,7 @@ markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
-marshmallow==3.14.1
+marshmallow==3.19.0
     # via
     #   flask-rest-jsonapi
     #   marshmallow-jsonapi
@@ -67,6 +69,7 @@ mongoengine==0.26.0
     #   sweetrpg-db
 packaging==23.0
     # via
+    #   marshmallow
     #   pallets-sphinx-themes
     #   sphinx
 pallets-sphinx-themes==2.0.3
@@ -78,7 +81,7 @@ pygments==2.14.0
     #   rich
     #   sphinx
     #   sphinx-tabs
-pymongo[srv]==4.0.2
+pymongo[srv]==4.3.3
     # via
     #   mongoengine
     #   sweetrpg-db
@@ -128,7 +131,7 @@ sqlalchemy==2.0.4
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.81
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.54
+sweetrpg-db==0.0.91
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
