@@ -5,7 +5,7 @@ setup(
     name="sweetrpg-library-objects",
     install_requires=[
         "Flask<3.0",
-        "mongoengine @ git+https://github.com/MongoEngine/mongoengine.git",
+        "mongoengine==0.26.0",
         "sweetrpg-db",
         "sweetrpg-model-core",
         "marshmallow-jsonapi",

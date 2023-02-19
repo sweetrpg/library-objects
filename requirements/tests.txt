@@ -63,7 +63,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine @ git+https://github.com/MongoEngine/mongoengine.git
+mongoengine==0.26.0
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
