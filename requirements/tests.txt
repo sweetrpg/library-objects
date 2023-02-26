@@ -24,7 +24,7 @@ click==8.1.3
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.1.0
+coverage[toml]==7.2.0
     # via
     #   coverage-badge
     #   pytest-cov
@@ -117,7 +117,7 @@ sqlalchemy==2.0.4
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.95
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.91
+sweetrpg-db==0.0.92
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
