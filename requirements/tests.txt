@@ -24,7 +24,7 @@ click==8.1.3
     # via flask
 colorama==0.4.6
     # via tox
-coverage[toml]==7.2.0
+coverage[toml]==7.2.1
     # via
     #   coverage-badge
     #   pytest-cov
@@ -84,7 +84,7 @@ packaging==23.0
     #   pyproject-api
     #   pytest
     #   tox
-platformdirs==3.0.0
+platformdirs==3.1.0
     # via
     #   tox
     #   virtualenv
@@ -99,7 +99,7 @@ pymongo[srv]==4.3.3
     #   sweetrpg-model-core
 pyproject-api==1.5.0
     # via tox
-pytest==7.2.1
+pytest==7.2.2
     # via
     #   -r requirements/tests.in
     #   pytest-cov
@@ -117,7 +117,7 @@ sqlalchemy==2.0.4
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.98
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.93
+sweetrpg-db==0.0.94
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -138,7 +138,7 @@ typing-extensions==4.5.0
     # via sqlalchemy
 urllib3==1.26.14
     # via requests
-virtualenv==20.19.0
+virtualenv==20.20.0
     # via tox
 werkzeug==2.2.3
     # via flask
