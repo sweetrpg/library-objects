@@ -76,7 +76,7 @@ packaging==23.0
     #   sphinx
 pallets-sphinx-themes==2.0.3
     # via -r requirements/docs.in
-pydantic==1.10.6
+pydantic==1.10.7
     # via rstcheck-core
 pygments==2.14.0
     # via
@@ -135,7 +135,7 @@ sqlalchemy==2.0.7
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.108
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.99
+sweetrpg-db==0.0.100
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core

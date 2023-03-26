@@ -38,7 +38,7 @@ dnspython==2.3.0
     #   sweetrpg-db
 exceptiongroup==1.1.1
     # via pytest
-filelock==3.10.0
+filelock==3.10.5
     # via
     #   tox
     #   virtualenv
@@ -84,7 +84,7 @@ packaging==23.0
     #   pyproject-api
     #   pytest
     #   tox
-platformdirs==3.1.1
+platformdirs==3.2.0
     # via
     #   tox
     #   virtualenv
@@ -117,7 +117,7 @@ sqlalchemy==2.0.7
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.108
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.99
+sweetrpg-db==0.0.100
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
