@@ -63,11 +63,11 @@ six==1.16.0
     # via
     #   airtable
     #   flask-rest-jsonapi
-sqlalchemy==2.0.7
+sqlalchemy==2.0.8
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.112
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.101
+sweetrpg-db==0.0.102
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
