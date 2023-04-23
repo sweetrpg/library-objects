@@ -36,7 +36,7 @@ dnspython==2.3.0
     #   sweetrpg-db
 exceptiongroup==1.1.1
     # via pytest
-filelock==3.11.0
+filelock==3.12.0
     # via
     #   tox
     #   virtualenv
@@ -111,11 +111,11 @@ six==1.16.0
     # via
     #   airtable
     #   flask-rest-jsonapi
-sqlalchemy==2.0.9
+sqlalchemy==2.0.10
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.124
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.107
+sweetrpg-db==0.0.108
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -136,7 +136,7 @@ typing-extensions==4.5.0
     # via sqlalchemy
 urllib3==1.26.15
     # via requests
-virtualenv==20.21.0
+virtualenv==20.22.0
     # via tox
 werkzeug==2.2.3
     # via flask
