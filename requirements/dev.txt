@@ -199,13 +199,13 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlalchemy==2.0.11
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.128
+sweetrpg-api-core==0.0.130
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.110
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
-sweetrpg-model-core==0.0.115
+sweetrpg-model-core==0.0.116
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
