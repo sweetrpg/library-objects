@@ -8,7 +8,7 @@ airtable==0.4.8
     # via -r requirements/pkg.in
 blinker==1.6.2
     # via flask
-certifi==2022.12.7
+certifi==2023.5.7
     # via requests
 charset-normalizer==3.1.0
     # via requests
@@ -65,7 +65,7 @@ six==1.16.0
     # via
     #   airtable
     #   flask-rest-jsonapi
-sqlalchemy==2.0.12
+sqlalchemy==2.0.13
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.136
     # via -r requirements/pkg.in
@@ -82,5 +82,5 @@ typing-extensions==4.5.0
     # via sqlalchemy
 urllib3==2.0.2
     # via requests
-werkzeug==2.3.3
+werkzeug==2.3.4
     # via flask
