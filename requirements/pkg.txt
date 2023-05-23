@@ -59,7 +59,7 @@ pymongo[srv]==4.3.3
     #   mongoengine
     #   sweetrpg-db
     #   sweetrpg-model-core
-requests==2.30.0
+requests==2.31.0
     # via airtable
 six==1.16.0
     # via
@@ -69,7 +69,7 @@ sqlalchemy==2.0.15
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.144
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.117
+sweetrpg-db==0.0.118
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -78,7 +78,7 @@ sweetrpg-model-core==0.0.119
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
-typing-extensions==4.5.0
+typing-extensions==4.6.0
     # via sqlalchemy
 urllib3==2.0.2
     # via requests

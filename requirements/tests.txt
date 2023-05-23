@@ -107,7 +107,7 @@ pytest-cov==4.0.0
     # via -r requirements/tests.in
 python-dotenv==0.21.1
     # via -r requirements/tests.in
-requests==2.30.0
+requests==2.31.0
     # via airtable
 six==1.16.0
     # via
@@ -117,7 +117,7 @@ sqlalchemy==2.0.15
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.144
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.117
+sweetrpg-db==0.0.118
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -134,7 +134,7 @@ tomli==2.0.1
     #   tox
 tox==4.4.5
     # via -r requirements/tests.in
-typing-extensions==4.5.0
+typing-extensions==4.6.0
     # via sqlalchemy
 urllib3==2.0.2
     # via requests
