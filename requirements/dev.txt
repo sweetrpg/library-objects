@@ -8,7 +8,7 @@ airtable==0.4.8
     # via -r requirements/pkg.in
 alabaster==0.7.13
     # via sphinx
-asgiref==3.6.0
+asgiref==3.7.2
     # via -r requirements/tests.in
 babel==2.12.1
     # via sphinx
@@ -20,7 +20,7 @@ blinker==1.6.2
     #   flask
 build==0.10.0
     # via pip-tools
-cachetools==5.3.0
+cachetools==5.3.1
     # via tox
 certifi==2023.5.7
     # via requests
@@ -40,7 +40,7 @@ colorama==0.4.6
     #   typer
 commonmark==0.9.1
     # via rich
-coverage[toml]==7.2.5
+coverage[toml]==7.2.6
     # via
     #   coverage-badge
     #   pytest-cov
@@ -130,7 +130,7 @@ pluggy==1.0.0
     # via
     #   pytest
     #   tox
-pydantic==1.10.7
+pydantic==1.10.8
     # via rstcheck-core
 pygments==2.15.1
     # via
@@ -199,9 +199,9 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlalchemy==2.0.15
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.152
+sweetrpg-api-core==0.0.154
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.122
+sweetrpg-db==0.0.123
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -225,8 +225,9 @@ typer[all]==0.7.0
     # via rstcheck
 types-docutils==0.19.1.9
     # via rstcheck-core
-typing-extensions==4.6.0
+typing-extensions==4.6.2
     # via
+    #   asgiref
     #   pydantic
     #   sqlalchemy
 urllib3==2.0.2
