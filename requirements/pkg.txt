@@ -25,6 +25,8 @@ flask==2.3.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
+greenlet==2.0.2
+    # via sqlalchemy
 idna==3.4
     # via requests
 itsdangerous==2.1.2
@@ -52,7 +54,7 @@ mongoengine==0.26.0
     #   sweetrpg-db
 packaging==23.1
     # via marshmallow
-pymongo[srv]==4.3.3
+pymongo[srv]==4.4.0
     # via
     #   mongoengine
     #   sweetrpg-db
@@ -63,7 +65,7 @@ six==1.16.0
     # via
     #   airtable
     #   flask-rest-jsonapi
-sqlalchemy==2.0.16
+sqlalchemy==2.0.17
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.168
     # via -r requirements/pkg.in
