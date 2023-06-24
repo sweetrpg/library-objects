@@ -49,8 +49,6 @@ flask==2.3.2
     #   sweetrpg-api-core
 flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
-greenlet==2.0.2
-    # via sqlalchemy
 idna==3.4
     # via requests
 iniconfig==2.0.0
@@ -103,9 +101,15 @@ pytest==7.3.2
     # via
     #   -r requirements/tests.in
     #   pytest-cov
+    #   pytest-env
+    #   pytest-ordering
 pytest-cov==4.0.0
     # via -r requirements/tests.in
-python-dotenv==0.21.1
+pytest-env==0.8.1
+    # via -r requirements/tests.in
+pytest-ordering==0.6
+    # via -r requirements/tests.in
+python-dotenv==1.0.0
     # via -r requirements/tests.in
 requests==2.31.0
     # via airtable
@@ -132,7 +136,7 @@ tomli==2.0.1
     #   pyproject-api
     #   pytest
     #   tox
-tox==4.4.5
+tox==4.5.1
     # via -r requirements/tests.in
 typing-extensions==4.6.3
     # via

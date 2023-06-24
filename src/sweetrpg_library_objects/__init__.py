@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+Metadata.
 """
 
 __title__ = 'sweetrpg-library-objects'
