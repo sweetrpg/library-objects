@@ -10,9 +10,9 @@ blinker==1.6.2
     # via flask
 certifi==2023.5.7
     # via requests
-charset-normalizer==3.1.0
+charset-normalizer==3.2.0
     # via requests
-click==8.1.3
+click==8.1.4
     # via flask
 dnspython==2.3.0
     # via
@@ -65,11 +65,11 @@ six==1.16.0
     # via
     #   airtable
     #   flask-rest-jsonapi
-sqlalchemy==2.0.17
+sqlalchemy==2.0.18
     # via flask-rest-jsonapi
 sweetrpg-api-core==0.0.175
     # via -r requirements/pkg.in
-sweetrpg-db==0.0.133
+sweetrpg-db==0.0.134
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -78,7 +78,7 @@ sweetrpg-model-core==0.0.129
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
     #   sweetrpg-db
-typing-extensions==4.7.0
+typing-extensions==4.7.1
     # via sqlalchemy
 urllib3==2.0.3
     # via requests
