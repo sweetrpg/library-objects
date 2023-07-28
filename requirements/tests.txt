@@ -4,8 +4,6 @@
 #
 #    pip-compile requirements/tests.in
 #
-airtable==0.4.8
-    # via -r requirements/pkg.in
 asgiref==3.7.2
     # via -r requirements/tests.in
 blinker==1.6.2
@@ -14,12 +12,8 @@ blinker==1.6.2
     #   flask
 cachetools==5.3.1
     # via tox
-certifi==2023.7.22
-    # via requests
 chardet==5.1.0
     # via tox
-charset-normalizer==3.2.0
-    # via requests
 click==8.1.6
     # via flask
 colorama==0.4.6
@@ -51,8 +45,6 @@ flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
 greenlet==2.0.2
     # via sqlalchemy
-idna==3.4
-    # via requests
 iniconfig==2.0.0
     # via pytest
 itsdangerous==2.1.2
@@ -73,7 +65,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine==0.26.0
+mongoengine==0.27.0
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -113,15 +105,11 @@ pytest-ordering==0.6
     # via -r requirements/tests.in
 python-dotenv==1.0.0
     # via -r requirements/tests.in
-requests==2.31.0
-    # via airtable
 six==1.16.0
-    # via
-    #   airtable
-    #   flask-rest-jsonapi
+    # via flask-rest-jsonapi
 sqlalchemy==2.0.19
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.183
+sweetrpg-api-core==0.0.185
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.137
     # via
@@ -144,8 +132,6 @@ typing-extensions==4.7.1
     # via
     #   asgiref
     #   sqlalchemy
-urllib3==2.0.4
-    # via requests
 virtualenv==20.24.2
     # via tox
 werkzeug==2.3.6

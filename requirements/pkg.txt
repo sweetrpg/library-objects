@@ -4,14 +4,8 @@
 #
 #    pip-compile requirements/pkg.in
 #
-airtable==0.4.8
-    # via -r requirements/pkg.in
 blinker==1.6.2
     # via flask
-certifi==2023.7.22
-    # via requests
-charset-normalizer==3.2.0
-    # via requests
 click==8.1.6
     # via flask
 dnspython==2.4.1
@@ -27,8 +21,6 @@ flask-rest-jsonapi==0.31.2
     # via sweetrpg-api-core
 greenlet==2.0.2
     # via sqlalchemy
-idna==3.4
-    # via requests
 itsdangerous==2.1.2
     # via flask
 jinja2==3.1.2
@@ -47,7 +39,7 @@ marshmallow-jsonapi==0.24.0
     # via
     #   -r requirements/pkg.in
     #   flask-rest-jsonapi
-mongoengine==0.26.0
+mongoengine==0.27.0
     # via
     #   -r requirements/pkg.in
     #   sweetrpg-api-core
@@ -59,15 +51,11 @@ pymongo[srv]==4.4.1
     #   mongoengine
     #   sweetrpg-db
     #   sweetrpg-model-core
-requests==2.31.0
-    # via airtable
 six==1.16.0
-    # via
-    #   airtable
-    #   flask-rest-jsonapi
+    # via flask-rest-jsonapi
 sqlalchemy==2.0.19
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.183
+sweetrpg-api-core==0.0.185
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.137
     # via
@@ -80,7 +68,5 @@ sweetrpg-model-core==0.0.136
     #   sweetrpg-db
 typing-extensions==4.7.1
     # via sqlalchemy
-urllib3==2.0.4
-    # via requests
 werkzeug==2.3.6
     # via flask
