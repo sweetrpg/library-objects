@@ -76,7 +76,7 @@ packaging==23.1
     #   pyproject-api
     #   pytest
     #   tox
-platformdirs==3.9.1
+platformdirs==3.10.0
     # via
     #   tox
     #   virtualenv
@@ -109,7 +109,7 @@ six==1.16.0
     # via flask-rest-jsonapi
 sqlalchemy==2.0.19
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.186
+sweetrpg-api-core==0.0.187
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.137
     # via

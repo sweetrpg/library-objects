@@ -115,11 +115,11 @@ packaging==23.1
     #   tox
 pallets-sphinx-themes==2.1.1
     # via -r requirements/docs.in
-pathspec==0.11.1
+pathspec==0.11.2
     # via black
 pip-tools==6.14.0
     # via -r requirements/dev.in
-platformdirs==3.9.1
+platformdirs==3.10.0
     # via
     #   black
     #   tox
@@ -199,7 +199,7 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlalchemy==2.0.19
     # via flask-rest-jsonapi
-sweetrpg-api-core==0.0.186
+sweetrpg-api-core==0.0.187
     # via -r requirements/pkg.in
 sweetrpg-db==0.0.137
     # via
