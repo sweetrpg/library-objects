@@ -12,7 +12,7 @@ blinker==1.6.2
     #   flask
 cachetools==5.3.1
     # via tox
-chardet==5.1.0
+chardet==5.2.0
     # via tox
 click==8.1.6
     # via flask
